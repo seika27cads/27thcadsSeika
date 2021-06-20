@@ -1,0 +1,4 @@
+Black #3b4b52
+purple #787ed4
+green #b6df70
+Red #c93329

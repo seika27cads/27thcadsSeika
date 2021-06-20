@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="design.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            var urlData = "json/data.json";
+            var url = "json/memberList.json";
+
+            var imgElement = document.getElementById("content");
+            $.getJSON(url, function(result) {
+
+
+                var i;
+                for(i=0;i<result.length;i++){
+                    img="<img class='sekaiIcon'  src='"+result[i].QIcons+"'>";
+                    imgProject="<div class='d-none d-lg-block' style='margin-right: 290px;'><div class=''style='width:250px;height:250px;background: linear-gradient(to right,"+result[i].color[0]+","+result[i].color[1]+");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>"+img+"</div></div>";
+
+                    var contentNumber = result[i].content.length;
+                    var j;
+                    var temp="<div class='d-flex p-3'>"+imgProject+"<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
+
+                    temp+="<div class='card-body'><h4 class='card-title'> <div><img src="+result[i].icon+" alt='' class='icon'> "+result[i].Name+"</div> </h4><hr><div class='chatBG'>";
+                        temp+="<div><div class='d-flex mb-10'><div class='w-75'></div><div class='w-25 talkBubbleChat text-right my-2'>你好阿UWU</div> </div></div>";
+                        for(j=0;j<contentNumber;j++){
+                            temp+= "<div class='talkBubbleRole w-50'>"+ result[i].content[j].text+"</div>";
+                        }
+                        temp+="<div class='d-flex mb-10'><div class='w-75'></div><div class='w-25 talkBubbleChat text-right my-2'>輸入中...</div> </div></div>";
+                    temp+="</div><hr> <div class='d-flex flex-row m-2'><input type='text' class='inputBubble' disabled value='😆'><div class='inputBtn align-items-center bg-primary text-center'><i class='fa fa-paper-plane mt-2 text-white' style=''></i></div></div></div></div></div></div>";
+                    document.getElementById("content").innerHTML+=temp;
+                }
+
+
+                /*
+                for(i=0;i<=numOutIndex;i++){
+                    img="<img class='sekaiIcon'  src='"+result.out[i].QIcons+"'>";
+                    imgProject="<div class='d-none d-lg-block' style='margin-right: 290px;'><div class=''style='width:250px;height:250px;background-color: red;position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>"+img+"</div></div>";
+
+                    var contentNumber = result.out[i].content.length;
+                    var j;
+                    var temp="<div class='d-flex p-3'>"+imgProject+"<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
+
+                    temp+="<div class='card-body'><h4 class='card-title'> <div><img src="+result.out[i].icon+" alt='' class='icon'> "+result.out[i].Name+"</div> </h4><hr><div class='chatBG'>";
+                        temp+="<div>";
+                        for(j=0;j<contentNumber;j++){
+                            temp+= "<div class='talkBubbleRole w-50'>"+ result.out[i].content[j].text+"</div>";
+                        }
+                        temp+="<div class='d-flex mb-10'><div class='w-75'></div><div class='w-25 talkBubbleChat text-right my-2'>輸入中...</div> </div></div>";
+                    temp+="</div><hr> <div class='d-flex flex-row'><input type='text' class='inputBubble' disabled value='Pansy 有冇玩project sekai ? UWU'><div class='inputBtn align-items-center bg-primary text-center'><i class='fa fa-paper-plane mt-2 text-white' style=''></i></div></div></div></div></div></div>";
+                    document.getElementById("content").innerHTML+=temp;
+                }
+                */
+
+
+
+
+
+
+
+
+
+            });
+        });
+    </script>
+</head>
+<style>
+    .banner{
+        background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
+        height: 100%;
+        min-height: 300px;
+        background-attachment:local;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .intro img{
+       padding:0
+    }
+</style>
+<body>
+    <div class="container-fluid bg-light">
+        <nav class="navbar navbar-fixed-top navbar-light bg-white  d-flex justify-content-around">
+            <div class="d-flex flex-row navbar-nav">
+                <img src="img/login.png" alt="" class="icon">
+                <a class="navbar-brand nav-item m-2 p-1" href="index.html">漫衍菁華</a>
+                <a href="event.html" class="nav-item nav-link m-2 p-1">活動</a>
+                <a href="" class="nav-item nav-link m-2 p-1">成員</a>
+                <a href="contactPage.html" class="nav-item nav-link m-2 p-1">聯絡我們</a>
+                <!--<a href="" class="nav-item nav-link m-2 p-1">作品集</a>--></div>
+            <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
+                <!--
+                <img src="img/icon_1.jfif" alt="" class="icon ">
+                <a href="" class="nav-item nav-link m-2 p-1 ">Profile</a>
+                <a href="login.php" class="nav-item nav-link m-2 p-1 btn btn-danger text-white">Logout</a>
+                -->
+            </div>
+        </nav>
+        <section class="container">
+            <div class="row row-cols-1" id="content">
+            </div>
+        </section>
+        <footer class="bg-dark text-white d-flex flex-column text-center ">
+            漫衍菁華
+            <div class="px-4">
+                如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我地
+            </div>
+            <div class="text-center">
+                <a href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
+                <a href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
+            </div>
+
+            <div class="bg-secondary">
+                @ 2021 Copyright seika27cads
+            </div>
+        </footer>
+    </div>
+<script>
+    /*x
+        var imgElement = document.getElementById("intro");
+        var imgText="";
+        var i;
+        for(i=1;i<15;i++){
+            imgText+="<img src='img/person/member/"+i+".png'>";
+        }
+
+        imgText+="<img src='img/banner%E2%80%94%E2%80%94for%20ig.png'>";
+        document.getElementById("intro").innerHTML = ""+imgText;
+        */
+    </script>
+</body>
+
+</html>

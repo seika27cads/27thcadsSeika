@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    font-family: Sans-serif;
+    font-size: 16px;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+header {
+    font-size: 30px;
+    color: #3b4b52;
+}
+
+form input {
+    width: 100%;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 16px;
+    background-color: #c93329;
+    padding: 5px 15px;
+}
+
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+}
+
+.submitBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+/*Memeber*/
+.banner {
+        background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
+        height: 100%;
+        min-height: 300px;
+        background-attachment: local;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .radioSet input:before {
+        content: attr(label);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .radioSet input {
+        width: 150px;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        font-size: large;
+        font-weight: bold;
+
+    }
+
+    input[type="radio"]:checked {
+        color: black;
+        text-shadow: 0.1em 0.1em 0.2em white;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .talkBubbleRole {
+        width: 300px;
+        height: 100%;
+        left: 25px;
+        background: #b6df70;
+        position: relative;
+        border-radius: 0px 10px 10px 10px;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .talkBubbleRole:before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        border-top: 0px solid transparent;
+        border-right: 20px solid #b6df70;
+        border-bottom: 23px solid transparent;
+    }
+
+    .talkBubbleChat {
+        width: 200px;
+        height: 100%;
+        background-color: darkseagreen;
+        position: relative;
+        border-radius: 10px 0px 10px 10px;
+        margin-top: 15px;
+        margin-right: 25px;
+        padding: 15px;
+    }
+
+    .talkBubbleChat:before {
+        content: "";
+        position: absolute;
+        left: 100%;
+        border-top: 0px solid transparent;
+        border-left: 20px solid darkseagreen;
+        border-bottom: 23px solid transparent;
+    }
+
+    .inputBubble {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .inputBtn {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        margin-left: 10px;
+        border-radius: 15px;
+        background-color: darkseagreen;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .trapezoid {
+        margin-left: 15px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #ddd;
+        transform: skewX(45deg);
+
+    }
+
+    .text {
+        transform: skewX(-45deg);
+    }
+
+    .chatBG{
+        background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
+        background-attachment: local;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sekaiIcon{
+        width:250px;height:250px;z-index:3;border: 1px solid black;
+    }
