@@ -39,7 +39,7 @@
                 },{
         "Name": "宣傳秘書 - Volar",
         "QIcons": "img/person/member/13.png",
-        "icon": "img/person/member/13.PNG",
+        "icon": "img/person/member/13.png",
         "color":["#dd6138","#deceb2"],
         "content": [
             {
@@ -85,7 +85,7 @@
             }, {
         "Name": "外務秘書 - Daniel",
         "QIcons": "img/person/member/6q.png",
-        "icon": "img/person/member/6.PNG",
+        "icon": "img/person/member/6.png",
         "color":["#373331","#661c38"],
         "content": [
             {
