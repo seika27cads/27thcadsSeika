@@ -43,34 +43,6 @@
                 }
 
 
-                /*
-                for(i=0;i<=numOutIndex;i++){
-                    img="<img class='sekaiIcon'  src='"+result.out[i].QIcons+"'>";
-                    imgProject="<div class='d-none d-lg-block' style='margin-right: 290px;'><div class=''style='width:250px;height:250px;background-color: red;position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>"+img+"</div></div>";
-
-                    var contentNumber = result.out[i].content.length;
-                    var j;
-                    var temp="<div class='d-flex p-3'>"+imgProject+"<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
-
-                    temp+="<div class='card-body'><h4 class='card-title'> <div><img src="+result.out[i].icon+" alt='' class='icon'> "+result.out[i].Name+"</div> </h4><hr><div class='chatBG'>";
-                        temp+="<div>";
-                        for(j=0;j<contentNumber;j++){
-                            temp+= "<div class='talkBubbleRole w-50'>"+ result.out[i].content[j].text+"</div>";
-                        }
-                        temp+="<div class='d-flex mb-10'><div class='w-75'></div><div class='w-25 talkBubbleChat text-right my-2'>輸入中...</div> </div></div>";
-                    temp+="</div><hr> <div class='d-flex flex-row'><input type='text' class='inputBubble' disabled value='Pansy 有冇玩project sekai ? UWU'><div class='inputBtn align-items-center bg-primary text-center'><i class='fa fa-paper-plane mt-2 text-white' style=''></i></div></div></div></div></div></div>";
-                    document.getElementById("content").innerHTML+=temp;
-                }
-                */
-
-
-
-
-
-
-
-
-
             });
         });
     </script>
@@ -88,6 +60,9 @@
 
     .intro img{
        padding:0
+    }
+    .intro:hover{
+        border-left:5px solid #787ed4;
     }
 </style>
 <body>
@@ -123,7 +98,7 @@
             </div>
 
             <div class="bg-secondary">
-                @ 2021 Copyright seika27cads
+                <a class="text-white" href="memberVersion3.html" style="text-decoration: none;">@ 2021 Copyright seika27cads</a>
             </div>
         </footer>
     </div>

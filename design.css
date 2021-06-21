@@ -54,7 +54,7 @@ form input {
 .banner {
         background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
         height: 100%;
-        min-height: 300px;
+        min-height: 200px;
         background-attachment: local;
         background-repeat: no-repeat;
         background-position: center;
@@ -89,13 +89,14 @@ form input {
         width: 300px;
         height: 100%;
         left: 25px;
-        background: #b6df70;
+        background: #0A1118;
+        color: white;
         position: relative;
-        border-radius: 0px 10px 10px 10px;
+        border-radius:  10px;
         margin-top: 15px;
         padding: 15px;
     }
-
+/*
     .talkBubbleRole:before {
         content: "";
         position: absolute;
@@ -104,18 +105,19 @@ form input {
         border-right: 20px solid #b6df70;
         border-bottom: 23px solid transparent;
     }
-
+*/
     .talkBubbleChat {
         width: 200px;
         height: 100%;
-        background-color: darkseagreen;
+        background-color: #7143F8;
         position: relative;
-        border-radius: 10px 0px 10px 10px;
+        color: white;
+        border-radius: 10px ;
         margin-top: 15px;
         margin-right: 25px;
         padding: 15px;
     }
-
+/*
     .talkBubbleChat:before {
         content: "";
         position: absolute;
@@ -124,7 +126,7 @@ form input {
         border-left: 20px solid darkseagreen;
         border-bottom: 23px solid transparent;
     }
-
+*/
     .inputBubble {
         width: 100%;
         border-radius: 10px;
@@ -136,7 +138,7 @@ form input {
         object-fit: cover;
         margin-left: 10px;
         border-radius: 15px;
-        background-color: darkseagreen;
+        background-color: purple;
     }
 
     .card {

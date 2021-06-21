@@ -1,5 +1,6 @@
 [{
         "Name": "主席 - Hinson",
+        "Nickname": "Hinson",
         "QIcons": "img/person/member/1.png",
         "icon": "img/person/member/1.png",
         "color":["#56091C","#000000"],
@@ -12,6 +13,7 @@
                     ]
                 }, {
         "Name": "外務副主席 -  DB",
+        "Nickname": "DB",
         "QIcons": "img/person/member/2.png",
         "icon": "img/person/member/2.png",
         "color":["#6DA1BE","#E4E4E4"],
@@ -24,6 +26,7 @@
                     ]
 },{
         "Name": "外務副主席 - Yuki",
+        "Nickname": "Yuki",
         "QIcons": "img/person/member/3q.png",
         "icon": "img/person/member/3.png",
         "color":["#3b3138","#2d4f2e"],
@@ -38,6 +41,7 @@
                     ]
                 },{
         "Name": "宣傳秘書 - Volar",
+        "Nickname": "Volar",
         "QIcons": "img/person/member/13.png",
         "icon": "img/person/member/13.png",
         "color":["#dd6138","#deceb2"],
@@ -50,6 +54,7 @@
                 }]
                 }, {
         "Name": "宣傳秘書 - Ivy ",
+        "Nickname": "Ivy",
         "QIcons": "img/person/member/7.png",
         "icon": "img/person/member/7.png",
         "color":["#000000","#fdfeff"],
@@ -62,8 +67,9 @@
                     ]
                 }, {
         "Name": "宣傳秘書 - Annie",
-        "QIcons": "img/person/member/4.png",
-        "icon": "img/person/member/4q.png",
+        "Nickname": "Annie",
+        "QIcons": "img/person/member/4q.png",
+        "icon": "img/person/member/4.png",
         "color":["#9fc496","#d1d1d1","#cfa1b3"],
         "content": [
             {
@@ -72,8 +78,9 @@
                 ]
                 }, {
         "Name": "宣傳秘書 - Libby",
-        "QIcons": "img/person/member/10.png",
-        "icon": "img/person/member/10q.png",
+        "Nickname": "Libby",
+        "QIcons": "img/person/member/10q.png",
+        "icon": "img/person/member/10.png",
         "color":["#475f6a","#c3c8cc"],
         "content": [
             {
@@ -84,6 +91,7 @@
                 ]
             }, {
         "Name": "外務秘書 - Daniel",
+        "Nickname": "Daniel",
         "QIcons": "img/person/member/6q.png",
         "icon": "img/person/member/6.png",
         "color":["#373331","#661c38"],
@@ -93,6 +101,7 @@
                 }]
                 },{
         "Name": "內務秘書 - Ivy Lau",
+        "Nickname": "Ivy",
         "QIcons": "img/person/member/5.png",
         "icon": "img/person/member/5.png",
         "color":["#000000","#fcfdff"],
@@ -102,6 +111,7 @@
                     }]
 },{
         "Name": "財務秘書 - 白龍 hyaku",
+        "Nickname": "白龍",
         "QIcons": "img/person/member/14.png",
         "icon": "img/person/member/14.png",
         "color":["#47397f","#711a81"],
@@ -114,6 +124,7 @@
                 ]
             },  {
         "Name": "常務秘書 - Entrollpy ",
+        "Nickname": "Entrollpy",
         "QIcons": "img/person/member/8q.png",
         "icon": "img/person/member/8.png",
         "color":["#4c4c4c","#9a9896"],
@@ -126,6 +137,7 @@
                     ]
 }, {
         "Name": "市場秘書 - Pansy",
+        "Nickname": "Pansy",
         "QIcons": "img/person/member/11q.png",
         "icon": "img/person/member/11.png",
         "color":["#e1c2b6","#a57760"],
@@ -138,6 +150,7 @@
                     ]
                 }, {
         "Name": "康樂秘書 - 申展",
+        "Nickname": "申展",
         "QIcons": "img/person/member/12q.png",
         "icon": "img/person/member/12.png",
         "color":["#87b8af","#3d4a6a"],
@@ -151,6 +164,7 @@
             ]
     }, {
         "Name": "福利秘書 - Ken",
+        "Nickname": "Ken",
         "QIcons": "img/person/member/9.png",
         "icon": "img/person/member/9.png",
         "color":["#9a396b","#cda298"],

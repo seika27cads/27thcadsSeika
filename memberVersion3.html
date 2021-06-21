@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="phoneDesign.css">
+    <link rel="icon" href="img/login.png">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            var url = "json/memberList.json";
+            //get json data
+
+            $(".inbox, .memeber").click(function() {
+                $(".contactPerson").hide();
+                $(".chatroom").css('display', 'block');
+                var memberid = $(this).find(".chat").attr("id");
+                //get json
+                $.getJSON(url, function(result) {
+                    var i;
+                    var contentNumber = result[memberid].content.length;
+
+                    document.getElementById("chatroomBar").innerHTML = " ";
+                    document.getElementById("content").innerHTML = " ";
+                    var info = " <img src=" + result[memberid].icon + "  class='icon'>   " + result[memberid].Name;
+
+                    document.getElementById("chatroomBar").innerHTML += info;
+
+                    var temp = "<div class='d-flex'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right bg-whiter'> 你好阿 " + result[memberid].Nickname + " UWU 你平時有咩興趣阿?</div> </div><div>";
+                    for (i = 0; i < contentNumber; i++) {
+                        temp += "<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
+                    }
+                    temp += "<div class='d-flex mb-10'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right'>輸入中...</div> </div></div>"
+                    document.getElementById("content").innerHTML += temp;
+
+                    img = "<img class='sekaiIcon'  src='" + result[memberid].QIcons + "'>";
+                    imgProject = "<div class='d-none d-lg-block' style='margin-right: 100px;'><div class=''style='width:250px;height:250px;background: linear-gradient(to right," + result[memberid].color[0] + "," + result[memberid].color[1] + ");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>" + img + "</div></div>";
+
+                    var temp2 = "<div class='d-flex p-3'>" + imgProject + "<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
+                    document.getElementById("memberIcon").innerHTML = temp2;
+                });
+            });
+            $(".back").click(function() {
+                $(".contactPerson").show();
+                $(".chatroom").css('display', 'none');
+                document.getElementById("memberIcon").innerHTML = "<div class='hints d-none d-lg-block' id='memberIcon'> <div class='bubble'>你想搵邊個阿 你只要click個紙飛機就可以搵到佢架啦</div> <img class=' dchickImg  ' src='img/IMG_1348.PNG' > </div>";
+
+            });
+            $(".memeber").hover(function() {
+                $(this).find('.inbox').css(' font-size', '32px');
+                $(this).find('.inbox').css('display', 'block');
+            }, function() {
+                $(this).find('.inbox').css(' font-size', '16px');
+                $(this).find('.inbox').css('display', 'none');
+
+            });
+
+        });
+
+    </script>
+</head>
+<style>
+    .intro img {
+        padding: 0;
+    }
+
+    .memeberList {
+        max-height: 600px;
+        overflow: scroll;
+    }
+
+    .memeberList .memeber {
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        padding: 15px 0px;
+        border-bottom: 1px solid #3389FF;
+    }
+
+    .memeber:hover div:first-child{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .toolBar {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+    }
+
+    .toolBar input {
+        width: 100%;
+    }
+
+    .toolBar .search {
+        width: 50px;
+        height: 50px;
+    }
+
+    .inbox {
+        background-color: royalblue;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 3px;
+        cursor: pointer;
+    }
+
+    .fa-chevron-left {
+        cursor: pointer;
+
+    }
+
+    .member div {
+        margin: 50px;
+    }
+
+    .inbox {
+        display: none;
+    }
+
+    .dchickImg {
+        width: 250px;
+        height: 250px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .hints {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 10%;
+    }
+    .bubble {
+        border-radius: 15px;
+        background-color: floralwhite;
+        padding: 15px;
+        width: 20px;
+        position: relative;
+        border-right: 2px solid rgba(255,255,255,.75);
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 2s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+    }
+
+    .container-fluid {
+        background: linear-gradient(-45deg, #BAFFDF, #E1BAFF , #23a6d5, #A3FC94);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    .dchickImg:hover  {
+        animation-name: chick;
+        animation-duration: 2s;
+    }
+    #chatroomBar{
+        border-radius: 15px 15px 0px 0px;
+    }
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 250px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;
+    }
+}
+    @keyframes chick {
+        0% {
+            left: -80px;
+            transform: rotate(0deg);
+        }
+        50% {
+            left: -80px;
+            transform: rotate(-50deg);
+        }
+        100% {
+            left: -80px;
+            transform: rotate(0deg);
+        }
+    }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+}
+</style>
+
+<body>
+    <div class="container-fluid bg-light banner" style="height: 100vh;">
+        <nav class="navbar navbar-fixed-top navbar-light bg-dark   d-flex justify-content-around">
+            <div class="d-flex flex-row navbar-nav">
+                <img src="img/login.png" alt="" class="icon">
+                <a class="navbar-brand nav-item m-2 p-1 text-white" href="index.html">漫衍菁華</a>
+                <a href="event.html" class="nav-item nav-link m-2 p-1 text-white">活動</a>
+                <a href="" class="nav-item nav-link m-2 p-1 text-white">成員</a>
+                <a href="contactPage.html" class="nav-item nav-link m-2 p-1 text-white">聯絡我們</a>
+            </div>
+            <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center text-white" style="width:250px;">
+            </div>
+        </nav>
+
+        <section class="container d-flex d-row justify-content-around" >
+
+            <div class="d-flex flex-column position-relative" style="">
+                <div class="hints d-none d-lg-block " id="memberIcon">
+                    <div class="bubble">你想搵邊個阿? Click落去搵佢啦</div>
+                    <img class=" dchickImg  " src="img/IMG_1348.PNG" alt="">
+                </div>
+
+
+            </div>
+            <div class=" phone  m-5 " style="max-width: 400px;min-width: 400px; ">
+
+                <div class="phoneBg">
+                    <div class="d-flex justify-content-between phoneTopbar">
+
+                        <div id="MyClockDisplay" class="clock ml-3 mt-2" onload="showTime()"></div>
+                        <div class="phoneHand d-flex justify-content-around ">
+                            <div class="speaker"></div>
+
+                        </div>
+                        <div class="icons d-flex justify-content-center mt-2">
+                            <i class="fa fa-signal" aria-hidden="true"></i>
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-battery-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="contactPerson px-3">
+                        <div class="">
+                            <form class="form-inline my-2 my-lg-2 d-flex d-row">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                            <div class="memeberList" id="memberList">
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3 ">
+                                        主席 - Hinson
+                                    </div>
+                                    <div class="inbox ">
+                                        <i class='fa fa-paper-plane text-white chat ' style='' id="0"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        外務副主席 - DB
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="1"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        外務副主席 - Yuki
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="2"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        宣傳秘書 - Volar
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="3"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        宣傳秘書 - Ivy
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="4"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        宣傳秘書 - Annie
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="5"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        宣傳秘書 - Libby
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="6"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        外務秘書 - Daniel
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="7"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        內務秘書 - Ivy Lau
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="8"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        財務秘書 - 白龍 hyaku
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="9"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        常務秘書 - Entrollpy
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="10"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        市場秘書 - Pansy
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="11"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        康樂秘書 - 申展
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="12"></i>
+                                    </div>
+                                </div>
+                                <div class="memeber d-flex flex-row">
+                                    <div class="w-100 px-3">
+                                        福利秘書 - Ken
+                                    </div>
+                                    <div class="inbox">
+                                        <i class='fa fa-paper-plane text-white chat' style='' id="13"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatroom " style="display: none;">
+                        <div class="card-title mt-2 bg-dark text-white  px-1" id="chatroomBar" >
+
+                        </div>
+
+                        <div class="content  bgImg" style="overflow: scroll;" id="content">
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center">
+                    <i class="fa fa-circle-thin fa-2x mt-2 back text-white" aria-hidden="true"></i>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+    </div>
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+
+            var time = h + ":" + m;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+
+    </script>
+</body>
+
+</html>
