@@ -67,12 +67,6 @@
                 $(this).find('.inbox').css('display', 'none');
 
             });
-            $("#filter").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-              });
 
         });
 
@@ -296,7 +290,7 @@
                     <div class="contactPerson px-3">
                         <div class="">
                             <form class="form-inline my-2 my-lg-2 d-flex d-row">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="filter">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="filter" disabled>
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                             <div class="memeberList" id="memberList">
