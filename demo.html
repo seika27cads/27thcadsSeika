@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="darkMode/dark-mode.css">
 </head>
-<style>
-#container{
-    width: 400px;
-    background: yellow;
-}
-#floated{
-    float: left;
-    width: 150px;
-    background: red;
-}</style>
-<body>
-    <div id="casdasdasdsdontainer">
-    <div id="floated">...some other random text</div>
-    ...
-    some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasdvsome random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...some random textasdasdasdasdasdasdasdasdasdassadsadsadsadsadsadsadsadsadsaddasdasdasdasdasdasdasdasdasd
-    ...
-    ...
-</div>
+<body class="bg-white text-center d-flex h-100">
+
+  <div class="container d-flex p-3 mx-auto w-100 flex-column">
+    <header class="mb-auto">
+      <div class="float-md-start fw-bold fs-5">Dark Mode Switch</div>
+      <nav class="nav justify-content-center float-md-end">
+        <a class="nav-link active" href="https://coliff.github.io/dark-mode-switch/">Home</a>
+        <a class="nav-link" href="https://github.com/coliff/dark-mode-switch" target="_blank">GitHub</a>
+        <div class="nav-link">
+
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="darkMode/dark-mode-switch.min.js"></script>
+
+        </div>
+      </nav>
+    </header>
+
+
+
+  </div>
 </body>
 </html>

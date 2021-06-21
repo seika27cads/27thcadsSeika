@@ -14,6 +14,9 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
 
     </script>
+        <!--Dark mode-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="darkMode/dark-mode.css">
     <script>
         $(document).ready(function() {
             var urlData = "json/data.json";
@@ -32,7 +35,7 @@
                     var j;
                     var temp="<div class='d-flex p-3'>"+imgProject+"<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
 
-                    temp+="<div class='card-body'><h4 class='card-title'> <div><img src="+result[i].icon+" alt='' class='icon'> "+result[i].Name+"</div> </h4><hr><div class='chatBG'>";
+                    temp+="<div class='card-body text-black'><h4 class='card-title'> <div><img src="+result[i].icon+" alt='' class='icon'> "+result[i].Name+"</div> </h4><hr><div class='chatBG'>";
                         temp+="<div><div class='d-flex mb-10'><div class='w-75'></div><div class='w-25 talkBubbleChat text-right my-2'>你好阿UWU</div> </div></div>";
                         for(j=0;j<contentNumber;j++){
                             temp+= "<div class='talkBubbleRole w-50'>"+ result[i].content[j].text+"</div>";
@@ -67,21 +70,25 @@
 </style>
 <body>
     <div class="container-fluid bg-light">
-        <nav class="navbar navbar-fixed-top navbar-light bg-white  d-flex justify-content-around">
+       <nav class="navbar navbar-fixed-top navbar-light bg-light  d-flex justify-content-around">
             <div class="d-flex flex-row navbar-nav">
                 <img src="img/login.png" alt="" class="icon">
-                <a class="navbar-brand nav-item m-2 p-1" href="index.html">漫衍菁華</a>
-                <a href="event.html" class="nav-item nav-link m-2 p-1">活動</a>
-                <a href="" class="nav-item nav-link m-2 p-1">成員</a>
-                <a href="contactPage.html" class="nav-item nav-link m-2 p-1">聯絡我們</a>
-                <!--<a href="" class="nav-item nav-link m-2 p-1">作品集</a>--></div>
+                <a class="navbar-brand nav-item m-2 p-1 text-dark" href="index.html">漫衍菁華</a>
+               <a href="event.html" class="nav-item nav-link m-2 p-1 text-dark">活動</a>
+                <a href="member.html" class="nav-item nav-link m-2 p-1 text-dark">成員</a>
+                <a href="contactPage.html" class="nav-item nav-link m-2 p-1 text-dark">聯絡我們</a></div>
             <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
-                <!--
-                <img src="img/icon_1.jfif" alt="" class="icon ">
-                <a href="" class="nav-item nav-link m-2 p-1 ">Profile</a>
-                <a href="login.php" class="nav-item nav-link m-2 p-1 btn btn-danger text-white">Logout</a>
-                -->
+            <div class="nav-link">
+
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <label class="custom-control-label text-dark" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="darkMode/dark-mode-switch.min.js"></script>
+
+        </div>
             </div>
+
         </nav>
         <section class="container">
             <div class="row row-cols-1" id="content">
@@ -92,29 +99,17 @@
             <div class="px-4">
                 如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我地
             </div>
-            <div class="text-center">
+            <div class="text-center d-flex justify-content-center">
                 <a href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
                 <a href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
             </div>
-
             <div class="bg-secondary">
-                <a class="text-white" href="memberVersion3.html" style="text-decoration: none;">@ 2021 Copyright seika27cads</a>
+                <a class="text-always-white" href="memberVersion3.html" style="text-decoration: none;">@ 2021 Copyright seika27cads</a>
             </div>
+
         </footer>
     </div>
-<script>
-    /*x
-        var imgElement = document.getElementById("intro");
-        var imgText="";
-        var i;
-        for(i=1;i<15;i++){
-            imgText+="<img src='img/person/member/"+i+".png'>";
-        }
 
-        imgText+="<img src='img/banner%E2%80%94%E2%80%94for%20ig.png'>";
-        document.getElementById("intro").innerHTML = ""+imgText;
-        */
-    </script>
 </body>
 
 </html>
