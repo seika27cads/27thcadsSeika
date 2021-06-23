@@ -4,18 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>CityU Seika</title>
-
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="icon" href="img/login.png" />
+    <link rel="icon" href="img/commonUsageImg/" />
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="design.css">
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+
+    </script>
     <!--Dark mode-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="darkMode/dark-mode.css">
+    <script>
+$(document).ready(function(){
+    $('#index, .icon').click(function(){
+        $('.mainContent').load("home.html");
+    });
+    $('#event').click(function(){
+        $('.mainContent').load("event.html");
+    });
+    $('#member').click(function(){
+        $('.mainContent').load("memberVersion3.html");
+    });
+    $('#contactUs').click(function(){
+        $('.mainContent').load("contactPage.html");
+    });
+
+   $('.mainContent').load("home.html");
+
+});
+</script>
 </head>
 <style>
     .bg1 {
@@ -43,105 +64,54 @@
         vertical-align: middle;
         max-width: 500px;
     }
-
+    .navbar-nav a,
+    navbar-nav img{
+        cursor: pointer;
+    }
 
 </style>
 
 <body class="">
     <div class="container-fluid bg-white">
+        <nav class="navbar navbar-fixed-top navbar-light bg-light  d-flex justify-content-around">
+            <div class="d-flex flex-row navbar-nav">
+                <img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon">
+                <a class="navbar-brand nav-item m-2 p-1 text-dark" id="index" >漫衍菁華</a>
+                <a  class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動</a>
+                <a  class="nav-item nav-link m-2 p-1 text-dark" id='member'>成員</a>
+                <a  class="nav-item nav-link m-2 p-1 text-dark" id='contactUs'>聯絡我們</a></div>
+            <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
+            <div class="nav-link">
 
-        <section class=" container  mt-2 mb-2 p-3 ">
-            <div class="text-center">
-                <h1>
-                    香港城市大學學生會
-                    <br>第二十七屆動漫畫同人誌幹事會
-                    <br>漫衍菁華🌺
-                </h1>
-                <hr>
-                大家好！！我哋係香港城市大學學生會第27屆動漫畫同人誌幹事會《漫衍菁華》٩(˃̶͈̀௰˂̶͈́)و
-            </div>
-        </section>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <label class="custom-control-label text-dark" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="darkMode/dark-mode-switch.min.js"></script>
 
-        <div class="bg1 position-relative">
-            <div class="position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>\成功上莊/</h2>
-            </div>
         </div>
-        <section class=" container  mt-2 mb-2 p-3 ">
-            我哋漫衍菁華成功當選！！~\(≧▽≦)/~
-            多謝各位會員對我哋嘅支持同埋你哋所投嘅每一票
-
-           <br><br>
-            感謝各位一直對我哋嘅支持同埋鼓勵🙌🏻 我哋《漫衍菁華》終於正式上任啦😆🎉🎊 有你哋大家嘅支持先至有今日嘅我哋❣️❣️嚟緊嘅呢一年，我哋《漫衍菁華》將不遺餘力咁為大家服務💪🏻💪🏻希望可以為每一位會員帶嚟歡樂，同埋更享受大學嘅生活🔥
-
-<br><br><hr>
-            最新消息我哋會即刻向大家宣布！請大家多啲留意我哋嘅Facebook同Instagram(*/ω＼*)
-            最後！再一次感謝大家嘅支持！嚟緊呢一年請大家多多指教(≧∇≦)و
-
-
-        </section>
-        <div class="bg1_1 position-relative">
-            <div class="position-absolute top-50 start-50 text-center bg-light pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>Thank you!!</h2>
             </div>
+
+        </nav>
+        <div class="mainContent">
+
         </div>
 
-        <section class=" container  mt-2 mb-2 p-3 position-relative d-flex flex-column">
-            <div class="d-flex flex-row justify-content-center">
 
-
-                <img src="img/thx/2.png" alt="" class="position-relative">
-                <img src="img/thx/1.JPG" alt="" class="position-relative">
+        <footer class="bg-dark text-white d-flex flex-column text-center ">
+            漫衍菁華
+            <div class="px-4">
+                如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我地
             </div>
-            <div class="d-flex flex-row justify-content-center">
-
-                <img src="img/thx/3.JPG" alt="" class="position-relative">
-                <img src="img/thx/4.jpg" alt="" class="position-relative">
+            <div class="text-center d-flex justify-content-center">
+                <a href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
+                <a href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
             </div>
-        </section>
-
-        <div class="bg1 position-relative">
-            <div class="position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>福利提供</h2>
-            </div>
-        </div>
-        <section class=" container  mt-2 mb-2 p-3 ">
-            <div class="text-center">
-            </div>
-        </section>
-        <section class=" container">
-            <hr>
-            <div class="d-flex flex-row " style="min-height:300px;">
-                <div class="col-md-8  p-3">
-                    <h1></h1>
-                    號外！！！！🤩
-                    城大漫soc有幸可以同 Future Formula 合作，只要你係漫soc嘅基本會員，
-                    <br>
-                    並於 Future Formula 訂購商品時出示本會會員證，就可以：
-                    <ul>
-                        <li>以Future Formula 會員價格訂購商品</li>
-                        <li> 購物時將獲得額外 Future Formula印花(印花10個可當港幣$50使用）</li>
-                    </ul>
-                    <div class="text-danger">是次福利將會持續直至本會莊期結束，快啲趁住今次嘅機會將老婆/老公帶返屋企啦！Click here <a href="https://www.facebook.com/futureformula2014" class="fa fa-facebook  btn btn-primary text-white"></a></div>
-
-
-
-
-                </div>
-                <div class="text-center">
-
-
-                    <a href="https://www.facebook.com/futureformula2014/"><img src="img/welfare/welfare.JPG" class="position-absolute" style="width:250px;height:250px;"></a>
-
-                </div>
-
+            <div class="bg-secondary">
+                @ 2021 Copyright seika27cads
             </div>
 
-        </section>
-
-
-
-
+        </footer>
     </div>
 
 </body>

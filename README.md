@@ -1,4 +1,4 @@
-- [ ] Event date add a tag to ig. 
+- [x] Event date add a tag to ig. 
 - [ ] responsive layout
 - [ ] News
 - [ ] Portfolio
