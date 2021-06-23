@@ -21,8 +21,10 @@
     <link rel="stylesheet" href="darkMode/dark-mode.css">
     <script>
         $(document).ready(function() {
+            var clickAlert=0;
             var url = "json/memberList.json";
             //get json data
+
 
             $(".inbox, .memeber").click(function() {
                 $(".contactPerson").hide();
@@ -47,16 +49,18 @@
                     document.getElementById("content").innerHTML += temp;
 
                     img = "<img class='sekaiIcon'  src='" + result[memberid].QIcons + "'>";
-                    imgProject = "<div class='d-none d-lg-block' style='margin-right: 100px;'><div class=''style='width:250px;height:250px;background: linear-gradient(to right," + result[memberid].color[0] + "," + result[memberid].color[1] + ");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>" + img + "</div></div>";
+                    imgProject = "<div class='d-none d-lg-block' style=''><div class=''style='width:250px;height:250px;background: linear-gradient(to right," + result[memberid].color[0] + "," + result[memberid].color[1] + ");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>" + img + "</div></div>";
 
-                    var temp2 = "<div class='d-flex p-3'>" + imgProject + "<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
-                    document.getElementById("memberIcon").innerHTML = temp2;
+                    var temp1 = "<div class='d-flex p-3'>" + imgProject + "<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
+                    document.getElementById("memberIcon").innerHTML = temp1;
+                    document.getElementById("memberIcon").innerHTML += "<div class='bubble'  style='top:300px;color:"+result[memberid].color[0]+";font-weight:bold' id='howtoback' onclick='countClick()'>Click Home鍵就可以番上一頁</div>";
+
                 });
             });
             $(".back").click(function() {
                 $(".contactPerson").show();
                 $(".chatroom").css('display', 'none');
-                document.getElementById("memberIcon").innerHTML = "<div class='hints d-none d-lg-block' id='memberIcon'> <div class='bubble'>你想搵邊個阿? Click落去搵佢啦</div> <img class=' dchickImg  ' src='img/IMG_1348.PNG' > </div>";
+                document.getElementById("memberIcon").innerHTML = "<div class='bubble'>你想搵邊個阿? Click落去搵佢啦</div> <img class='dchickImg' src='img/commonUsageImg/DchickHi.PNG' >";
 
             });
             $(".memeber").hover(function() {
@@ -68,6 +72,9 @@
 
             });
 
+
+
+
         });
 
     </script>
@@ -78,7 +85,7 @@
     }
 
     .memeberList {
-        max-height: 600px;
+        max-height: 850px;
         overflow: scroll;
     }
 
@@ -238,47 +245,23 @@
 
 <body>
     <div class="container-fluid bg-light banner" style="height: 100vh;">
-        <nav class="navbar navbar-fixed-top navbar-light bg-light  d-flex justify-content-around">
-            <div class="d-flex flex-row navbar-nav">
-                <img src="img/login.png" alt="" class="icon">
-                <a class="navbar-brand nav-item m-2 p-1 text-dark" href="index.html">漫衍菁華</a>
-                <a href="event.html" class="nav-item nav-link m-2 p-1 text-dark">活動</a>
-                <a href="member.html" class="nav-item nav-link m-2 p-1 text-dark">成員</a>
-                <a href="contactPage.html" class="nav-item nav-link m-2 p-1 text-dark">聯絡我們</a>
-            </div>
-            <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
-                <div class="nav-link">
-
-                    <div class="form-check form-switch">
-                        <input type="checkbox" class="form-check-input" id="darkSwitch">
-                        <label class="custom-control-label text-dark" for="darkSwitch">Dark Mode</label>
-                    </div>
-                    <script src="darkMode/dark-mode-switch.min.js"></script>
-
-                </div>
-            </div>
-
-        </nav>
 
         <section class="container d-flex d-row justify-content-around">
 
             <div class="d-flex flex-column position-relative" style="">
                 <div class="hints d-none d-lg-block text-black" id="memberIcon">
                     <div class="bubble">你想搵邊個阿? Click落去搵佢啦</div>
-                    <img class=" dchickImg  " src="img/IMG_1348.PNG" alt="">
+                    <img class=" dchickImg  " src="img/commonUsageImg/DchickHi.PNG" alt="">
                 </div>
-
-
             </div>
-            <div class=" phone  m-5 " style="max-width: 400px;min-width: 400px; ">
-
+            <div class="w-25 d-none d-lg-block">
+            </div>
+            <div class=" phone  m-5 " style="">
                 <div class="phoneBg">
                     <div class="d-flex justify-content-between phoneTopbar">
-
                         <div id="MyClockDisplay" class="clock ml-3 mt-2 text-black" onload="showTime()"></div>
                         <div class="phoneHand d-flex justify-content-around ">
                             <div class="speaker"></div>
-
                         </div>
                         <div class="icons d-flex justify-content-center mt-2 text-black">
                             <i class="fa fa-signal" aria-hidden="true"></i>
@@ -294,6 +277,8 @@
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                             <div class="memeberList" id="memberList">
+
+
                                 <div class="memeber d-flex flex-row">
                                     <div class="w-100 px-3  text-black">
                                         主席 - Hinson
@@ -424,11 +409,13 @@
 
                 </div>
                 <div class="d-flex justify-content-center">
+
                     <i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true"></i>
+                    </div>
+                    <div class="message">
 
-                </div>
+                    </div>
             </div>
-
 
 
 
@@ -436,6 +423,7 @@
 
     </div>
     <script>
+        var clickAlert=0;
         function showTime() {
             var date = new Date();
             var h = date.getHours(); // 0 - 23
@@ -459,7 +447,14 @@
             setTimeout(showTime, 1000);
         }
         showTime();
-
+       function countClick() {
+            clickAlert++;
+            if(clickAlert<10){
+            }else{
+            document.getElementById("howtoback").innerHTML = "會長:人黎搵人教白龍用Iphone";
+            clickAlert=0;
+        }s
+        }
     </script>
 </body>
 
