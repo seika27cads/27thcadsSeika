@@ -42,3 +42,6 @@
 .bg-always-dark{
  background-color: black;
 }
+[data-theme="dark"] .container-fluid{
+    background: #222!important;
+}
