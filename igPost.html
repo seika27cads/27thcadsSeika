@@ -33,7 +33,6 @@
             $('#ig').click(function() {
                 $('.mainContent').load("demo.html");
             });
-            $('.mainContent').load("home.html");
 
         });
 
@@ -70,7 +69,14 @@
     navbar-nav img {
         cursor: pointer;
     }
+    a img{
+			width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
 
+		}
 </style>
 
 <body class="">
@@ -82,13 +88,12 @@
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='member'>成員</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='contactUs'>聯絡我們</a>
-
             </div>
             <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
                 <div class="nav-link">
 
-                    <div class="form-check form-switch">
-                        <input type="checkbox" class="form-check-input" id="darkSwitch">
+                    <div class="form-check form-switch d-none d-md-block">
+                        <input type="checkbox" class="form-check-input " id="darkSwitch">
                         <label class="custom-control-label text-dark" for="darkSwitch">Dark Mode</label>
                     </div>
                     <script src="darkMode/dark-mode-switch.min.js"></script>
@@ -97,8 +102,22 @@
             </div>
 
         </nav>
-        <div class="mainContent">
+        <div class="mainContent container my-2">
+            <div id="instafeed-container" class="row  row-cols-sm-1 row-cols-md-2 row-cols-lg-3"></div>
 
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJWNWhhWWZArTVVpeTNXVEdjT2dJTWRlN0tRenY5bUxWSEtQYl9jUVYxZAmw2XzlkSjZAUaDJsR3o1MWs1VUh3NUQ2c3JSNUN3ZAzFoM1NURmtSQ3VrSW8zekdldk5Xa1AtUjJkMnpjcmhqU3RSVDhCaAZDZD'
+	});
+
+	userFeed.run();
+	</script>
         </div>
 
 
@@ -109,7 +128,7 @@
             </div>
             <div class="text-center d-flex justify-content-center">
                 <a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
-                <a target='_blank' href="igPost.html" class="fa fa-instagram text-white nav-link "></a>
+                <a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
             </div>
             <div class="bg-secondary">
                 @ 2021 Copyright seika27cads

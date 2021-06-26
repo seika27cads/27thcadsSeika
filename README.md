@@ -1,9 +1,9 @@
 - [x] Event date add a tag to ig. 
 - [ ] responsive layout
-- [ ] News
+- [ ] News/Update IG post
 - [ ] Portfolio
 - [ ] 莊人設
-- [ ] Update IG post
+- [ ] 
 
 
 Created by 27thcads seika lamkayik
