@@ -2,7 +2,7 @@
 - [ ] responsive layout
 - [ ] News/Update IG post
 - [ ] Portfolio
-- [ ] 莊人設
+- [x] 莊人設
 - [ ] 
 
 
