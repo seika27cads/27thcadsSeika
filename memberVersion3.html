@@ -197,10 +197,12 @@
         border-radius: 60px;
         position: relative;
     }
-
-.phoneTopbar {
-    height: 30px;
-}
+    #content{
+        height: 500px!important;
+    }
+    .phoneTopbar {
+        height: 30px;
+    }
 
 .phoneHand {
     width: 150px;
@@ -330,6 +332,9 @@
         max-height: 850px;
         overflow: scroll;
         }
+            #content{
+                height: 700px!important;
+            }
     }
     @media only screen and (min-width: 970px) {
 
@@ -342,7 +347,7 @@
 </style>
 
 <body>
-    <div class="container-fluid bg-light " style="height: 100vh;">
+    <div class="container-fluid bg-light " style="height: 100%;">
 
         <section class="container d-flex d-row justify-content-around">
 
@@ -354,7 +359,7 @@
             </div>
             <div class="w-25 d-none d-lg-block">
             </div>
-            <div class=" phone  m-5 " style="">
+            <div class=" phone  mt-2" style="">
                 <div class="phoneBg">
                     <div class="d-flex justify-content-between phoneTopbar">
                         <div id="MyClockDisplay" class="clock ml-3 mt-2 text-black" onload="showTime()"></div>
