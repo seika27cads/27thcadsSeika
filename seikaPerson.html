@@ -56,6 +56,9 @@
         transform: skewX(45deg);
 
     }
+    .girl{
+        max-height: 220px;
+    }
     @keyframes rotate {
         0% {
             transform: perspective(1000px) rotateY(4deg);
@@ -114,49 +117,15 @@
         }
 
     @media only screen and (min-width: 750px) {
-        #chick {
-            max-height: 500px;
-            width: auto;
-        }
+
 
         .myMemo {
             width: 500px;
             transform: translate(-100px, -20%);
         }
 
-
-    }
-
-    @media only screen and (min-width: 970px) {
-        #chick {
-            max-height: 300px;
-            width: auto;
-        }
-
-        .slideShow img {
-            display: none;
-            width: auto;
-            max-height: 600px;
-            position: relative;
-        }
-
-        .myMemo {
-            width: 500px;
-            transform: translate(-80px, 0%);
-            display: none;
-            background-color: #EBEF67;
-            height: auto;
-            text-align: left;
-            box-shadow: 5px 5px 5px grey;
-
-        }
-
-        .notesItem {
-            padding: 2px 50px;
-            height: 50px;
-            border-bottom: 2px solid grey;
-            font-family: 'Reenie Beanie';
-            font-size: 1.75rem;
+        #personDetails {
+        height: 50vh;
         }
         /*Choosing button*/
         .radioSet input:before {
@@ -193,7 +162,43 @@
             text-align: center;
             background: #ddd;
             transform: skewX(45deg);
+        }
+    }
 
+    @media only screen and (min-width: 970px) {
+        #chick {
+            max-height: 300px;
+            width: auto;
+        }
+
+        .slideShow img {
+            display: none;
+            width: auto;
+            max-height: 480px;
+            position: relative;
+        }
+
+        .myMemo {
+            width: 500px;
+            transform: translate(-80px, 0%);
+            display: none;
+            background-color: #EBEF67;
+            height: auto;
+            text-align: left;
+            box-shadow: 5px 5px 5px grey;
+
+        }
+
+        .notesItem {
+            padding: 2px 50px;
+            height: 50px;
+            border-bottom: 2px solid grey;
+            font-family: 'Reenie Beanie';
+            font-size: 1.75rem;
+        }
+
+        #personDetails {
+        height: 60vh;
         }
     }
 
@@ -206,6 +211,12 @@
         .myMemo {
             width: 500px;
             transform: translate(-80px, 0%);
+        }
+        .slideShow img {
+            display: none;
+            width: auto;
+            max-height: 600px;
+            position: relative;
         }
     }
 </style>
@@ -249,7 +260,7 @@
 
                 </div>
             </div>
-            <div class="detail"><img class="mySlides" src="img/person/girl/girlBanner.png" alt="">
+            <div class="detail"><img class="mySlides" src="img/person/girl/girlBanner.png" alt="" id="girl">
                 <div class="myMemo pt-3  rotate text-black">
                     <div class="notesItem">名字：菁</div>
                     <div class="notesItem">身高：164cm</div>
