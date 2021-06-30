@@ -35,7 +35,6 @@
             });
 
         });
-
     </script>
 </head>
 <style>
@@ -69,14 +68,15 @@
     navbar-nav img {
         cursor: pointer;
     }
-    a img{
-			width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
 
-		}
+    a img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
+    }
 </style>
 
 <body class="">
@@ -84,8 +84,7 @@
         <nav class="navbar navbar-fixed-top navbar-light bg-light  d-flex justify-content-around">
             <div class="d-flex flex-row navbar-nav">
                 <img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon">
-                <a class="navbar-brand nav-item m-2 p-1 text-dark" href="index.html"
-                >漫衍菁華</a>
+                <a class="navbar-brand nav-item m-2 p-1 text-dark" href="index.html">漫衍菁華</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='member'>成員</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='contactUs'>聯絡我們</a>
@@ -108,17 +107,17 @@
 
 
 
-	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-	<script type="text/javascript">
-	var userFeed = new Instafeed({
-		get: 'user',
-		target: "instafeed-container",
-    	resolution: 'low_resolution',
-		accessToken: 'IGQVJWNWhhWWZArTVVpeTNXVEdjT2dJTWRlN0tRenY5bUxWSEtQYl9jUVYxZAmw2XzlkSjZAUaDJsR3o1MWs1VUh3NUQ2c3JSNUN3ZAzFoM1NURmtSQ3VrSW8zekdldk5Xa1AtUjJkMnpjcmhqU3RSVDhCaAZDZD'
-	});
-
-	userFeed.run();
-	</script>
+            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    resolution: 'low_resolution',
+                    accessToken: 'IGQVJWNWhhWWZArTVVpeTNXVEdjT2dJTWRlN0tRenY5bUxWSEtQYl9jUVYxZAmw2XzlkSjZAUaDJsR3o1MWs1VUh3NUQ2c3JSNUN3ZAzFoM1NURmtSQ3VrSW8zekdldk5Xa1AtUjJkMnpjcmhqU3RSVDhCaAZDZD'
+                });
+                //https://www.wfublog.com/2020/07/instagram-basic-display-api-long-term-token-get-images.html#section3
+                userFeed.run();
+            </script>
         </div>
 
 
@@ -138,6 +137,4 @@
         </footer>
     </div>
 
-</body>
-
-</html>
+</body></html>

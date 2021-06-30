@@ -1,7 +1,7 @@
 [{
         "Name": "主席 - Hinson",
         "Nickname": "Hinson",
-        "QIcons": "img/person/member/1.png",
+        "QIcons": "img/person/member/1q.png",
         "icon": "img/person/member/1.png",
         "color":["#56091C","#000000"],
         "content": [
@@ -57,7 +57,7 @@
                 }, {
         "Name": "宣傳秘書 - Ivy ",
         "Nickname": "Ivy",
-        "QIcons": "img/person/member/7.png",
+        "QIcons": "img/person/member/7q.png",
         "icon": "img/person/member/7.png",
         "color":["#000000","#fdfeff"],
         "content": [

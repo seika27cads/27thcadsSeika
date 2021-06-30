@@ -30,14 +30,19 @@
 [data-theme="dark"] .text-black {
   color: #111 !important;
 }
+
 [data-theme="dark"] .text-white {
   color: #111 !important;
 }
 [data-theme="dark"] .text-always-white {
   color: #fff  !important;
 }
+
 .text-always-white{
  color: #fff;
+}
+.text-always-black{
+ color: #000;
 }
 .bg-always-dark{
  background-color: black;

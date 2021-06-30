@@ -52,39 +52,7 @@ form input {
 
 }
 /*Memeber*/
-.banner {
-        background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
-        height: 100%;
-        min-height: 200px;
-        background-attachment: local;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
 
-    .radioSet input:before {
-        content: attr(label);
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .radioSet input {
-        width: 150px;
-        appearance: none;
-        cursor: pointer;
-        outline: none;
-        font-size: large;
-        font-weight: bold;
-
-    }
-
-    input[type="radio"]:checked {
-        color: black;
-        text-shadow: 0.1em 0.1em 0.2em white;
-        font-weight: bold;
-        font-size: 23px;
-    }
 
     .talkBubbleRole {
         width: 300px;
@@ -97,16 +65,7 @@ form input {
         margin-top: 15px;
         padding: 15px;
     }
-/*
-    .talkBubbleRole:before {
-        content: "";
-        position: absolute;
-        right: 100%;
-        border-top: 0px solid transparent;
-        border-right: 20px solid #b6df70;
-        border-bottom: 23px solid transparent;
-    }
-*/
+
     .talkBubbleChat {
         width: 200px;
         height: 100%;
@@ -146,15 +105,7 @@ form input {
         border-radius: 20px;
     }
 
-    .trapezoid {
-        margin-left: 15px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        background: #ddd;
-        transform: skewX(45deg);
 
-    }
 
     .text {
         transform: skewX(-45deg);

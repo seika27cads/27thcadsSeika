@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>CityU Seika</title>
     <link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="darkMode/dark-mode.css">
     <script>
         $(document).ready(function() {
+            $('.mainContent').load("home.html");
             $('#index, .icon').click(function() {
                 $('.mainContent').load("home.html");
             });
@@ -30,13 +30,13 @@
             $('#contactUs').click(function() {
                 $('.mainContent').load("contactPage.html");
             });
-            $('#ig').click(function() {
-                $('.mainContent').load("demo.html");
+
+            $('#seikaPerson').click(function() {
+                $('.mainContent').load("seikaPerson.html");
             });
-            $('.mainContent').load("home.html");
+
 
         });
-
     </script>
 </head>
 <style>
@@ -51,24 +51,36 @@
 
     }
 
-    .bg1_1 {
-        background-image: url('img/Bgimg/banner.png');
-        height: 100%;
-        min-height: 250px;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    img {
-        vertical-align: middle;
-        max-width: 500px;
-    }
-
     .navbar-nav a,
     navbar-nav img {
         cursor: pointer;
+    }
+
+    #addShape {
+
+        min-height: 100px;
+    }
+
+    #addShape {
+
+        clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
+    }
+
+    .mainContent {
+        height: 100%;
+    }
+
+    .toolset {
+        font-size: 30px;
+    }
+
+    .tools {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+        align-items: center;
+        background-color: red;
     }
 
 </style>
@@ -78,46 +90,57 @@
         <nav class="navbar navbar-fixed-top navbar-light bg-light  d-flex justify-content-around">
             <div class="d-flex flex-row navbar-nav">
                 <img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon">
-                <a class="navbar-brand nav-item m-2 p-1 text-dark" href="index.html">漫衍菁華</a>
+                <a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index" >漫衍菁華</a>
+                <a class="nav-item nav-link m-2 p-1 text-dark"  id='seikaPerson'>莊人設</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='member'>成員</a>
                 <a class="nav-item nav-link m-2 p-1 text-dark" id='contactUs'>聯絡我們</a>
 
             </div>
-            <div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="width:250px;">
-                <div class="nav-link">
+            <div><div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="">
 
-                    <div class="form-check form-switch">
-                        <input type="checkbox" class="form-check-input" id="darkSwitch">
-                        <label class="custom-control-label text-dark" for="darkSwitch">Dark Mode</label>
-                    </div>
-                    <script src="darkMode/dark-mode-switch.min.js"></script>
-
-                </div>
-            </div>
+                </div></div>
 
         </nav>
         <div class="mainContent">
-
         </div>
+        <div id="addShape" class="bg-dark d-none d-md-block"></div>
+        <div class="d-none d-md-block">
+            <footer class="bg-dark text-white d-flex flex-column text-center ">
+            <div>
+                漫衍菁華
+                <div class="px-4">
+                    如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我地
+                </div>
+                <div class="text-center d-flex justify-content-center">
+                    <a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
+                    <a href="igPost.html" class="fa fa-instagram text-white nav-link "></a>
+                </div>
+                <div class="bg-secondary">
+                    @ 2021 Copyright seika27cads
+                </div>
 
-
-        <footer class="bg-dark text-white d-flex flex-column text-center ">
-            漫衍菁華
-            <div class="px-4">
-                如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我地
-            </div>
-            <div class="text-center d-flex justify-content-center">
-                <a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
-                <a  href="igPost.html" class="fa fa-instagram text-white nav-link "></a>
-            </div>
-            <div class="bg-secondary">
-                @ 2021 Copyright seika27cads
             </div>
 
         </footer>
+        </div>
+
+        <div class="toolset row row-cols-3 w-100 d-inlineblock d-md-none"  style="position: sticky;bottom: 0px;left: 2px;">
+                <a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram  btn btn-danger text-white" style="font-size: 24px;"></a>
+                <a target='_blank' href="https://www.facebook.com/futureformula2014" class="fa fa-facebook btn btn-primary text-white" style="font-size: 24px;"></a>
+
+                <div class="nav-link btn btn-primary bg-dark text-white">
+                           <input type="checkbox" class="form-check-input fa fa-sun-o" id="darkSwitch" style="display: none;">
+                            <label for="darkSwitch" class="fa fa-moon-o w-100" style="font-size: 24px;">
+
+                            </label>
+
+                        <script src="darkMode/dark-mode-switch.min.js"></script>
+
+                    </div>
+
+
+        </div>
     </div>
 
-</body>
-
-</html>
+</body></html>
