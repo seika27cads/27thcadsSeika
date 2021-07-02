@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function () {
+    res = fetch("https://www.instagram.com/cityu_seika/?__a=1", {
+        method: 'cors',
+        credentials: 'include'
+    }).then(function (data) {
+        return data.json();
+    }).catch(function (error) {
+        console.log("ERROR".concat(error.toString()));
+    });
+    console.log(res.user);
+};
+    </script>
+<body>
+
+</body>
+</html>

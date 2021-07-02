@@ -56,7 +56,6 @@ form input {
 
     .talkBubbleRole {
         width: 300px;
-        height: 100%;
         left: 25px;
         background: #0A1118;
         color: white;
@@ -77,16 +76,7 @@ form input {
         margin-right: 25px;
         padding: 15px;
     }
-/*
-    .talkBubbleChat:before {
-        content: "";
-        position: absolute;
-        left: 100%;
-        border-top: 0px solid transparent;
-        border-left: 20px solid darkseagreen;
-        border-bottom: 23px solid transparent;
-    }
-*/
+
     .inputBubble {
         width: 100%;
         border-radius: 10px;

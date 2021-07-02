@@ -41,9 +41,16 @@
 
                     document.getElementById("chatroomBar").innerHTML += info;
 
-                    var temp = "<div class='d-flex'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right bg-whiter'> 你好阿 " + result[memberid].Nickname + " UWU 你平時有咩興趣阿?</div> </div><div>";
+                    var temp = "";
+                    var temp1="<div class='d-flex'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right bg-whiter'> 你好阿 " + result[memberid].Nickname + " UWU 你平時有咩興趣阿?</div> </div><div>"
                     for (i = 0; i < contentNumber; i++) {
-                        temp += "<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
+
+                        if(i==1){
+                            temp += temp1+"<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
+                        }else{
+                            temp += "<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
+                        }
+
                     }
                     temp += "<div class='d-flex mb-10'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right'>輸入中...</div> </div></div>"
                     document.getElementById("content").innerHTML += temp;
@@ -337,11 +344,9 @@
             }
     }
     @media only screen and (min-width: 970px) {
-
     }
 
     @media only screen and (min-width: 1170px) {
-
     }
 
 </style>
