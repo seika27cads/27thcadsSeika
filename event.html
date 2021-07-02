@@ -85,7 +85,6 @@
         position: relative;
 
     }
-
     .timeLabel {
         left: -30px;
         text-align: center;
@@ -132,12 +131,13 @@
         display: none;
         width: 125px;
         height: 125px;
-        right: 20px;
-        top: 0px;
+        height: 125px;
+        right: -80px;
+        top: 10px;
     }
 
     .events:hover .testimg {
-        display: flex;
+        display: none;
         width: 125px;
         height: 125px;
         right: -80px;
@@ -164,6 +164,25 @@
         }
 
 
+    }
+    .testimg{display: none;}
+        @media only screen and (min-width: 750px) {
+
+            .events:hover .testimg {
+                display: block;
+                width: 125px;
+                height: 125px;
+                right: -80px;
+                top: 10px;
+                animation-name: example;
+                animation-duration: 2s;
+
+            }
+    }
+    @media only screen and (min-width: 970px) {
+    }
+
+    @media only screen and (min-width: 1170px) {
     }
 </style>
 
