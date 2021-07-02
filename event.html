@@ -31,7 +31,7 @@
                 var j;
                 for(j=0;j<result[i].dateDetail.length;j++){
                     if(result[i].dateDetail[j].url.length>0){
-                        temp+="<a href='"+result[i].dateDetail[j].url+"' target='_blank' class='text-always-white' style='text-decoration:none;'><div class='mx-2 date "+result[i].dateDetail[j].color+"'>"+result[i].dateDetail[j].date+"</div></a>";
+                        temp+="<a href='"+result[i].dateDetail[j].url+"' target='_blank' class='text-always-white' style='text-decoration:none;'><div class='mx-2 my-1 date "+result[i].dateDetail[j].color+"'>"+result[i].dateDetail[j].date+"</div></a>";
                     }else{
                         temp+="<div class='mx-2 date "+result[i].dateDetail[j].color+"'>"+result[i].dateDetail[j].date+"</div>";
                     }

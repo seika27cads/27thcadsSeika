@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="darkMode/dark-mode.css">
     <script>
         $(document).ready(function() {
-            var clickAlert=0;
+            var clickAlert = 0;
             var url = "json/memberList.json";
             //get json data
 
@@ -42,12 +42,12 @@
                     document.getElementById("chatroomBar").innerHTML += info;
 
                     var temp = "";
-                    var temp1="<div class='d-flex'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right bg-whiter'> 你好阿 " + result[memberid].Nickname + " UWU 你平時有咩興趣阿?</div> </div><div>"
+                    var temp1 = "<div class='d-flex'> <div class='w-50'></div> <div class='w-50 talkBubbleChat text-right bg-whiter'> 你好阿 " + result[memberid].Nickname + " UWU 你平時有咩興趣阿?</div> </div><div>"
                     for (i = 0; i < contentNumber; i++) {
 
-                        if(i==1){
-                            temp += temp1+"<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
-                        }else{
+                        if (i == 1) {
+                            temp += temp1 + "<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
+                        } else {
                             temp += "<div class='talkBubbleRole w-50'>" + result[memberid].content[i].text + "</div>";
                         }
 
@@ -56,11 +56,11 @@
                     document.getElementById("content").innerHTML += temp;
 
                     img = "<img class='sekaiIcon bg-white'  src='" + result[memberid].QIcons + "'>";
-                    imgProject = "<div class='d-none d-lg-block' style=''><div class=''style='width:250px;height:250px;background: linear-gradient(to right," + result[memberid].color[0] + "," + result[memberid].color[1] + ");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>" + img + "</div></div>";
+                    imgProject = "<div class='shadowBg d-none d-lg-block' style=''><div class=''style='width:250px;height:250px;background: linear-gradient(to right," + result[memberid].color[0] + "," + result[memberid].color[1] + ");position: absolute;z-index:0;transform: rotate(-5deg);'></div><div class='icon my-3' style='position:absolute;z-index:1;'>" + img + "</div></div>";
 
-                    var temp1 = "<div class='d-flex p-3'>" + imgProject + "<div class='w-100 d-flex align-items-center bg-white my-3 '><div class='card w-100 intro'>";
+                    var temp1 = "<div class='d-flex p-3'>" + imgProject + "<div class='w-100 d-flex align-items-center  my-3 '><div class='intro'>";
                     document.getElementById("memberIcon").innerHTML = temp1;
-                    document.getElementById("memberIcon").innerHTML += "<div class='bubble'  style='top:300px;color:"+result[memberid].color[0]+";font-weight:bold' id='howtoback' onclick='countClick()'>Click Home鍵就可以番上一頁</div>";
+                    document.getElementById("memberIcon").innerHTML += "<div class='bubble'  style='top:300px;color:" + result[memberid].color[0] + ";font-weight:bold' id='howtoback' onclick='countClick()'>Click Home鍵就可以番上一頁</div>";
 
                 });
             });
@@ -194,8 +194,9 @@
     #chatroomBar {
         border-radius: 15px 15px 0px 0px;
     }
+
     /*Phone*/
-    .phone{
+    .phone {
         background: linear-gradient(-45deg, #181616, #000000);
         width: 400px;
         min-height: 650px;
@@ -204,58 +205,71 @@
         border-radius: 60px;
         position: relative;
     }
-    #content{
-        height: 500px!important;
+    #content {
+        height: 500px !important;
     }
     .phoneTopbar {
         height: 30px;
     }
-
-.phoneHand {
-    width: 150px;
-    background-color: black;
-    min-height: 30px;
-    position: absolute;
-    left: 30%;
-    border-radius: 0px 0px 15px 15px;
-}
-
-.speaker {
-    background-color: #1E1B24;
-    border-radius: 20px;
-    width: 50px;
-    height: 8px;
-}
-
-.phoneBg {
-    background-color: white;
-    border-radius: 60px;
-    width: 100%;
-    height: 600px;
-    background-image: url(img/person/boy/handsome.png);
-    background-position: center;
-    background-size: cover;
-}
-    .contactPerson{
+    .phoneHand {
+        width: 150px;
+        background-color: black;
+        min-height: 30px;
+        position: absolute;
+        left: 30%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .speaker {
+        background-color: #1E1B24;
+        border-radius: 20px;
+        width: 50px;
+        height: 8px;
+    }
+    .phoneBg {
+        background-color: white;
+        border-radius: 60px;
+        width: 100%;
+        height: 600px;
+        background-image: url(img/person/boy/handsome.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .contactPerson {
         height: 600px;
     }
 
-.icons i {
-    margin-left: 5px;
-}
+    .icons i {
+        margin-left: 5px;
+    }
 
-.icons {
-    width: 150px;
-}
+    .icons {
+        width: 150px;
+        border: 1px solid black;
+    }
 
-.clock {
-    padding-left: 45px;
-    font-weight: bold;
-}
+    .clock {
+        padding-left: 45px;
+        font-weight: bold;
+    }
 
-.card-title {
-    margin-bottom: 0rem;
-}
+    .card-title {
+        margin-bottom: 0rem;
+    }
+
+    .memeberList  {
+        animation: chatAnimation 0.5s ;
+    }
+    .imgPart,.sekaiIcon,.shadowBg{
+        animation: imgAnimation 2s ;
+    }
+    @keyframes imgAnimation {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @keyframes chatAnimation {
+        0%{width: 0%;}
+        100%{width: 100%;}
+    }
 
     @keyframes typewriter {
         from {
@@ -309,23 +323,25 @@
     }
 
     @media only screen and (min-width: 750px) {
-    .phone{
-        background: linear-gradient(-45deg, #181616, #000000);
-        width: 500px;
-        min-height: 850px;
-        max-height: 850px;
-        border: 5px solid black;
-        border-radius: 60px;
-        position: relative;
-    }
-    .phoneHand {
-        width: 150px;
-        background-color: black;
-        min-height: 30px;
-        position: absolute;
-        left: 35%;
-        border-radius: 0px 0px 15px 15px;
-    }
+        .phone {
+            background: linear-gradient(-45deg, #181616, #000000);
+            width: 500px;
+            min-height: 850px;
+            max-height: 850px;
+            border: 5px solid black;
+            border-radius: 60px;
+            position: relative;
+        }
+
+        .phoneHand {
+            width: 150px;
+            background-color: black;
+            min-height: 30px;
+            position: absolute;
+            left: 35%;
+            border-radius: 0px 0px 15px 15px;
+        }
+
         .phoneBg {
             background-color: white;
             border-radius: 60px;
@@ -335,19 +351,20 @@
             background-position: center;
             background-size: cover;
         }
+
         .memeberList {
-        max-height: 850px;
-        overflow: scroll;
+            max-height: 850px;
+            overflow: scroll;
         }
-            #content{
-                height: 700px!important;
-            }
-    }
-    @media only screen and (min-width: 970px) {
+
+        #content {
+            height: 700px !important;
+        }
     }
 
-    @media only screen and (min-width: 1170px) {
-    }
+    @media only screen and (min-width: 970px) {}
+
+    @media only screen and (min-width: 1170px) {}
 
 </style>
 
@@ -356,7 +373,7 @@
 
         <section class="container d-flex d-row justify-content-around">
 
-            <div class="d-flex flex-column position-relative" style="">
+            <div class="imgPart d-flex flex-column position-relative" style="">
                 <div class="hints d-none d-lg-block text-black" id="memberIcon">
                     <div class="bubble">你想搵邊個阿? Click落去搵佢啦</div>
                     <img class=" dchickImg  " src="img/commonUsageImg/DchickHi.PNG" alt="">
@@ -519,10 +536,10 @@
                 <div class="d-flex justify-content-center">
 
                     <i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true"></i>
-                    </div>
-                    <div class="message">
+                </div>
+                <div class="message">
 
-                    </div>
+                </div>
             </div>
 
 
@@ -531,7 +548,8 @@
 
     </div>
     <script>
-        var clickAlert=0;
+        var clickAlert = 0;
+
         function showTime() {
             var date = new Date();
             var h = date.getHours(); // 0 - 23
@@ -555,14 +573,16 @@
             setTimeout(showTime, 1000);
         }
         showTime();
-       function countClick() {
+
+        function countClick() {
             clickAlert++;
-            if(clickAlert<10){
-            }else{
-            document.getElementById("howtoback").innerHTML = "會長:人黎搵人教白龍用Iphone";
-            clickAlert=0;
-        }s
+            if (clickAlert < 10) {} else {
+                document.getElementById("howtoback").innerHTML = "會長:人黎搵人教白龍用Iphone";
+                clickAlert = 0;
+            }
+            s
         }
+
     </script>
 </body>
 

@@ -67,7 +67,6 @@ form input {
 
     .talkBubbleChat {
         width: 200px;
-        height: 100%;
         background-color: #7143F8;
         position: relative;
         color: white;
@@ -75,6 +74,7 @@ form input {
         margin-top: 15px;
         margin-right: 25px;
         padding: 15px;
+
     }
 
     .inputBubble {
@@ -95,8 +95,6 @@ form input {
         border-radius: 20px;
     }
 
-
-
     .text {
         transform: skewX(-45deg);
     }
@@ -109,5 +107,8 @@ form input {
         background-size: cover;
     }
     .sekaiIcon{
-        width:250px;height:250px;z-index:3;border: 1px solid black;
+        width:250px;
+        height:250px;
+        z-index:3;
+        border: 1px solid black;
     }

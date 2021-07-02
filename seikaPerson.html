@@ -47,18 +47,31 @@
         animation: rotate 4s infinite ease-in-out;
 
     }
+
     .trapezoid {
         margin-left: 5px;
-        height: 30px;
+        height: 0px;
         line-height: 25px;
         text-align: center;
         background: #ddd;
         transform: skewX(45deg);
+        animation: choice 2s ease-out;
 
     }
-    .girl{
+
+    @keyframes choice{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+    .girl {
         max-height: 220px;
     }
+
     @keyframes rotate {
         0% {
             transform: perspective(1000px) rotateY(4deg);
@@ -89,33 +102,43 @@
     }
 
     .radioSet input:before {
-            content: attr(label);
-            display: inline-block;
-            text-align: center;
-            width: 100%;
+        content: attr(label);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .radioSet input {
+        width: 100px;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        font-size: large;
+        font-weight: bold;
+
+    }
+
+    input[type="radio"]:checked {
+        color: white;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    input[type="radio"] {
+        font-size: 16px;
+        animation: choiceText 2s ;
+
+    }
+    @keyframes choiceText{
+        0%{
+            opacity: 0;
+
         }
-
-        .radioSet input {
-            width: 100px;
-            appearance: none;
-            cursor: pointer;
-            outline: none;
-            font-size: large;
-            font-weight: bold;
-
+        100%{
+            opacity: 1;
         }
-
-        input[type="radio"]:checked {
-            color: white;
-            text-shadow: 0.1em 0.1em 0.2em black;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        input[type="radio"] {
-            font-size: 16px;
-        }
-
+    }
     @media only screen and (min-width: 750px) {
 
 
@@ -148,11 +171,13 @@
             text-shadow: 0.1em 0.1em 0.2em black;
             font-weight: bold;
             font-size: 24px;
+
         }
 
         input[type="radio"] {
             font-size: 20px;
         }
+
         .trapezoid {
             margin-left: 15px;
             height: 50px;
@@ -161,18 +186,19 @@
             background: #ddd;
             transform: skewX(45deg);
         }
-        .slideShow img,#chick {
+
+        .slideShow img,
+        #chick {
             display: none;
             width: auto;
             max-height: 300px;
             position: relative;
         }
+
         #personDetails {
-<<<<<<< HEAD
-        height: 70vh;
-=======
-        height: 85vh;
->>>>>>> 5959ebe893f5e35c899836d9991154469522db23
+
+            height: 85vh;
+
         }
     }
 
@@ -209,7 +235,7 @@
         }
 
         #personDetails {
-        height: 85vh;
+            height: 85vh;
         }
     }
 
@@ -241,14 +267,14 @@
                 <div class="position d-flex justify-content-center ">
                     <div class="radioSet  d-flex">
                         <label class="trapezoid bg-danger" for="1">
-                            <input class="radioBtn  text" type="radio" name="position" id="1" label="菁" onclick="showDivs(1)">
+                            <input class="  text" type="radio" name="position" id="1" label="菁" onclick="showDivs(1)">
                         </label>
 
                         <label class="trapezoid bg-success" for="2">
-                            <input class="radioBtn text" type="radio" name="position" id="2" label="華" style="" onclick="showDivs(0)">
+                            <input class=" text" type="radio" name="position" id="2" label="華" style="" onclick="showDivs(0)">
                         </label>
                         <label class="trapezoid bg-warning" for="3">
-                            <input class="radioBtn text" type="radio" name="position" id="3" label="DChick" onclick="showDivs(2)">
+                            <input class=" text" type="radio" name="position" id="3" label="DChick" onclick="showDivs(2)">
                         </label>
 
                     </div>
