@@ -17,15 +17,12 @@
         width: auto;
         text-align: center;
     }
-
     .slideShow img {
         display: none;
         width: auto;
         max-height: 400px;
         position: relative;
     }
-
-
     .myMemo {
         display: none;
         width: 350px;
@@ -34,7 +31,6 @@
         text-align: left;
         box-shadow: 5px 5px 5px grey;
     }
-
     .notesItem {
         padding: 2px 5px;
         height: 40px;
@@ -42,23 +38,70 @@
         font-family: 'Reenie Beanie';
         font-size: 20px;
     }
-
     .rotate {
         animation: rotate 4s infinite ease-in-out;
 
     }
-
     .trapezoid {
-        margin-left: 5px;
-        height: 0px;
-        line-height: 25px;
+            margin-left: 5px;
+            height: 30px;
+            line-height:30px;
+            text-align: center;
+            background: #ddd;
+            transform: skewX(45deg);
+
+    }
+    .girl {
+        max-height: 220px;
+    }
+    #chick {
+        max-height: 220px;
+        width: auto;
+    }
+    .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #personDetails {
+        height: 100vh;
+    }
+    .radioSet input:before {
+        content: attr(label);
+        display: inline-block;
         text-align: center;
-        background: #ddd;
-        transform: skewX(45deg);
-        animation: choice 2s ease-out;
+        width: 100%;
+    }
+    .radioSet input {
+        width: 100px;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        font-size: large;
+        font-weight: bold;
+
+    }
+    input[type="radio"]:checked {
+        color: white;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    input[type="radio"] {
+        font-size: 16px;
+        animation: choiceText 2s ;
 
     }
 
+    @keyframes choiceText{
+        0%{
+            opacity: 0;
+
+        }
+        100%{
+            opacity: 1;
+        }
+    }
     @keyframes choice{
         0%{
             width: 0%;
@@ -67,11 +110,6 @@
             width: 100%;
         }
     }
-
-    .girl {
-        max-height: 220px;
-    }
-
     @keyframes rotate {
         0% {
             transform: perspective(1000px) rotateY(4deg);
@@ -85,69 +123,11 @@
             transform: perspective(1000px) rotateY(4deg);
         }
     }
-
-    #chick {
-        max-height: 220px;
-        width: auto;
-    }
-
-    .mySlides {
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    #personDetails {
-        height: 100vh;
-    }
-
-    .radioSet input:before {
-        content: attr(label);
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .radioSet input {
-        width: 100px;
-        appearance: none;
-        cursor: pointer;
-        outline: none;
-        font-size: large;
-        font-weight: bold;
-
-    }
-
-    input[type="radio"]:checked {
-        color: white;
-        text-shadow: 0.1em 0.1em 0.2em black;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    input[type="radio"] {
-        font-size: 16px;
-        animation: choiceText 2s ;
-
-    }
-    @keyframes choiceText{
-        0%{
-            opacity: 0;
-
-        }
-        100%{
-            opacity: 1;
-        }
-    }
     @media only screen and (min-width: 750px) {
-
-
         .myMemo {
 
             transform: translate(-100px, -20%);
         }
-
-
         /*Choosing button*/
         .radioSet input:before {
             content: attr(label);
@@ -196,12 +176,9 @@
         }
 
         #personDetails {
-
             height: 85vh;
-
         }
     }
-
     @media only screen and (min-width: 970px) {
         #chick {
             max-height: 300px;
@@ -238,7 +215,6 @@
             height: 85vh;
         }
     }
-
     @media only screen and (min-width: 1170px) {
         #chick {
             max-height: 380px;
@@ -267,7 +243,7 @@
                 <div class="position d-flex justify-content-center ">
                     <div class="radioSet  d-flex">
                         <label class="trapezoid bg-danger" for="1">
-                            <input class="  text" type="radio" name="position" id="1" label="菁" onclick="showDivs(1)">
+                            <input class="text" type="radio" name="position" id="1" label="菁" onclick="showDivs(1)" Checked>
                         </label>
 
                         <label class="trapezoid bg-success" for="2">

@@ -90,12 +90,10 @@
     .intro img {
         padding: 0;
     }
-
     .memeberList {
         max-height: 500px;
         overflow: scroll;
     }
-
     .memeberList .memeber {
         width: 100%;
         height: 50px;
@@ -103,33 +101,29 @@
         padding: 15px 0px;
         border-bottom: 1px solid #3389FF;
     }
-
     .memeber:hover div:first-child {
         font-size: 24px;
         font-weight: bold;
     }
-
-
+    .member div {
+        margin: 50px;
+    }
     ::-webkit-scrollbar {
         width: 0px;
     }
-
     .toolBar {
         margin-top: 15px;
         width: 100%;
         border-radius: 15px;
         height: 40px;
     }
-
     .toolBar input {
         width: 100%;
     }
-
     .toolBar .search {
         width: 50px;
         height: 50px;
     }
-
     .inbox {
         background-color: royalblue;
         width: 30px;
@@ -139,34 +133,18 @@
         padding-top: 3px;
         cursor: pointer;
     }
-
     .fa-chevron-left {
         cursor: pointer;
-
     }
-
-    .member div {
-        margin: 50px;
-    }
-
     .inbox {
         display: none;
     }
-
-    .dchickImg {
-        width: 250px;
-        height: 250px;
-        bottom: 0px;
-        left: 0px;
-    }
-
     .hints {
         position: absolute;
         width: 250px;
         height: 250px;
         top: 10%;
     }
-
     .bubble {
         border-radius: 15px;
         background-color: floralwhite;
@@ -179,18 +157,22 @@
         animation: typewriter 2s steps(44) 1s 1 normal both,
             blinkTextCursor 500ms steps(44) infinite normal;
     }
-
     .container-fluid {
         background: linear-gradient(-45deg, #BAFFDF, #E1BAFF, #23a6d5, #A3FC94);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
     }
 
+    .dchickImg {
+        width: 250px;
+        height: 250px;
+        bottom: 0px;
+        left: 0px;
+    }
     .dchickImg:hover {
         animation-name: chick;
         animation-duration: 2s;
     }
-
     #chatroomBar {
         border-radius: 15px 15px 0px 0px;
     }
@@ -237,31 +219,27 @@
     .contactPerson {
         height: 600px;
     }
-
     .icons i {
         margin-left: 5px;
     }
-
     .icons {
         width: 150px;
 
     }
-
     .clock {
         padding-left: 45px;
         font-weight: bold;
     }
-
     .card-title {
         margin-bottom: 0rem;
     }
-
     .memeberList  {
         animation: chatAnimation 0.5s ;
     }
     .imgPart,.sekaiIcon,.shadowBg{
         animation: imgAnimation 2s ;
     }
+
 
     @keyframes imgAnimation {
         0%{opacity: 0;}

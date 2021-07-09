@@ -37,7 +37,7 @@
                     }
 
                 }
-                temp+="</div> <div>為基本會員提供一個借閱漫畫的場所 給予基本會員一個交流和分享資訊心得的平台 給予基本會員一個向本候選內閣提供意見的平台 作為一個平台讓非基本會員了解本學會的文化 處理新會員入會或舊會員續會的平台 </div> </div> <div> <img src='img/commonUsageImg/DchickHi.PNG'  class='testimg position-absolute' > </div> </div>";
+                temp+="</div> <div>為基本會員提供一個借閱漫畫的場所 給予基本會員一個交流和分享資訊心得的平台 給予基本會員一個向本候選內閣提供意見的平台 作為一個平台讓非基本會員了解本學會的文化 處理新會員入會或舊會員續會的平台 </div> </div> <div> <img src='img/commonUsageImg/DchickHi.PNG'  class='chickImg position-absolute' > </div> </div>";
 
                 document.getElementById("timeline").innerHTML+=temp;
             }
@@ -51,39 +51,13 @@
 
 </head>
 <style>
-    .bg1 {
-        background-image: url('img/banner%E2%80%94%E2%80%94fb.png');
-        height: 100%;
-        min-height: 250px;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .bg2_1 {
-        background-image: url('img/sing.PNG');
-        height: 100%;
-        min-height: 250px;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
     .events {
         margin-bottom: 1rem;
-
+        position: relative;
     }
-
     .timeline {
         border-left: 5px solid #787ed4;
         padding-left: 1rem;
-    }
-
-    .events {
-        position: relative;
-
     }
     .timeLabel {
         left: -30px;
@@ -97,12 +71,10 @@
         top: 50%;
         transform: translate(0, -50%);
     }
-
     .eventDetails {
         margin: 25px;
         border-left: 5px solid #c93329;
     }
-
     .events .date {
         display: inline-block;
         width: auto;
@@ -111,7 +83,6 @@
         padding: 2px 5px;
 
     }
-
     .events:hover .timeLabel {
         left: -32px;
         text-align: center;
@@ -126,17 +97,8 @@
 
 
     }
-
-    .testimg {
-        display: none;
-        width: 125px;
-        height: 125px;
-        height: 125px;
-        right: -80px;
-        top: 10px;
-    }
-
-    .events:hover .testimg {
+    .chickImg{display: none;}
+    .events:hover .chickImg {
         display: none;
         width: 125px;
         height: 125px;
@@ -165,10 +127,11 @@
 
 
     }
-    .testimg{display: none;}
-        @media only screen and (min-width: 750px) {
 
-            .events:hover .testimg {
+
+    @media only screen and (min-width: 750px) {
+
+            .events:hover .chickImg {
                 display: block;
                 width: 125px;
                 height: 125px;
@@ -179,11 +142,8 @@
 
             }
     }
-    @media only screen and (min-width: 970px) {
-    }
-
-    @media only screen and (min-width: 1170px) {
-    }
+    @media only screen and (min-width: 970px) {}
+    @media only screen and (min-width: 1170px) {}
 </style>
 
 <body>
