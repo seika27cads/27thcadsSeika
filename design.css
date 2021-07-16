@@ -3,6 +3,7 @@ body {
     margin: 0px;
     font-family: Sans-serif;
     font-size: 16px;
+    cursor: url('/img/commonUsageImg/DchickHi.PNG'), auto;
 }
 
 .container-fluid {
