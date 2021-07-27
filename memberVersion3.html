@@ -99,7 +99,7 @@
         height: 50px;
         align-items: center;
         padding: 15px 0px;
-        border-bottom: 1px solid #3389FF;
+        border-bottom: 1px solid white;
     }
     .memeber:hover div:first-child {
         font-size: 24px;
@@ -241,10 +241,12 @@
         animation: imgAnimation 2s ;
     }
 
-    .phoneBg,#homeButton{
+    .phoneBg{
         cursor: url("img/commonUsageImg/seikaPointer.png"), auto!important;
     }
-
+	#homeButton{
+		cursor: pointer;
+	}
     @keyframes imgAnimation {
         0%{opacity: 0;}
         100%{opacity: 1;}
@@ -511,9 +513,10 @@
                     </div>
 
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center" id="homeButton">
 
-                    <i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true" id="homeButton"></i>
+                    <i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true" ></i>
+
                 </div>
                 <div class="message">
 
