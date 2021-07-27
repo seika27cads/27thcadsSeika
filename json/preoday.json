@@ -1,0 +1,289 @@
+[{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "10:00",
+        "endTime":"11:00",
+        "activity":"清空場地",
+        "venue": "soc房",
+        "manpower":"所有莊員",
+        "supplies":[""],
+        "remarks":["準備表演物資", "點算物資", "放置物資跟到7217"]
+   }]
+},{ "bothevent":true,
+    "AFKtime":false,
+   "setup":[{
+       "startTime": "11:00",
+        "endTime":"11:30",
+        "activity":"休息時間",
+        "venue": "soc房",
+        "manpower":"所有莊員",
+        "supplies":[],
+        "remarks":["準備","如果未完成上可以用埋呢段時間"]
+   },{
+       "startTime": "11:00",
+        "endTime":"11:30",
+        "activity":"OC集合",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"OC && OC長 ",
+        "supplies":[],
+        "remarks":["OC點名"]
+   }]
+},{ "bothevent":true,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "11:30",
+        "endTime":"11:45",
+        "activity":"準備破冰物資",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"物資長 && OC長",
+        "supplies":["40支筆/24人","25*BINGO紙","2張抬"],
+        "remarks":["每Dorm會有一張枱","每張枱上都會有足夠一Dorm的筆及BINGO紙"]
+   },{
+       "startTime": "11:30",
+        "endTime":"11:45",
+        "activity":"活動流程簡介",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"營長 || 副營",
+        "supplies":["時間表"],
+        "remarks":["公佈人員分配", "回應OC問題"]
+
+   }]
+},{ "bothevent":true,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "11:45",
+        "endTime":"12:45",
+        "activity":"準備集體遊戲物資",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"物資長 && OC長 && ANNIE && Volar",
+        "supplies":["猜猜畫畫物資","大電視物資","動漫問答物資","雲畫之月物資"],
+        "remarks":["如果遊戲需要使用電腦 就要提前測試"]
+   },{
+       "startTime": "11:45",
+        "endTime":"12:00",
+        "activity":"練習破冰-無中生友",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營) &&(組爸媽及組爸媽)",
+        "supplies":["40支筆","25*BINGO紙"],
+        "remarks":["參加者先將自已喜愛的事物寫在格子內", "填寫完成後，參加者可在限時內詢問其他參加者，並互相觀看對方的BINGO紙","發現對方與自己一樣喜觀相同的東西","最快圈出事物成一直 / 橫 / 斜線的參加者便是贏家"]
+
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "11:45",
+        "endTime":"12:05",
+        "activity":"練習破冰",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營) &&(組爸媽及OC)",
+        "supplies":["40支筆","25*BINGO紙"],
+        "remarks":["無中生友", "估領袖","邊個偷咗雪櫃入面嗰個大西瓜","開心返埋黎(後備)"]
+
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "12:05",
+        "endTime":"12:25",
+        "activity":"練習破冰-估領袖",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營) &&(組爸媽及OC)",
+        "supplies":[],
+        "remarks":["圍圈而坐，選出一個代表離場", "小組再推舉一位「領袖」","「領袖」負責帶領各人做動作，包括：拍手、點頭、大笑、拍膊頭、拍大脾等","開始首個動作後，離場者便可回來，站在圓心猜測誰是領袖","~左右要完20分鐘"]
+
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "12:25",
+        "endTime":"12:45",
+        "activity":"練習破冰-邊個偷咗雪櫃入面嗰個大西瓜",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營) &&(組爸媽及OC)",
+        "supplies":[],
+        "remarks":["邊個偷咗雪櫃入面嗰個大西瓜 (for 開頭)", "係咩，唔係喎","唔係你，係邊個","「XX」偷咗雪櫃入面嗰個大西瓜"]
+
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "12:45",
+        "endTime":"13:45",
+        "activity":"放飯時段",
+        "venue": "自由活動",
+        "manpower":"全人",
+        "supplies":[],
+        "remarks":["可以買野番2717食"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "13:45",
+        "endTime":"14:00",
+        "activity":"點名",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營) &&(組爸媽及OC)",
+        "supplies":[],
+        "remarks":["OC點名"]
+
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "14:00",
+        "endTime":"14:30",
+        "activity":"Set場 && 教OcHost場",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"四大",
+        "supplies":[],
+        "remarks":["四大一人負責教一隻GAME","可以分散係7217四個角落教"]
+   },{
+       "startTime": "14:00",
+        "endTime":"14:30",
+        "activity":"協助Set場 && 了解負責內容",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"OC",
+        "supplies":[],
+        "remarks":["有GAME host 真的很興奮"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "14:30",
+        "endTime":"15:00",
+        "activity":"協助進行分組遊戲-動漫問答",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"MC:Tiffany, OC:吖樂, 熙仔",
+        "supplies":[],
+        "remarks":["MC HOST場+發問問題+轉問題","計分","計時"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "15:00",
+        "endTime":"15:30",
+        "activity":"協助進行分組遊戲-大電視",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"MC: Cyy,Jerry  JC, OC:Andy",
+        "supplies":[],
+        "remarks":["MC:睇人有冇犯規 && 負責檢查答案係咪合理","OC:計分 && 計時"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "15:30",
+        "endTime":"16:00",
+        "activity":"協助進行分組遊戲-雲畫之月",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"MC: Calvin, OC:Zoe, Yoyo  ",
+        "supplies":[],
+        "remarks":["MC:Hold場","OC:傳紙員 , 計分 && 計時"]
+   },{
+       "startTime": "15:30",
+        "endTime":"16:00",
+        "activity":"分組遊戲-雲畫之月",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"OC",
+        "supplies":[],
+        "remarks":[]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "16:00",
+        "endTime":"16:30",
+        "activity":"佈置場地 && 擺放道具",
+        "venue": "SOC房 && 中國銀行（香港）綜合樓七樓學生會會室7217 ",
+        "manpower":"物資長, OC長, Annie, Volar ",
+        "supplies":["劇情稿","購物清單","準備可以購買的道具"],
+        "remarks":["點算 && 分類物資","等待最後遊戲完結，準備結算分數","多分買先"]
+   },{
+       "startTime": "16:00",
+        "endTime":"16:30",
+        "activity":"進行分組遊戲- 猜猜畫畫",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"MC: Ellie, OC:落櫻, Mitchell  ",
+        "supplies":["200張白紙","2部tablet","4枝筆"],
+        "remarks":["MC:Hold場","OC:傳紙員 , 計分 && 發佈題目"]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "16:30",
+        "endTime":"16:50",
+        "activity":"協助進行購買物資流程",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"物資長, OC長, Annie, Volar",
+        "supplies":["Cosplay衫","櫈","波板糖人牌","4份劇情稿"],
+        "remarks":[]
+   },{
+       "startTime": "16:30",
+        "endTime":"16:50",
+        "activity":" 抽稿 && 購買物資",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"(營長 || 副營)MC:Tiffany, 評選 Jc, Calvin, Zoe ",
+        "supplies":["Cosplay衫","櫈","波板糖人牌","4份劇情稿"],
+        "remarks":["抽完稿","5分鐘買野 高分買先","買完協助者送貨"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "16:50",
+        "endTime":"17:15",
+        "activity":"練習表演",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"組爸媽",
+        "supplies":[],
+        "remarks":[]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "17:15",
+        "endTime":"17:45",
+        "activity":"準備意見收集的Form && 拍攝合照",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"物資長, OC長, Annie, Volar",
+        "supplies":[],
+        "remarks":[]
+   },{
+       "startTime": "17:15",
+        "endTime":"17:45",
+        "activity":"表演",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"組爸媽,MC: Tiffany,評選: JC,Calvin,Zoe ",
+        "supplies":[],
+        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:45",
+        "endTime":"18:00",
+        "activity":"意見收集",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"四大",
+        "supplies":[],
+        "remarks":[]
+   },{
+       "startTime": "17:45",
+        "endTime":"18:00",
+        "activity":"意見收集",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"所有人",
+        "supplies":[],
+        "remarks":["填下GOOGLE form || 提出可以改善的地方"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "18:00",
+        "endTime":"18:15",
+        "activity":"影相",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
+        "manpower":"主負責人: Volar",
+        "supplies":[],
+        "remarks":[]
+   }]
+}
+]
