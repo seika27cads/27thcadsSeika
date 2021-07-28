@@ -89,7 +89,7 @@
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>(營長 || 副營) && (組爸媽 && OC)</strong>",
         "supplies":[],
-        "remarks":["邊個偷咗雪櫃入面嗰個大西瓜 (for 開頭)", "係咩，唔係喎","唔係你，係邊個","「XX」偷咗雪櫃入面嗰個大西瓜"]
+        "remarks":["邊個偷咗雪櫃入面嗰個大西瓜 (for 開頭)","「XX」偷咗雪櫃入面嗰個大西瓜", "係咩，唔係我","唔係你，係邊個","Loop番去第2句: 「XX」偷咗雪櫃入面嗰個大西瓜 "]
 
    }]
 },{ "bothevent":false,
@@ -184,7 +184,7 @@
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong><br>MC: Ellie, <br>OC: 落櫻, Mitchell  </strong>",
         "supplies":["一塊白板","2枝水性筆","兩個白板擦","1部tablet"],
-        "remarks":["MC:Hold場","OC:計分 && 發出題目"]
+        "remarks":["MC:Hold場","OC:計分 && 向參加者展示題目"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -233,7 +233,7 @@
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong><br>組爸媽<br>MC: Tiffany<br>評選: JC,副營,Zoe </strong>",
         "supplies":[],
-        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見","評選評估分數(1-10)跟據還原度,創意分及搞笑分而決定"]
+        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見","評選評估分數(1-10)根據還原度,創意分及搞笑分而決定"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
