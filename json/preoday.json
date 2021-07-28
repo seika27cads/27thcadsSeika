@@ -60,24 +60,12 @@
         "remarks":["如果遊戲需要使用電腦 就要提前測試"]
    },{
        "startTime": "11:45",
-        "endTime":"12:00",
+        "endTime":"12:05",
         "activity":"練習破冰-無中生友",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>(營長 || 副營) &&(組爸媽及組爸媽)</strong>",
         "supplies":["40支筆","25*BINGO紙"],
         "remarks":["參加者先將自已喜愛的事物寫在格子內", "填寫完成後，參加者可在限時內詢問其他參加者，並互相觀看對方的BINGO紙","發現對方與自己一樣喜觀相同的東西","最快圈出事物成一直 / 橫 / 斜線的參加者便是贏家"]
-
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
-       "startTime": "11:45",
-        "endTime":"12:05",
-        "activity":"練習破冰",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>(營長 || 副營) && (組爸媽 && OC)</strong>",
-        "supplies":["40支筆","25*BINGO紙"],
-        "remarks":["無中生友", "估領袖","邊個偷咗雪櫃入面嗰個大西瓜","開心返埋黎(後備)"]
 
    }]
 },{ "bothevent":false,
@@ -113,7 +101,7 @@
         "venue": "自由活動",
         "manpower":"<strong>全人<strong>",
         "supplies":[],
-        "remarks":["可以買野番2717食"]
+        "remarks":[]
    }]
 },{ "bothevent":false,
    "AFKtime":false,
@@ -136,7 +124,7 @@
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong></strong>四大",
         "supplies":[],
-        "remarks":["四大一人負責教一隻GAME","可以分散係7217四個角落教"]
+        "remarks":["四大一人教一隻GAME,令負責OC可以順暢host game,分散係7217四個角落教","營長: 猜猜畫畫","副營: 大電視","物資長: 雲畫之月","OC長: 動漫問答"]
    },{
        "startTime": "14:00",
         "endTime":"14:30",
@@ -151,41 +139,33 @@
    "setup":[{
        "startTime": "14:30",
         "endTime":"15:00",
-        "activity":"協助進行分組遊戲-動漫問答",
+        "activity":"進行分組遊戲-動漫問答",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<br><strong>MC:Tiffany<br> OC:吖樂, 熙仔</strong>",
-        "supplies":[],
-        "remarks":["MC HOST場+發問問題+轉問題","計分","計時"]
+        "supplies":["1部Tablet"],
+        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
        "startTime": "15:00",
         "endTime":"15:30",
-        "activity":"協助進行分組遊戲-大電視",
+        "activity":"進行分組遊戲-大電視",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong><br>MC: Cyy,Jerry  JC<br> OC:Andy</strong>",
-        "supplies":[],
-        "remarks":["MC:睇人有冇犯規 && 負責檢查答案係咪合理","OC:計分 && 計時"]
+        "manpower":"<strong><br>MC: Cyy, JC<br> OC: Andy</strong>",
+        "supplies":["1部Tablet"],
+        "remarks":["MC: 睇人有冇犯規 && 負責檢查答案合理性","OC: 計分 && 計時"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
        "startTime": "15:30",
         "endTime":"16:00",
-        "activity":"協助進行分組遊戲-雲畫之月",
+        "activity":"進行分組遊戲-雲畫之月",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong></strong>MC: Calvin, OC:Zoe, Yoyo  ",
-        "supplies":[],
-        "remarks":["MC:Hold場","OC:傳紙員 , 計分 && 計時"]
-   },{
-       "startTime": "15:30",
-        "endTime":"16:00",
-        "activity":"分組遊戲-雲畫之月",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>OC</strong>",
-        "supplies":[],
-        "remarks":[]
+        "supplies":["100張白紙","筆"],
+        "remarks":["MC:Hold場 && 計時","OC:提供題目 && 傳紙員","MC最後10秒要倒數"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -202,9 +182,9 @@
         "endTime":"16:30",
         "activity":"進行分組遊戲- 猜猜畫畫",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong><br>MC: Ellie, <br>OC:落櫻, Mitchell  </strong>",
-        "supplies":["200張白紙","2部tablet","4枝筆"],
-        "remarks":["MC:Hold場","OC:傳紙員 , 計分 && 發佈題目"]
+        "manpower":"<strong><br>MC: Ellie, <br>OC: 落櫻, Mitchell  </strong>",
+        "supplies":["一塊白板","2枝水性筆","兩個白板擦","1部tablet"],
+        "remarks":["MC:Hold場","OC:計分 && 發出題目"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -214,7 +194,7 @@
         "activity":"協助進行購買物資流程",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>物資長, OC長, Annie, Volar</strong>",
-        "supplies":["Cosplay衫","櫈","波板糖人牌","4份劇情稿"],
+        "supplies":["購物清單","劇情稿"],
         "remarks":[]
    },{
        "startTime": "16:30",
@@ -222,8 +202,8 @@
         "activity":" 抽稿 && 購買物資",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>(營長 || 副營)<br>MC:Tiffany<br>評選 : Jc, Calvin, Zoe</strong> ",
-        "supplies":["Cosplay衫","櫈","波板糖人牌","4份劇情稿"],
-        "remarks":["抽完稿","5分鐘買野 高分買先","買完協助者送貨"]
+        "supplies":["Cosplay衫","波板糖人牌","劇情稿"],
+        "remarks":["高分組別先抽劇情稿","較高分組別可先用3分鐘選擇物資表的物資","選擇後協助者送貨"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -251,7 +231,7 @@
         "endTime":"17:45",
         "activity":"表演",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong><br>組爸媽<br>MC: Tiffany<br>評選: JC,Calvin,Zoe </strong>",
+        "manpower":"<strong><br>組爸媽<br>MC: Tiffany<br>評選: JC,副營,Zoe </strong>",
         "supplies":[],
         "remarks":["MC: Host場 如cue下一組 || cue評選發表意見"]
    }]
