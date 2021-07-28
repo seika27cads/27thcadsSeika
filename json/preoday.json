@@ -163,8 +163,8 @@
         "endTime":"16:00",
         "activity":"進行分組遊戲-雲畫之月",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong></strong>MC: Calvin, OC:Zoe, Yoyo  ",
-        "supplies":["100張白紙","筆"],
+        "manpower":"<strong><br>MC: Calvin <br> OC: Zoe, Yoyo </strong> ",
+        "supplies":["100張白紙","40枝筆"],
         "remarks":["MC:Hold場 && 計時","OC:提供題目 && 傳紙員","MC最後10秒要倒數"]
    }]
 },{ "bothevent":true,
@@ -194,7 +194,7 @@
         "activity":"協助進行購買物資流程",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>物資長, OC長, Annie, Volar</strong>",
-        "supplies":["購物清單","劇情稿"],
+        "supplies":["物資清單","劇情稿"],
         "remarks":[]
    },{
        "startTime": "16:30",
@@ -202,8 +202,8 @@
         "activity":" 抽稿 && 購買物資",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>(營長 || 副營)<br>MC:Tiffany<br>評選 : Jc, Calvin, Zoe</strong> ",
-        "supplies":["Cosplay衫","波板糖人牌","劇情稿"],
-        "remarks":["高分組別先抽劇情稿","較高分組別可先用3分鐘選擇物資表的物資","選擇後協助者送貨"]
+        "supplies":["物資清單","劇情稿","物資"],
+        "remarks":["高分組別先抽劇情稿","較高分組別可先用3分鐘選擇物資表的物資","選擇後物資熊貓送貨"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -233,7 +233,7 @@
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong><br>組爸媽<br>MC: Tiffany<br>評選: JC,副營,Zoe </strong>",
         "supplies":[],
-        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見"]
+        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見","評選評估分數(1-10)跟據還原度,創意分及搞笑分而決定"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
