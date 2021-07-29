@@ -18,7 +18,6 @@
         $(document).ready(function() {
             var url = "json/preoday.json";
             //get json data
-
             $.getJSON(url, function(result) {
                 //get number for loop
                 var activityNum=result.length;
@@ -47,6 +46,8 @@
                     }
                     remark0list+="</ol></li>";
                     }
+					//get game rule if it hvs
+
 
                 if(result[loop].bothevent){
                     //get number of supplies and number of remarks for loop
@@ -62,13 +63,10 @@
                     }
                     stuff1list+="</ol></li>";
                     }
-
                     //get remark1
                     i=0;
                      var remark1list="";
                     if(remark1Num>0){
-
-
                     var remark1list="<li>Remark:<ol>";
 
                     for(i=0;i<remark1Num;i++){
@@ -76,17 +74,39 @@
                     }
                     remark1list+="</ol></li>";
                     }
+					//get game1
+					var gameContent1=result[loop].setup[1].Content.length;
+					var gamelist1="";
+					if(gameContent1>0){
+                         gamelist1="<div onclick=show("+loop+") class='btn ' id ='gameBtn'>遊戲玩法<ol id='"+ loop+"' class='gameContent card p-5 text-left'><h4>遊戲玩法</h4>";
+                        for(i=0;i<gameContent1;i++){
+                        	gamelist1+="<li>"+result[loop].setup[1].Content[i]+"</li>";
+                    	}
+                    	gamelist1+="<i>click box to close<i></ol></div>";
 
-                    temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 setup text-start p-2 card'> <h4 class='text-center'> <strong> "+result[loop].setup[0].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning p-1'>"+result[loop].setup[0].startTime+"-"+result[loop].setup[0].endTime+" </b></li><li> 集合地點 : "+result[loop].setup[0].venue+" </li> <li>人手安排 :"+result[loop].setup[0].manpower+" "+stuff0list+remark0list+"  </ul> </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div> </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> "+result[loop].setup[1].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>"+result[loop].setup[1].startTime+"-"+result[loop].setup[1].endTime+"</b> </li><li> 集合地點 : "+result[loop].setup[1].venue+" </li> <li>人手安排 : "+result[loop].setup[1].manpower+"</li> "+stuff1list+"  "+remark1list+" </ul> </div> </div>";
+                    }
+
+                    temp = "<div class='row mb-3 position-relative'> <div class='col col-12 col-sm-5 order-2 setup text-start p-2 card'> <h4 class='text-center'> <strong> "+result[loop].setup[0].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning p-1'>"+result[loop].setup[0].startTime+"-"+result[loop].setup[0].endTime+" </b></li><li> 集合地點 : "+result[loop].setup[0].venue+" </li> <li>人手安排 :"+result[loop].setup[0].manpower+" "+stuff0list+remark0list+"  </ul> </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div> </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> "+result[loop].setup[1].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>"+result[loop].setup[1].startTime+"-"+result[loop].setup[1].endTime+"</b> </li><li> 集合地點 : "+result[loop].setup[1].venue+" </li> <li>人手安排 : "+result[loop].setup[1].manpower+"</li> "+stuff1list+"  "+remark1list+""+gamelist1+" </ul> </div> </div>";
                 }else if(result[loop].AFKtime){
-                    temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 d-none d-sm-grid'>  </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div>  </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> "+result[loop].setup[0].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>"+result[loop].setup[0].startTime+"-"+result[loop].setup[0].endTime+" </b></li><li> 集合地點 : "+result[loop].setup[0].venue+" </li> <li>人手安排 : "+result[loop].setup[0].manpower+"</li> "+stuff0list+"  "+remark0list+" </ul> </div> </div>";
+					//get game
+					var gameContent0=result[loop].setup[0].Content.length;
+					var gamelist0="";
+					if(gameContent0>0){
+                         gamelist0="<div onclick=show("+loop+") class='btn ' id ='gameBtn'>遊戲玩法<ol id='"+ loop+"' class='gameContent card p-5 text-left'><h4>遊戲玩法</h4>";
+                        for(i=0;i<gameContent0;i++){
+                        	gamelist0+="<li>"+result[loop].setup[0].Content[i]+"</li>";
+                    	}
+                    	gamelist0+="<i class='text-danger'>click box to close<i></ol></div>";
+
+                    }
+                    temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 d-none d-sm-grid'>  </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div>  </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> "+result[loop].setup[0].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>"+result[loop].setup[0].startTime+"-"+result[loop].setup[0].endTime+" </b></li><li> 集合地點 : "+result[loop].setup[0].venue+" </li> <li>人手安排 : "+result[loop].setup[0].manpower+"</li> "+stuff0list+"  "+remark0list+""+gamelist0+" </ul> </div> </div>";
 
 
 
                 }else{
                     temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 setup text-start p-2 card'> <h4 class='text-center'> <strong> "+result[loop].setup[0].activity+" </strong> </h4> <ul> <li>時間 : <b class='bg-warning p-1'>"+result[loop].setup[0].startTime+"-"+result[loop].setup[0].endTime+" </b></li><li> 集合地點 : "+result[loop].setup[0].venue+" </li> <li>人手安排 :"+result[loop].setup[0].manpower+""+stuff0list+"  "+remark0list+" </ul> </div><div class='col col-0 col-sm-1 position-relative order-1  ' > <span id='circle'></span><div class='timeBadge'></div>  </div> <div class='col col-12 col-sm-5  p-2  order-3 d-none d-sm-grid'></div>";
                 }
-                document.getElementById("timeline").innerHTML += temp;
+                	document.getElementById("timeline").innerHTML += temp;
                 }
             });
         });
@@ -164,6 +184,32 @@
         border-left: 5px solid #0d6efd;
 
     }
+	.gameContent{
+		display: none;
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		width: 400px;
+
+		transform: translate(-50%,-50%);
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: white;
+		z-index: 1;
+	}
+	#gameBtn{
+		background-color: #c93329;
+		margin:20px 80px 0px 80px;
+		color: aliceblue;
+	}
+	#gameBtn ol{
+		color: black;
+	}
+	#gameBtn:hover{
+		background-color: indianred;
+		box-shadow: 8px 8px 5px gray;
+	}
         @media only screen and (min-width: 750px) {
 		.eventHandling {
 				margin-left: 30px;
@@ -179,7 +225,7 @@
 
     <div class="container " id="timeline">
         <div class="row">
-        <div class="col col-10 col-sm-1">
+        <div class="col col-12 col-sm-1">
         	<div class=" bg-secondary eventInfo m-3">PreOday: 1/8/21</div>
         </div>
         	<div class="col col-5 d-none d-sm-inline-block"><div class=" bg-danger eventInfo m-3 ">Helper Timeline</div></div>
@@ -190,5 +236,14 @@
 
 
     </div>
-
+	<script>
+		function show(n) {
+		var x = document.getElementById(n);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+	</script>
 </body></html>
