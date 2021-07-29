@@ -86,7 +86,7 @@
 
 						}
 
-						temp = "<div class='row mb-3 position-relative'> <div class='col col-12 col-sm-5 order-2 setup text-start p-2 card'> <h4 class='text-center'> <strong> " + result[loop].setup[0].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning p-1'>" + result[loop].setup[0].startTime + "-" + result[loop].setup[0].endTime + " </b></li><li> 集合地點 : " + result[loop].setup[0].venue + " </li> <li>人手安排 :" + result[loop].setup[0].manpower + " " + stuff0list + remark0list + "  </ul> </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div> </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> " + result[loop].setup[1].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>" + result[loop].setup[1].startTime + "-" + result[loop].setup[1].endTime + "</b> </li><li> 集合地點 : " + result[loop].setup[1].venue + " </li> <li>人手安排 : " + result[loop].setup[1].manpower + "</li> " + stuff1list + "  " + remark1list + "" + gamelist1 + " </ul> </div> </div>";
+						temp = "<div class='row mb-3 position-relative'> <div class='col col-12 col-sm-5 order-2 setup text-start p-2 card'> <h4 class='text-center'> <strong> " + result[loop].setup[0].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning p-1'>" + result[loop].setup[0].startTime + "-" + result[loop].setup[0].endTime + " </b></li><li> 集合地點 : " + result[loop].setup[0].venue + " </li> <li>人手安排 :" + result[loop].setup[0].manpower + " " + stuff0list + remark0list + "  </ul> </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div> </div> <div class='col col-12 col-sm-6  col-md-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> " + result[loop].setup[1].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>" + result[loop].setup[1].startTime + "-" + result[loop].setup[1].endTime + "</b> </li><li> 集合地點 : " + result[loop].setup[1].venue + " </li> <li>人手安排 : " + result[loop].setup[1].manpower + "</li> " + stuff1list + "  " + remark1list + "" + gamelist1 + " </ul> </div> </div>";
 					} else if (result[loop].AFKtime) {
 						//get game
 						var gameContent0 = result[loop].setup[0].Content.length;
@@ -99,7 +99,7 @@
 							gamelist0 += "<i class='text-danger'>click box to close<i></ol></div>";
 
 						}
-						temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 d-none d-sm-grid'>  </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div>  </div> <div class='col col-12 col-sm-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> " + result[loop].setup[0].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>" + result[loop].setup[0].startTime + "-" + result[loop].setup[0].endTime + " </b></li><li> 集合地點 : " + result[loop].setup[0].venue + " </li> <li>人手安排 : " + result[loop].setup[0].manpower + "</li> " + stuff0list + "  " + remark0list + "" + gamelist0 + " </ul> </div> </div>";
+						temp = "<div class='row mb-3'> <div class='col col-12 col-sm-5 order-2 d-none d-sm-grid'>  </div><div class='col col-0 col-sm-1 position-relative order-1' > <span id='circle'></span><div class='timeBadge'></div>  </div> <div class='col col-12 col-sm-6  col-md-5 card text-start p-2  order-3 eventHandling'> <h4 class='text-center'> <strong> " + result[loop].setup[0].activity + " </strong> </h4> <ul> <li>時間 : <b class='bg-warning  p-1'>" + result[loop].setup[0].startTime + "-" + result[loop].setup[0].endTime + " </b></li><li> 集合地點 : " + result[loop].setup[0].venue + " </li> <li>人手安排 : " + result[loop].setup[0].manpower + "</li> " + stuff0list + "  " + remark0list + "" + gamelist0 + " </ul> </div> </div>";
 
 
 
@@ -109,15 +109,24 @@
 					document.getElementById("timeline").innerHTML += temp;
 				}
 			});
+
+			$("#info").click(function() {
+
+                $('.myMemo').show;
+            });
 		});
 	</script>
 </head>
 <style>
+
+
 	.row .col {
 		min-height: 100px;
 		text-align: center;
 	}
-
+	.row{
+		width: 100%;
+	}
 	h4 {
 
 		border-bottom: 5px solid #b6df70;
@@ -136,20 +145,24 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	li {
 		max-width: 300px;
 	}
+
 	b {
 		margin-bottom: 5px;
 		border-radius: 10px;
 		padding: 1px 5px;
 	}
+
 	.eventInfo {
 		border-radius: 10px;
 		display: inline-block;
 		padding: 5px 8px;
 		color: aliceblue;
 	}
+
 	#circle {
 		height: 20px;
 		width: 20px;
@@ -161,6 +174,7 @@
 		background-color: white;
 		z-index: 1;
 	}
+
 	.timeBadge {
 		height: 120%;
 		width: 5px;
@@ -170,18 +184,24 @@
 		left: 50%;
 		z-index: -1;
 	}
+
 	.card {
 		padding: 0;
 	}
-	.setup,.eventHandling {
+
+	.setup,
+	.eventHandling {
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	}
+
 	.setup {
 		border-left: 5px solid #dc3545;
 	}
+
 	.eventHandling {
 		border-left: 5px solid #0d6efd;
 	}
+
 	.gameContent {
 		display: none;
 		position: fixed;
@@ -192,27 +212,36 @@
 		transform: translate(-50%, -50%);
 		padding: 10px;
 		border-radius: 10px;
-		border-left:5px solid green;
-		z-index: 1;
+		border-left: 5px solid green;
+		z-index: 3;
 		box-shadow: 5px 4px 10px gray;
 	}
+
 	#gameBtn {
 		background-color: #c93329;
 		margin: 20px 80px 0px 80px;
 		color: aliceblue;
 	}
+
 	#gameBtn ol {
 		color: black;
 	}
+
 	#gameBtn:hover {
 		background-color: indianred;
 		box-shadow: 8px 8px 5px gray;
 	}
+
 	@media only screen and (min-width: 750px) {
+		.container{
+			margin-right: auto;
+    		margin-left: auto;
+		}
 		.eventHandling {
 			margin-left: 30px;
 		}
 	}
+
 	@media only screen and (min-width: 970px) {
 
 	}
