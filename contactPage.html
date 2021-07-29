@@ -2,61 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>CityU Seika Contact Page</title>
+	<meta charset="UTF-8">
+	<title>CityU Seika Contact Page</title>
 </head>
 <style>
-    a {
-        text-decoration: none;
-    }
-    div h1 {
-        box-shadow: #001306 0px 5px 100px;
-    }
-    img {
-        vertical-align: middle;
-        max-width: 550px;
-    }
-    .contactTitle {
-        background-color: #001306 !important;
-        border-radius: 5px;
-    }
-    .card {
-        font-size: large;
-    }
+	a {
+		text-decoration: none;
+	}
+
+	div h1 {
+		box-shadow: #001306 0px 5px 100px;
+	}
+
+	img {
+		vertical-align: middle;
+		max-width: 550px;
+	}
+
+	.contactTitle {
+		background-color: #001306 !important;
+		border-radius: 5px;
+	}
+
+	.card {
+		font-size: large;
+	}
+
+	.seikaImg {
+		height: 400px;
+
+	}
+
+	.introduce {
+		height: 300px;
+		margin: 50px auto;
+		font-size: 24px;
+	}
+
+	.aboutUs {
+		background-color: white;
+		border-radius: 10px;
+		height: 1000px;
+	}
+
+	.aboutUs div {
+		border: 0px solid;
+	}
+
+	@media only screen and (min-width: 750px) {
+		.aboutUs {
+			height: 500px;
+		}
+
+	}
+
+	@media only screen and (min-width: 970px) {}
+
+	@media only screen and (min-width: 1170px) {}
 </style>
 
 <body>
-    <div class="container-fluid bg-light">
-        <section class="container my-5 text-black">
-            <div>
-                <h1 class="bg-dark  p-2 contactTitle px-4 text-white" style=""> 聯絡我們</h1>
-            </div>
+	<div class="container-fluid bg-light">
+		<section class="container my-5 text-black">
+			<div>
+				<h1 class="bg-dark  p-2 contactTitle px-4 text-white" style="">關於我們</h1>
+			</div>
+			<section class=" container p-3 row  row-cols-sm-1 row-cols-md-2 aboutUs">
+				<div class=" card align-items-center " style="background-color: transparent!important;">
+					<img class="card-img-top" src="img/commonUsageImg/seikaIcon.png" alt="Card image cap">
+				</div>
+				<div class=" card align-items-center introduce ">
+					古有「沕潏漫衍」之說，今有「漫衍菁華」綠水青花，相互映襯。
+					我們致力推廣動漫畫同人誌，令更多人了解同人文化，希望認識同好的喜悅及憧憬幻想的悸動能紮根於心中，綿延伸展，好比萬紫千紅的芳群，璀璨盛放。
+				</div>
+			</section>
+			<div>
+				<h1 class="bg-dark  p-2 contactTitle px-4 text-white" style=""> 聯絡我們</h1>
+			</div>
 
-            <div class="row  row-cols-sm-1 row-cols-md-2">
-                <div class=" card align-items-center ">
-                    <img class="card-img-top" src="img/commonUsageImg/DchickHi.PNG" alt="Card image cap">
-                    <div class="card-body align-items-left w-100">
-                        <h5 class="card-title" style="border-bottom: 5px solid #b6df70;">聯絡方法</h5>
-                        電郵：27thCADS@gmail.com <br>
-                    </div>
-                </div>
-                <div class=" card align-items-center ">
-                    <img class="card-img-top" src="img/thx/2.png" alt="Card image cap">
-                    <div class="card-body align-items-left w-100">
+			<div class="row  row-cols-sm-1 row-cols-md-2">
+				<div class=" card align-items-center ">
+					<img class="card-img-top" src="img/commonUsageImg/DchickHi.PNG" alt="Card image cap">
+					<div class="card-body align-items-left w-100">
+						<h5 class="card-title" style="border-bottom: 5px solid #b6df70;">聯絡方法</h5>
+						電郵：27thCADS@gmail.com <br>
+					</div>
+				</div>
+				<div class=" card align-items-center ">
+					<img class="card-img-top" src="img/thx/2.png" alt="Card image cap">
+					<div class="card-body align-items-left w-100">
+						<h5 class="card-title" style="border-bottom: 5px solid darkred;">社交媒體</h5>
+						<a target='_blank' href="https://www.facebook.com/cityucads">
+							<i class="fa fa-facebook  text-primary"></i>
+						</a> : cityucads
+						<br>
+						<a target='_blank' href="https://www.instagram.com/cityu_seika/"> <i class="fa fa-instagram text-danger "></i></a>
+						: @cityu_seika
+					</div>
+				</div>
+			</div>
 
-                        <h5 class="card-title" style="border-bottom: 5px solid darkred;">社交媒體</h5>
-                        <a target='_blank' href="https://www.facebook.com/cityucads">
-                            <i class="fa fa-facebook  text-primary"></i>
-                        </a> : cityucads
-                        <br>
-                        <a target='_blank' href="https://www.instagram.com/cityu_seika/"> <i class="fa fa-instagram text-danger "></i></a>
-                        : @cityu_seika
-                    </div>
-                </div>
-            </div>
+		</section>
 
-        </section>
-
-    </div>
+	</div>
 
 </body></html>
