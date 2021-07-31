@@ -41,7 +41,7 @@
 	}
 	.bottomSet{margin-top: -100px;}
 </style>
-<body>
+<body onload="">
 	<div class='bgInfo'>
 	<div class="container loginForm ">
 		<h4 class="">漫衍菁華</h4>
@@ -61,5 +61,19 @@
 		</div>
 	</div>
 	</div>
+		<script>
+		function login() {
+			var temp2 = document.getElementById("password").value;
+			if (temp2 == "27") {
+				setCookie();
+				alert("Login success");
+				window.location.href = "links.html";
+			} else {
+				alert("You input invalid LoginID or Password");
+			}
+		}
+
+	</script>
 </body>
+
 </html>

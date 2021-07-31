@@ -29,7 +29,9 @@
 			$('#login').click(function() {
 				$('.showContent').load("preOdaylogin.html");
 			});
-
+			$('#allLisks').click(function() {
+				$('.showContent').load("links.html");
+			});
 			$('#twoDMenu, #twoDMenuContent').hover(function() {
 				$('#twoDMenuContent').show();
 			}, function() {
@@ -139,7 +141,7 @@
 
 </style>
 
-<body class="bg-light">
+<body class="bg-light" onload="checkCookie()">
 	<nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
 		<div class="d-flex flex-row navbar-nav">
 			<img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
@@ -147,7 +149,7 @@
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='info'>活動資料</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='team'>分組名單</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動流程</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='login'>login</a>
+
 			<div class="nav-item position-relative" id="twoDMenu">
 				<div class="nav-item  m-2 p-1 ">更多資料</div>
 				<div class="position-absolute documents" id="twoDMenuContent">
@@ -159,8 +161,8 @@
 
 		</div>
 		<div>
-			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" >
-
+			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" id="noShow">
+				<a class="nav-item nav-link m-2 p-1 text-dark" id='login'>登入</a>
 			</div>
 		</div>
 	</nav>
@@ -192,7 +194,7 @@
 		</div>
 	</footer>
    </div>
-
+   <script src="js/cookieMaker.js"></script>
 	<script>
 		var mybutton = document.getElementById("topBtn");
 		window.onscroll = function() {scrollFunction()};
@@ -208,5 +210,7 @@
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
+
+
 	</script>
 </body></html>

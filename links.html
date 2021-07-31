@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>PreOday</title>
 	<link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
@@ -14,31 +16,7 @@
 	</script>
 	<!--PhoneDesign-->
 	<link rel="stylesheet" href="css/phoneDesign.css">
-	<script>
-		$(document).ready(function() {
-			$('#twoDMenuContent').hide();
-			$('.mainContent').load("home.html");
-			$('#info').click(function() {
-				$('.showContent').load("info.html");
-			});
-			$('#event').click(function() {
-				$('.showContent').load("timeLine.html");
-			});
-			$('#team').click(function() {
-				$('.showContent').load("team.html");
-			});
-			$('#login').click(function() {
-				$('.showContent').load("preOdayLogin.html");
-			});
 
-
-			$('#twoDMenu, #twoDMenuContent').hover(function() {
-				$('#twoDMenuContent').show();
-			}, function() {
-				$('#twoDMenuContent').hide();
-			});
-		});
-	</script>
 
 </head>
 <style>
@@ -153,31 +131,18 @@
 </style>
 
 <body class="bg-light" onload="checkCookie()">
-	<nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
+<nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
 		<div class="d-flex flex-row navbar-nav">
 			<img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
-			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index">漫衍菁華</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='info'>活動資料</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='team'>分組名單</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動流程</a>
-			<div class="nav-item position-relative" id="twoDMenu">
-				<div class="nav-item  m-2 p-1 ">更多資料</div>
-				<div class="position-absolute documents" id="twoDMenuContent">
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/spreadsheets/d/1BsrGmYG_ZqZHsZqols40OCdN0YLmmIe2KhaI6nLsvOs/edit?usp=sharing">PreODay人手安排</a>
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/document/d/17_hUeqC1FMJSHNP8jPLVE7frMPApfKTDIMQ5DrI45t0/edit?usp=sharing">Preoday_Highlight</a>
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://forms.gle/6nj1BRMvTJZvjyfK9">Preoday意見收集</a>
-				</div>
-			</div>
-
+			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" href="preOdayIndex.html">漫衍菁華</a>
 		</div>
 		<div>
-			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" id="login">
-				Login
+			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" id="noShow">
+				<a class="nav-item nav-link m-2 p-1 text-dark" id='login'></a>
 			</div>
 		</div>
 	</nav>
 
-	<div class="showContent">
 	<div class="text-center w-100">
 		<div class=" phone  mt-2" style="">
 			<div class="phoneBg">
@@ -314,44 +279,8 @@
 			}
 		}
 	</script>
-	</div>
-	<div class="toolset">
-		<button onclick="topFunction()" id="topBtn" class="bg-dark"><i class="fas fa-angle-double-up"></i></button>
-	</div>
-   <div class="bottomSet">
-   	<div id="addShape" class="bg-dark d-none d-md-block " style=""></div>
-	<footer class="bg-dark text-white d-flex flex-column text-center ">
-		<div>
-			香港城市大學學生會
 
-			<div class="px-4">
-				<a href="https://seika27cads.github.io/27thcadsSeika" class="text-decoration-none text-white">第二十七屆動漫畫同人誌幹事會漫衍菁華</a>
-			</div>
-			<div class="text-center d-flex justify-content-center">
-				<a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
-				<a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
-			</div>
-			<div class="bg-secondary">
-				@ 2021 Copyright seika27cads
-			</div>
-		</div>
-	</footer>
-   </div>
 
-	<script>
-		var mybutton = document.getElementById("topBtn");
-		window.onscroll = function() {scrollFunction()};
 
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = "block";
-		  } else {
-			mybutton.style.display = "none";
-		  }
-		}
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
+
 </body></html>
