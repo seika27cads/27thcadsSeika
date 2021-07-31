@@ -134,7 +134,7 @@
 <nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
 		<div class="d-flex flex-row navbar-nav">
 			<img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
-			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" href="preOdayIndex.html">漫衍菁華</a>
+			<a class="nav-item nav-link m-2 p-1 text-dark  d-block" href="preOdayIndex.html">漫衍菁華</a>
 		</div>
 		<div>
 			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" id="noShow">
@@ -271,7 +271,6 @@
 		function checkCookie() {
 			let user = getCookie("username");
 			if (user != "") {
-				document.getElementById("blockStronger").style.display="none";
 
 			} else {
 				alert("Login first thanks");
