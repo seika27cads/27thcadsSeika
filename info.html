@@ -3,8 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
 </head>
+<style>
+	.bgInfo{
+		background-image: url("img/Bgimg/banner.png");
+		min-height: 80vh;
+		background-position: center;
+		background-size: cover;
+	}
+	.myMemo {
+		position: absolute;
+		left: 5%;
+		top: 20%;
+		width: 450px;
+		background-color: #EBEF67;
+		height: auto;
+		text-align: left;
+		box-shadow: 5px 5px 5px grey;
+		margin-top: 10px;
+	}
+.bottomSet{
+		margin-top: -100px;
+	}
+
+		@media only screen and (min-width: 750px) {
+		.myMemo {
+			left: 25%;
+			width: 500px;
+		}
+	}
+	.ocSign, .ocSign:hover {
+		text-decoration: none;
+		color: black;
+	}
+	@media only screen and (min-width: 970px) {
+		.myMemo {
+			left: 30%;
+		}
+	}
+
+	@media only screen and (min-width: 1170px) {
+		.myMemo {
+			left: 40%;
+		}
+	}
+	</style>
 <body>
+	<div class='bgInfo'></div>
 	<div class="myMemo pt-3  rotate text-black ">
 				<div class="notesItem">
 					PreOday 日期:1/8 11:30 - 18:00
@@ -13,7 +59,7 @@
 					集合時間: 11:00-11:30
 				</div>
 				<div class="notesItem">
-					集合地點: 中國銀行（香港）綜合樓
+					<a href="https://forms.gle/HfuEkkvbFoRKVmDF6" class="ocSign">集合地點</a>: 中國銀行（香港）綜合樓
 				</div>
 				<div class="notesItem">
 					七樓學生會會室7217
@@ -22,12 +68,12 @@
 					Remark: PreOday 除左破冰遊戲外
 				</div>
 				<div class="notesItem">
-					所有進行遊戲時 OC會分兩dorm進行
+					所有進行遊戲OC都會分兩dorm進行
 				</div>
 				 <div class="notesItem">
-
-				  當進行到某遊戲時 負責該遊戲的OC會協助活動進行
+				  進行到某遊戲時 負責該遊戲的OC會協助活動進行
 				</div>
     </div>
+
 </body>
 </html>

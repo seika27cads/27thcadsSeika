@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		margin: 0px;
+	}
+	.loginForm{
+		background-color: white;
+		width: 400px;
+		position: absolute;
+		top:40%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 15px 15px;
+		border-radius: 8px;
+		box-shadow: 5px 8px 10px #3b4b52;
+
+	}
+	.loginbtn{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.field{
+		display: inline-block;
+		margin-bottom: 10px;
+		border-bottom: 3px solid #787ed4;
+	}
+	h4{
+		text-align: center;
+		border-bottom: 5px  solid #c93329;
+	}
+	.bgInfo{
+		background-image: url("img/Bgimg/banner.png");
+		min-height: 100vh;
+		background-position: center;
+		background-size: cover;
+	}
+</style>
+<body>
+<div class='bgInfo'>
+	<div class="container loginForm ">
+		<h4 class="">漫衍菁華</h4>
+		<section class="form-group mt-3">
+			<div class="field"><strong>LoginID</strong></div>
+			<input class="form-control id" type="text" id="cname">
+
+		</section>
+		<section class="form-group mt-3">
+				<div class="field"><strong>Password</strong></div>
+
+	<input type="password" class="form-control" id="password">
+		</section>
+		<div class="w-100 text-center p-2">
+			<button onclick="login()" class="btn btn-outline-primary " id="loginbtn">login</button>
+
+		</div>
+	</div></div>
+	<script>
+		//https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+		function login() {
+			var temp2 = document.getElementById("password").value;
+			if (temp2 == "27") {
+				setCookie();
+				alert("Login success");
+				window.location.href = "links.html";
+			} else {
+				alert("You input invalid LoginID or Password");
+			}
+		}
+		function setCookie() {
+			const d = new Date();
+			const cname = "username";
+			const cvalue = document.getElementById("cname").value;;
+			const exdays = 30;
+			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+			let expires = "expires=" + d.toGMTString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+		function getCookie(cname) {
+			let name = cname + "=";
+			let ca = document.cookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+		function checkCookie() {
+			let user = getCookie("username");
+			if (user != "") {
+				alert("Welcome again " + user);
+			} else {
+				user = prompt("Please enter your name:", "");
+				if (user != "" && user != null) {
+					setCookie("username", user, 30);
+				}
+			}
+		}
+	</script>
+</body></html>

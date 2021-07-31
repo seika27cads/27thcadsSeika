@@ -221,7 +221,7 @@
         "endTime":"16:50",
         "activity":" 抽稿 && 購買物資",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>(營長 || 副營)<br>MC:Tiffany<br>評選 : Jc, Calvin, Zoe</strong> ",
+        "manpower":"<strong>(營長 || 副營)<br>MC:Tiffany<br>評選 : Jc, 副營, Zoe</strong> ",
         "supplies":["物資清單","劇情稿","物資"],
         "remarks":["高分組別先抽劇情稿","較高分組別可先用3分鐘選擇物資表的物資","選擇後物資熊貓送貨"],
 	    "Content":[]
@@ -231,7 +231,7 @@
    "setup":[{
        "startTime": "16:50",
         "endTime":"17:15",
-        "activity":"練習表演",
+        "activity":"練習動漫劇情扮演",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong>組爸媽</strong>",
         "supplies":[],
@@ -252,11 +252,11 @@
    },{
        "startTime": "17:15",
         "endTime":"17:45",
-        "activity":"表演",
+        "activity":"動漫劇情扮演",
         "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
         "manpower":"<strong><br>組爸媽<br>MC: Tiffany<br>評選: JC,副營,Zoe </strong>",
         "supplies":[],
-        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見","評選評估分數(1-10)根據還原度,創意分及搞笑分而決定"],
+        "remarks":["MC: Host場 如cue下一組 || cue評選發表意見","評選評估分數(1-10)根據<strong>還原度</strong>,<strong>創意分</strong>及<strong>搞笑分</strong>而決定"],
 	    "Content":[]
    }]
 },{ "bothevent":false,

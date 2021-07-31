@@ -12,9 +12,10 @@
 	<!--Jquery-->
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
 	</script>
+	<!--PhoneDesign-->
+	<link rel="stylesheet" href="css/phoneDesign.css">
 	<script>
 		$(document).ready(function() {
-			$('.showContent').load("timeLine.html");
 			$('#twoDMenuContent').hide();
 			$('.mainContent').load("home.html");
 			$('#info').click(function() {
@@ -137,10 +138,31 @@
     #addShape {
         clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
     }
+	body {
+		margin: 0px;
+	}
 
+	.blockContent {
+		background-color: black;
+		height: 100vh;
+		text-align: center;
+		vertical-align: center;
+		line-height: 100vh;
+		color: white;
+		font-size: 48px;
+		width: 100%;
+	}
+	.phone{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.memeber a{
+		text-decoration:none;
+		color: black;
+	}
 </style>
 
-<body class="bg-light">
+<body class="bg-light" onload="checkCookie()">
 	<nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
 		<div class="d-flex flex-row navbar-nav">
 			<img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
@@ -160,19 +182,155 @@
 		</div>
 		<div>
 			<div class="navbar-nav d-flex flex-row nav-item justify-content-around align-item-center" style="" id="login">
-				登入
+				Login
 			</div>
 		</div>
 	</nav>
 
 	<div class="showContent">
+	<div class="blockContent" id="blockStronger">
+		BYE BYE
+	</div>
+	<div class="text-center w-100">
+		<div class=" phone  mt-2" style="">
+			<div class="phoneBg">
+				<div class="d-flex justify-content-between phoneTopbar">
+					<div id="MyClockDisplay" class="clock ml-3 mt-2 text-black" onload="showTime()"></div>
+					<div class="phoneHand d-flex justify-content-around ">
+						<div class="speaker"></div>
+					</div>
+					<div class="icons d-flex justify-content-center mt-2 text-black">
+						<i class="fa fa-signal" aria-hidden="true"></i>
+						<i class="fa fa-wifi" aria-hidden="true"></i>
+						<i class="fa fa-battery-half" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="contactPerson px-3">
+					<div class="">
+						<form class="form-inline my-2 my-lg-2 d-flex d-row">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="filter" disabled>
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+						<div class="memeberList" id="memberList">
+
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3  text-black">
+									<a href="https://docs.google.com/document/d/1Pt0WU__OaPoyeBeipuZK_Mdz4f3GdqnfaKrj91Fikkk/edit?usp=sharing" target='_blank'>無中生友</a>
+								</div>
+								<div class="inbox ">
+									<i class='fa fa-paper-plane text-white chat ' style='' id="0"></i>
+								</div>
+
+							</div>
+
+
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://docs.google.com/document/d/1feaz28rVX7IurWFtoTTd6KzYDMaJjxtpNoYUKeYDS4c/edit?usp=sharing" target='_blank'>估領袖</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="1"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/file/d/14CkMBHgBvoBuKk0T9oEkDSHOBQoFvTCM/view?usp=sharing" target='_blank'>邊個偷咗雪櫃入面嗰個大西瓜</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="1"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/drive/folders/1B5g9FtatG_X3GW__BU2hI9bzjMxIC519?usp=sharing" target='_blank'>動漫問答</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="2"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/drive/folders/1v0tO3UWWVzLtvI_qrt3KmpSoQaeAIjjT?usp=sharing" target='_blank'>大電視</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="3"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/drive/folders/1vd7747AQ36M13V80KFiQTvq_x4nzdrWR?usp=sharing" target='_blank'>猜猜畫畫</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="4"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/drive/folders/1YSka6eDcSdQ4YUwm7C5iDqcu30M6uSyw?usp=sharing" target='_blank'>動漫劇情扮演</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="5"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chatroom " style="display: none;">
+					<div class="card-title mt-2 bg-dark text-white  px-1" id="chatroomBar">
+
+					</div>
+
+					<div class="content  bgImg" style="overflow: scroll;" id="content">
+					</div>
+
+
+				</div>
+
+			</div>
+			<div class="d-flex justify-content-center" id="homeButton">
+
+				<i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true"></i>
+
+			</div>
+			<div class="message">
+
+			</div>
+		</div>
+	</div>
+	<script src="js/phone.js">
+    </script>
+	<script>
+		function getCookie(cname) {
+			let name = cname + "=";
+			let ca = document.cookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+		function checkCookie() {
+			let user = getCookie("username");
+			if (user != "") {
+				document.getElementById("blockStronger").style.display="none";
+
+			} else {
+				alert("Login first thanks");
+				window.location.href = "preOdayIndex.html";
+			}
+		}
+	</script>
 	</div>
 	<div class="toolset">
 		<button onclick="topFunction()" id="topBtn" class="bg-dark"><i class="fas fa-angle-double-up"></i></button>
 	</div>
-  <div style="margin: -20px;">
-
-  </div>
    <div class="bottomSet">
    	<div id="addShape" class="bg-dark d-none d-md-block " style=""></div>
 	<footer class="bg-dark text-white d-flex flex-column text-center ">

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Jquery-->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		var url = "json/manpower.json";
+		$.getJSON(url, function(result) {
+			//get number of team
+			var teamNo=result.length;
+
+			var i;
+			var j;
+			for(i=0;i<teamNo;i++){
+				//get memebers
+				var memberNo=result[i].member.length;
+				var temp="";
+
+				for(j=0;j<memberNo;j++){
+					var idMember=j+1;
+					temp+="<tr><th scope='col'>"+idMember+"</th>";
+					temp+="<th scope='col'>"+result[i].member[j].name+"</th>";
+					temp+="<th scope='col'>"+result[i].member[j].role+"</th>";
+					temp+="<th scope='col'>"+result[i].member[j].changeOf+"</th></tr>";
+				}
+				var changedomHtml=""+i;
+				document.getElementById(changedomHtml).innerHTML += temp;
+			}
+
+		});
+	});
+	</script>
+</head>
+<style>
+
+	tbody > tr:nth-child(even){
+		background-color: gainsboro;
+	}
+
+	</style>
+<body>
+<div class="container">
+	<div class="d-flex flex-column flex-lg-row ">
+    	<table class="table m-3  ">
+    		<thead class="bg-danger text-white">
+    			<tr>
+    				<th scope="col">紅DORM</th>
+    				<th scope="col">人名</th>
+    				<th scope="col">職位</th>
+    				<th scope="col">負責事務</th>
+    			</tr>
+    		</thead>
+    		<tbody id="0">
+
+    		</tbody>
+    	</table>
+    	<table class="table m-3  ">
+    		<thead class="bg-primary text-white">
+    			<tr>
+    				<th scope="col">藍DORM</th>
+    				<th scope="col">人名</th>
+    				<th scope="col">職位</th>
+    				<th scope="col">負責遊戲</th>
+    			</tr>
+    		</thead>
+    		<tbody id="1">
+
+    		</tbody>
+    	</table>
+
+    </div>
+
+</div>
+</body>
+</html>
