@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>PreOday</title>
+	<title>Oday</title>
 	<link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
 
@@ -14,9 +14,8 @@
 	</script>
 	<script>
 		$(document).ready(function() {
-			$('.showContent').load("timeLine.html");
+			$('.showContent').load("info.html");
 			$('#twoDMenuContent').hide();
-			$('.mainContent').load("home.html");
 			$('#info').click(function() {
 				$('.showContent').load("info.html");
 			});
@@ -27,7 +26,7 @@
 				$('.showContent').load("team.html");
 			});
 			$('#login').click(function() {
-				$('.showContent').load("preOdaylogin.html");
+				$('.showContent').load("odaylogin.html");
 			});
 			$('#allLisks').click(function() {
 				$('.showContent').load("links.html");
@@ -153,6 +152,7 @@
 			<div class="nav-item position-relative" id="twoDMenu">
 				<div class="nav-item  m-2 p-1 ">更多</div>
 				<div class="position-absolute documents" id="twoDMenuContent">
+
 					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/spreadsheets/d/1BsrGmYG_ZqZHsZqols40OCdN0YLmmIe2KhaI6nLsvOs/edit?usp=sharing">PreODay人手安排</a>
 					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/document/d/17_hUeqC1FMJSHNP8jPLVE7frMPApfKTDIMQ5DrI45t0/edit?usp=sharing">Preoday_Highlight</a>
 					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://forms.gle/6nj1BRMvTJZvjyfK9">Preoday意見收集</a>

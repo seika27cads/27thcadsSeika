@@ -1,8 +1,3 @@
-Black #3b4b52
-purple #787ed4
-green #b6df70
-Red #c93329
-
 [{ "bothevent":false,
    "AFKtime":false,
    "setup":[{
@@ -99,7 +94,7 @@ Red #c93329
    "AFKtime":true,
    "setup":[{
        "startTime": "12:30",
-        "endTime":"13:00",
+        "endTime":"13:30",
         "activity":"破冰GAME",
         "venue": "7200,7217,7219,7220",
         "manpower":"組爸媽 && FM</strong>",
@@ -111,9 +106,22 @@ Red #c93329
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "13:00",
-        "endTime":"14:15",
-        "activity":"四Dorm準備聚餐",
+       "startTime": "13:30",
+        "endTime":"13:45",
+        "activity":"準備聚餐",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong>ALL people || Only 組爸媽奶 && FM??</strong>",
+        "supplies":[],
+        "remarks":["洗手"],
+	    "Content":[]
+
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "13:45",
+        "endTime":"14:30",
+        "activity":"聚餐",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>ALL people || Only 組爸媽奶 && FM??</strong>",
         "supplies":[],
@@ -124,8 +132,8 @@ Red #c93329
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
-       "startTime": "14:00",
-        "endTime":"14:15",
+       "startTime": "14:40",
+        "endTime":"14:45",
         "activity":"OC前往所屬地點&&Set up場地",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
@@ -133,9 +141,9 @@ Red #c93329
         "remarks":[],
 	    "Content":["中國銀行（香港）綜合樓七樓學生會會室7200: 1. 黃巧瑜<br> Tiffany <br>2. Law Chun Lok 吖樂 <br>3. 蔡嘉熙   熙仔<br>中國銀行（香港）綜合樓七樓學生會會室7217: 1. 陳容若 Cyy <br>2. Jerry  JC <br>3. Andy <br>中國銀行（香港）綜合樓七樓學生會會室7219 <br>1. 吳彥宗 Calvin <br>2. 劉曉琳   Zoe <br>3. Tang Chun Yiu Yoyo<br>中國銀行（香港）綜合樓七樓學生會會室7220<br>1. 梁芊蔚 Ellie/Elize <br>2. Regan Wong 落櫻 <br>3 陳啟康  Mitchell"]
    },{
-       "startTime": "14:00",
-        "endTime":"14:15",
-        "activity":"FM協助清理場地",
+       "startTime": "14:30",
+        "endTime":"14:45",
+        "activity":"FM協助清理場地-準備Round1",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>組爸媽奶 && FM</strong>",
         "supplies":[],
@@ -145,8 +153,8 @@ Red #c93329
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "14:15",
-        "endTime":"14:35",
+       "startTime": "14:45",
+        "endTime":"15:10",
         "activity":"進行分組遊戲-Round1",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
@@ -157,8 +165,8 @@ Red #c93329
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
-       "startTime": "14:40",
-        "endTime":"14:45",
+       "startTime": "15:10",
+        "endTime":"15:15",
         "activity":"清理場地",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong><br>OCs</strong> ",
@@ -166,9 +174,9 @@ Red #c93329
         "remarks":[],
 	    "Content":[]
    },{
-       "startTime": "14:40",
-        "endTime":"14:45",
-        "activity":"轉場地",
+       "startTime": "15:10",
+        "endTime":"15:15",
+        "activity":"轉場地-準備Round2",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
@@ -178,8 +186,8 @@ Red #c93329
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "14:45",
-        "endTime":"15:10",
+       "startTime": "15:15",
+        "endTime":"15:40",
         "activity":"進行分組遊戲-Round2",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
@@ -190,6 +198,39 @@ Red #c93329
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
+       "startTime": "15:40",
+        "endTime":"15:45",
+        "activity":"清理場地",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong><br>OCs</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   },{
+       "startTime": "15:40",
+        "endTime":"15:45",
+        "activity":"轉場地-準備Round3",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["7200 - 動漫問答 (橙B vs 紫A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 紫B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "15:45",
+        "endTime":"15:10",
+        "activity":"進行分組遊戲-Round3",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong>OC</strong>",
+        "supplies":[],
+        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
        "startTime": "15:10",
         "endTime":"15:15",
         "activity":"清理場地",
@@ -201,19 +242,19 @@ Red #c93329
    },{
        "startTime": "15:10",
         "endTime":"15:15",
-        "activity":"轉場地",
+        "activity":"轉場地-準備Round4",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
-        "remarks":[]
-	    "Content":["7200 - 動漫問答 (橙B vs 紫A)"," 7217 - 大電視(藍A vs 紅B)"," 7219 - 雲畫之月(紅A vs 紫B)"," 7220- 猜猜畫畫(藍B vs 橙A)"],
+        "remarks":[],
+	    "Content":["7200 - 動漫問答 (橙B vs 紫A)"," 7217 - 大電視(藍A vs 紅B)"," 7219 - 雲畫之月(紅A vs 紫B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
        "startTime": "15:15",
         "endTime":"15:40",
-        "activity":"進行分組遊戲-Round3",
+        "activity":"進行分組遊戲-Round4",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
         "supplies":[],
@@ -232,56 +273,107 @@ Red #c93329
         "remarks":[],
 	    "Content":[]
    },{
-       "startTime": "15:40",
-        "endTime":"15:45",
-        "activity":"轉場地",
-        "venue": "7200,7217,7219,7220",
-        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
-        "supplies":[],
-        "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙A vs 紫B)"," 7217 - 大電視(藍B vs 紅A)"," 7219 - 雲畫之月(紅B vs 紫A)"," 7220- 猜猜畫畫(藍A vs 橙B)"]
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
        "startTime": "15:45",
-        "endTime":"16:10",
-        "activity":"進行分組遊戲-Round4",
-        "venue": "7200,7217,7219,7220",
-        "manpower":"<strong>OC</strong>",
-        "supplies":[],
-        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
-       "startTime": "17:45",
-        "endTime":"18:00",
-        "activity":"意見收集",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>四大</strong>",
+        "endTime":"15:50",
+        "activity":"前往房間集合-準備動漫劇情扮演",
+        "venue": "7217",
+        "manpower":"<strong>營長</strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
-   },{
-       "startTime": "17:45",
-        "endTime":"18:00",
-        "activity":"意見收集",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>所有人</strong>",
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "15:50",
+        "endTime":"16:15",
+        "activity":"抽選劇情稿及用積分買道具",
+        "venue": "7217, soc房",
+        "manpower":"<strong>營長</strong>",
         "supplies":[],
-        "remarks":["填下GOOGLE form || 提出可以改善的地方"],
+        "remarks":[],
 	    "Content":[]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "18:00",
-        "endTime":"18:15",
-        "activity":"影相",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>主負責人: Volar</strong>",
+       "startTime": "16:15",
+        "endTime":"16:20",
+        "activity":"前往所屬房間練習",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong></strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["藍:7200","橙:7217","紅:7219","紫:7220"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "16:20",
+        "endTime":"16:55",
+        "activity":"動漫劇情扮演練習",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong>營長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "16:55",
+        "endTime":"17:00",
+        "activity":"四dorm前往表演房間",
+        "venue": "7217",
+        "manpower":"<strong>營長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["先後次序決定坐位"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:00",
+        "endTime":"17:15",
+        "activity":"動漫劇情扮演",
+        "venue": "7217",
+        "manpower":"<strong>營長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:15",
+        "endTime":"17:30",
+        "activity":"誰是間諜+公佈分數",
+        "venue": "7217",
+        "manpower":"<strong>組爸媽||營長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:30",
+        "endTime":"17:45",
+        "activity":"合照",
+        "venue": "7217",
+        "manpower":"<strong>營長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:45",
+        "endTime":"18:00~",
+        "activity":"邀請FM參加Ocamp",
+        "venue": "7217",
+        "manpower":"<strong>營長</strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
