@@ -23,11 +23,11 @@
 				for (i = 0; i < teamNo; i++) {
 					//get memebers
 					var memberNo = result[i].member.length;
-					var temp = "<thead class='text-white '  > <tr class='text-white ' style='background-color:" + result[i].color + ";'> <th scope='col'>" + result[i].dorm + "</th> <th scope='col'>人名</th> <th scope='col' class='flex-grow-2'>職位</th> <th scope='col'>負責事務</th> </tr> </thead>";
+					var temp = "<thead class='text-white '  > <tr class='text-white ' style='background-color:" + result[i].color + ";'>  <th scope='col'>人名</th> <th scope='col' class='flex-grow-2'>職位</th> <th scope='col'>負責事務</th> </tr> </thead>";
 
 					for (j = 0; j < memberNo; j++) {
 						var idMember = j + 1;
-						temp += "<tr><th scope='col'>" + idMember + "</th>";
+						temp += "<tr>";
 						temp += "<th scope='col'>" + result[i].member[j].name + "</th>";
 						temp += "<th scope='col'>" + result[i].member[j].role + "</th>";
 						temp += "<th scope='col'>" + result[i].member[j].changeOf + "</th></tr>";
@@ -37,50 +37,118 @@
 				}
 			});
 		});
-
 	</script>
 </head>
 <style>
+	body{
+		background-image: url('../img/Bgimg/banner.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+	}
+
 	tbody>tr:nth-child(even) {
 		background-color: gainsboro;
 	}
+
 	tbody>tr:nth-child(odd) {
 		background-color: white;
 	}
-	body {
-	}
+
+	body {}
+
 	.showContent {
-		min-height: 100vh;
+		min-height: 75vh;
 		margin-bottom: 10px;
+	}
+	button{
+		color: white!important;
+		text-decoration: none!important;
 	}
 </style>
 
 <body>
-	<div class="container mt-4">
+	<div class="accordion" id="accordionExample">
+
+	</div>
+	<div class="container my-5">
 		<div class="d-flex flex-column  ">
-			<table class="table my-3 mx-0 mx-sm-2  ">
-				<tbody id="0">
+			<div class="card">
+				<div class="card-header" id="headingOne" style="background-color: #0053D2">
+					<h5 class="mb-0">
+						<button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							夜凪(Entro/Yiku/Iris)
+						</button>
+					</h5>
+				</div>
 
-				</tbody>
-			</table>
-			<table class="table my-3 mx-0 mx-sm-2   ">
-				<tbody id="1">
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					<div class="card-body ">
+						<table class="table" id="multiCollapseExample1">
+							<tbody id="0">
 
-				</tbody>
-			</table>
-			<table class="table my-3 mx-0 mx-sm-1   ">
-				<tbody id="2">
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo" style="background-color:#950300">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed w-100" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							赤日 (Hinson/Daniel/Joyce)
+						</button>
+					</h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					<div class="card-body">
+						<table class="table" id="multiCollapseExample2">
+							<tbody id="1">
 
-				</tbody>
-			</table>
-			<table class="table my-3 mx-0 mx-sm-2   ">
-				<tbody id="3">
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingThree" style="background-color: #F6AE30">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed w-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							黃昏 (Libby/Pansy/Ryan)
+						</button>
+					</h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body">
+						<table class="table" id="multiCollapseExample3">
+							<tbody id="2">
 
-				</tbody>
-			</table>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingThree" style="background-color: #F19C9C">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed w-100" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+							東雲 (DB/Ivy/Micheal)
+						</button>
+					</h5>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body">
+						<table class="table" id="multiCollapseExample4">
+							<tbody id="3">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 	</div>
-</body>
-
-</html>
+</body></html>

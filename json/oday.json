@@ -18,7 +18,7 @@
         "activity":"準備聚餐及破冰物資",
         "venue": "soc房",
         "manpower":"<strong>營長(申展)<br>副營(QIVY)<br>物資長(白龍)<br>OC長(KEN)</strong>",
-        "supplies":["100無中生有紙","2個探熱槍","2技消毒洗手液"],
+        "supplies":["100無中生有紙","2個探熱槍","2枝消毒洗手液"],
         "remarks":["準備聚餐食物(最遲12:15要拿到)","準備聚餐物資","準備破冰物資"],
 	    "Content":[]
    },{
@@ -139,7 +139,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":[],
-	    "Content":["中國銀行（香港）綜合樓七樓學生會會室7200: 1. 黃巧瑜<br> Tiffany <br>2. Law Chun Lok 吖樂 <br>3. 蔡嘉熙   熙仔<br>中國銀行（香港）綜合樓七樓學生會會室7217: 1. 陳容若 Cyy <br>2. Jerry  JC <br>3. Andy <br>中國銀行（香港）綜合樓七樓學生會會室7219 <br>1. 吳彥宗 Calvin <br>2. 劉曉琳   Zoe <br>3. Tang Chun Yiu Yoyo<br>中國銀行（香港）綜合樓七樓學生會會室7220<br>1. 梁芊蔚 Ellie/Elize <br>2. Regan Wong 落櫻 <br>3 陳啟康  Mitchell"]
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
    },{
        "startTime": "14:00",
         "endTime":"14:15",
@@ -148,7 +148,7 @@
         "manpower":"<strong>組爸媽奶 && FM</strong>",
         "supplies":[],
         "remarks":["有GAME玩真的很興奮"],
-	    "Content":["7200 - 動漫問答 (紅A vs 藍A)", "7217 - 大電視(橙A vs 紫A)", "7219 - 雲畫之月(橙B vs 藍B)", "7220- 猜猜畫畫(紅B vs 紫B)"]
+	    "Content":["7200 - 動漫問答 (紅A vs 藍A)", "7217 - 大電視(橙A vs 粉紅A)", "7219 - 雲畫之月(橙B vs 藍B)", "7220- 猜猜畫畫(紅B vs 粉紅B)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -160,7 +160,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -181,7 +181,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (紅B vs 藍B)"," 7217 - 大電視(橙B vs 紫B)"," 7219 - 雲畫之月(橙A vs 藍A)"," 7220- 猜猜畫畫(紅A vs 紫A)"]
+	    "Content":["7200 - 動漫問答 (紅B vs 藍B)"," 7217 - 大電視(橙B vs 粉紅B)"," 7219 - 雲畫之月(橙A vs 藍A)"," 7220- 猜猜畫畫(紅A vs 粉紅A)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -193,7 +193,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -214,7 +214,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙B vs 紫A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 紫B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
+	    "Content":["7200 - 動漫問答 (橙B vs 粉紅A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 粉紅B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -226,7 +226,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -247,7 +247,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙B vs 紫A)"," 7217 - 大電視(藍A vs 紅B)"," 7219 - 雲畫之月(紅A vs 紫B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
+	    "Content":["7200 - 動漫問答 (橙A vs 粉紅B)"," 7217 - 大電視(藍B vs 紅A)"," 7219 - 雲畫之月(紅B vs 粉紅A)"," 7220- 猜猜畫畫(藍A vs 橙B)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -259,7 +259,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br> 物資:<br>1部Tablet <br> 計分Excel <br>總分計分Excel","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> 物資:<br>1部Tablet <br>總分計分紙<br>計分紙 <br>總分計分Excel <br>2枝筆","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>物資: <br>100張白紙<br>20-40枝筆<br>2部tablet","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>物資: <br>1塊白板<br>2枝水性筆<br>2個白板擦<br>1部tablet"]
+	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -301,10 +301,10 @@
         "endTime":"16:45",
         "activity":"前往所屬房間練習",
         "venue": "7200,7217,7219,7220",
-        "manpower":"<strong></strong>",
+        "manpower":"All",
         "supplies":[],
         "remarks":[],
-	    "Content":["藍:7200","橙:7217","紅:7219","紫:7220"]
+	    "Content":["藍:7200","橙:7217","紅:7219","粉紅:7220"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -371,7 +371,7 @@
    "setup":[{
        "startTime": "18:15",
         "endTime":"18:30~",
-        "activity":"邀請FM參加Ocamp",
+        "activity":"邀請FM參加ONight",
         "venue": "7217",
         "manpower":"<strong>營長</strong>",
         "supplies":[],
