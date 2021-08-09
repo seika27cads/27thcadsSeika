@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Oday</title>
-	<link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../img/commonUsageImg/seikaIcon.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -143,23 +145,14 @@
 <body class="bg-light" onload="checkCookie()">
 	<nav class="navbar navbar-fixed-top navbar-white bg-white  d-flex justify-content-around">
 		<div class="d-flex flex-row navbar-nav">
-			<img src="img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
+			<img src="../img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
 			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index">漫衍菁華</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='info'>活動資料</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='team'>分組名單</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='event'>活動流程</a>
 
 			<div class="nav-item position-relative" id="twoDMenu">
-				<div class="nav-item  m-2 p-1 ">更多</div>
-				<div class="position-absolute documents" id="twoDMenuContent">
 
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/spreadsheets/d/1BsrGmYG_ZqZHsZqols40OCdN0YLmmIe2KhaI6nLsvOs/edit?usp=sharing">PreODay人手安排</a>
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/document/d/17_hUeqC1FMJSHNP8jPLVE7frMPApfKTDIMQ5DrI45t0/edit?usp=sharing">Preoday_Highlight</a>
-					<!--
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://forms.gle/6nj1BRMvTJZvjyfK9">Preoday意見收集</a>
-					<a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://forms.gle/SuTxdXKneyDk7qyx8">JotNotes</a>
-					-->
-				</div>
 			</div>
 
 
@@ -198,7 +191,7 @@
 		</div>
 	</footer>
    </div>
-   <script src="js/cookieMaker.js"></script>
+   <script src="../js/cookieMaker.js"></script>
 	<script>
 		var mybutton = document.getElementById("topBtn");
 		window.onscroll = function() {scrollFunction()};

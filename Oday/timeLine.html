@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Preoday</title>
 
-	<link rel="icon" href="img/commonUsageImg/seikaIcon.png" />
+	<link rel="icon" href="../img/commonUsageImg/seikaIcon.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -16,7 +16,7 @@
 	</script>
 	<script>
 		$(document).ready(function() {
-			var url = "json/oday.json";
+			var url = "../json/oday.json";
 			//get json data
 			$.getJSON(url, function(result) {
 				//get number for loop
@@ -47,8 +47,6 @@
 						remark0list += "</ol></li>";
 					}
 					//get game rule if it hvs
-
-
 					if (result[loop].bothevent) {
 						//get number of supplies and number of remarks for loop
 						var stuff1Num = result[loop].setup[1].supplies.length;

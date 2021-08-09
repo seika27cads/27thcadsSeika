@@ -25,8 +25,10 @@ function setCookie() {
 		function checkCookie() {
 			let user = getCookie("username");
 			if (user != "") {
-				var temp2="<a href='links.html' class='nav-item nav-link m-0 p-3 text-dark bg-white'>AllinOneEventsLinks</a>";
+				var temp2="<a href='links.html' class='nav-item nav-link m-0 p-3 text-dark bg-white'>EventsFiles</a>";
 				document.getElementById("noShow").innerHTML=temp2;
+				var temp3=`<div class="nav-item  m-2 p-1 ">更多</div> <div class="position-absolute documents" id="twoDMenuContent"> <a class="nav-item nav-link m-0 p-3 text-dark bg-white" href="https://docs.google.com/spreadsheets/d/1_Bqj5AM0g2gw6oDD3XcKOd6qZ1mMg9usdjZyb7EViS0/edit?usp=sharing">ODay人手安排</a> </div>`;
+				document.getElementById("twoDMenu").innerHTML=temp3;
 			} else {
 
 			}
