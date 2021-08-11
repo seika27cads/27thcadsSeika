@@ -1,0 +1,90 @@
+[{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "13:45",
+        "endTime":"14:00",
+        "activity":"PreONight-幹事集合",
+        "venue": "soc房",
+        "manpower":"<strong>所有莊員</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+    "AFKtime":false,
+   "setup":[{
+       "startTime": "14:00",
+        "endTime":"15:00",
+        "activity":"準備場地 & 物資",
+        "venue": "soc房",
+        "manpower":"<strong>所有莊員</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+    "AFKtime":false,
+   "setup":[{
+       "startTime": "14:30",
+        "endTime":"15:00",
+        "activity":"工作人員集合",
+        "venue": "中國銀行（香港）綜合樓七樓學生會會室7215",
+        "manpower":"<strong>OC長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "15:00",
+        "endTime":"18:00",
+        "activity":"工作人員扮演遊戲角色",
+        "venue": "Cityu指定地方",
+        "manpower":"<strong>營長 & 副營長 & OC長 && OCs</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   },{
+       "startTime": "15:00",
+        "endTime":"18:00",
+        "activity":"偵探遊戲",
+        "venue": "Cityu指定地方",
+        "manpower":"<strong>組爸組媽組奶</strong>",
+        "supplies":[],
+        "remarks":["Preonight 當天會將四DORM 合成兩dorm遊玩","OC會停等在指定位置直至完成指定工作"],
+	    "Content":["藍Dorm: Entrollpy,Yuki, Iris, Libby, Pansy, Ryan","紅Dorm: Hinson, Daniel, Tiffany, DB, Ivy, Michael"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "18:00",
+        "endTime":"19:00",
+        "activity":"收拾進行偵探遊戲的區域",
+        "venue": "7200,7217,7219,7220",
+        "manpower":"<strong>物資長 && OC長</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   },{
+       "startTime": "18:00",
+        "endTime":"18:15",
+        "activity":"活動總結",
+        "venue": "",
+        "manpower":"<strong>營長</strong>",
+        "supplies":[],
+        "remarks":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "18:15",
+        "endTime":"18:30",
+        "activity":"合照",
+        "venue": "7215",
+        "manpower":"<strong>Volar</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+}]

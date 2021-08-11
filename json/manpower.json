@@ -2,64 +2,64 @@
 	"dorm":"夜凪",
 	"color":"#549EF5",
 	"member":[{
-		"name":"鄺宏昌",
+		"name":"Entrollpy",
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"鄧淽泳",
+		"name":"Yuki",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Iris",
 		"role":"組奶",
-		"changeOf":"協助組媽 && 炒熱氣氛"
+		"changeOf":"協助組爸媽 && 炒熱氣氛"
 	}]
 },{
 	"dorm":"赤日",
 	"color":"darkred",
 	"member":[{
-		"name":"陳文軒",
+		"name":"Hinson",
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"卓明翰",
+		"name":"Daniel",
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"Joyce",
+		"name":"Tiffany",
 		"role":"組奶",
-		"changeOf":"協助組媽 && 炒熱氣氛"
+		"changeOf":"協助組爸媽 && 炒熱氣氛"
 	}]
 },{
 	"dorm":"黃昏",
 	"color":"#F6AE30",
 	"member":[{
-		"name":"李怡",
+		"name":"Libby",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"DB",
+		"name":"Pansy",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Ryan",
 		"role":"組奶",
-		"changeOf":"協助組媽 && 炒熱氣氛"
+		"changeOf":"協助組爸媽 && 炒熱氣氛"
 	}]
 },{
 	"dorm":"東雲",
 	"color":"#F19C9C",
 	"member":[{
-		"name":"袁嘉俊",
+		"name":"DB",
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"劉蔚賢",
+		"name":"Ivy",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Michael",
 		"role":"組奶",
-		"changeOf":"協助組媽 && 炒熱氣氛"
+		"changeOf":"協助組爸媽 && 炒熱氣氛"
 	}]
 }]

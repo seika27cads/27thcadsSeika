@@ -3,7 +3,7 @@
    "setup":[{
        "startTime": "9:00",
         "endTime":"11:00",
-        "activity":"場地準備",
+        "activity":"ODAY場地準備",
         "venue": "soc房",
         "manpower":"<strong>所有莊員</strong>",
         "supplies":[],
@@ -100,7 +100,7 @@
         "manpower":"組爸媽 && FM</strong>",
         "supplies":[],
         "remarks":["必玩遊戲: 無中生友","估領袖"],
-	    "Content":["玩法: 無中生友 <br> 參加者獲發每人一枝筆及一張印有3X3格子的BINGO紙。參加者先將自已喜愛的事物寫在格子內，內容的自由度非常低，如喜愛的作品名。俾5分鐘時間寫，9個有關動漫嘅項目，填寫完成後。參加者可在10分鐘內詢問其他參加者，係問對方之前要稍微自我介紹先，並互相觀看對方的BINGO紙，如發現對方與自己一樣喜觀相同的東西，便可在自己的紙上圈起讓項東西。最快圈出事物成1直 / 橫 / 斜線的參加者便是贏家,<br><hr>","玩法: 圍圈而坐，每dorm選出一個代表離場，小組再推舉一位「領袖」；「領袖」負責帶領各人做動作，包括：拍手、點頭、大笑、拍膊頭、拍大脾等；開始首個動作後，離場者便可回來，站在圓心猜測誰是領袖，每人可猜3次，輸的人自我介紹一分鐘。"]
+	    "Content":["玩法: 無中生友 <br> 參加者獲發每人一枝筆及一張印有3X3格子的BINGO紙。參加者先將自已喜愛的事物寫在格子內，內容的自由度非常低，如喜愛的作品名。俾5分鐘時間寫，9個有關動漫嘅項目，填寫完成後。參加者可在10分鐘內詢問其他參加者，係問對方之前要稍微自我介紹先，並互相觀看對方的BINGO紙，如發現對方與自己一樣喜觀相同的東西，便可在自己的紙上圈起讓項東西。最快圈出事物成1直 / 橫 / 斜線的參加者便是贏家,<br><hr>","玩法: 估領袖 <br>圍圈而坐，每dorm選出一個代表離場，小組再推舉一位「領袖」；「領袖」負責帶領各人做動作，包括：拍手、點頭、大笑、拍膊頭、拍大脾等；開始首個動作後，離場者便可回來，站在圓心猜測誰是領袖，每人可猜3次，輸的人自我介紹一分鐘。"]
 
    }]
 },{ "bothevent":false,
@@ -110,7 +110,7 @@
         "endTime":"13:15",
         "activity":"準備聚餐",
         "venue": "7200,7217,7219,7220",
-        "manpower":"<strong>ALL people || Only 組爸媽奶 && FM??</strong>",
+        "manpower":"<strong>ALL people</strong>",
         "supplies":[],
         "remarks":["洗手"],
 	    "Content":[]
@@ -139,7 +139,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":[],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    },{
        "startTime": "14:00",
         "endTime":"14:15",
@@ -160,7 +160,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -193,7 +193,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -226,7 +226,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -259,7 +259,7 @@
         "manpower":"<strong>OC</strong>",
         "supplies":[],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:Tiffany <br> OC:吖樂, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Calvin <br> OC: Zoe, Yoyo</strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: ____, Mitchell </strong><br>"]
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
@@ -361,7 +361,7 @@
         "endTime":"18:15~",
         "activity":"合照",
         "venue": "7217",
-        "manpower":"<strong>營長</strong>",
+        "manpower":"<strong>營長 & Volar</strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
@@ -376,7 +376,7 @@
         "manpower":"<strong>營長</strong>",
         "supplies":[],
         "remarks":[],
-	    "Content":[]
+	    "Content":["MC: 營長 ","評選 1. Jerry JC <br>2. 孔翠雯  QIvy 3. 劉曉琳 Zoe"]
    }]
 }
 ]

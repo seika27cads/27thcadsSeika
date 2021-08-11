@@ -16,7 +16,16 @@
 	</script>
 	<script>
 		$(document).ready(function() {
-			var url = "../json/oday.json";
+			var url="";
+
+				  var aValue = localStorage.getItem('event');
+
+				if(aValue=="ODay"){
+					url="../json/oday.json";
+				}else{
+					url="../json/oNight.json";
+				}
+
 			//get json data
 			$.getJSON(url, function(result) {
 				//get number for loop
