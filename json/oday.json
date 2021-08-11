@@ -6,7 +6,7 @@
         "activity":"ODAY場地準備",
         "venue": "soc房",
         "manpower":"<strong>所有莊員</strong>",
-        "supplies":[],
+        "supplies":["OC Tshirt"],
         "remarks":["場地準備:<br>中國銀行（香港）綜合樓七樓學生會會室:<br>7200<br>7217<br>7219<br>7220","影場地相","準備OC Tshirt", "點算物資", "放置物資跟到7217"],
 	    "Content":[]
    }]
@@ -158,7 +158,7 @@
         "activity":"進行分組遊戲-Round1",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
-        "supplies":[],
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
 	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
@@ -191,7 +191,7 @@
         "activity":"進行分組遊戲-Round2",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
-        "supplies":[],
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
 	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
@@ -224,7 +224,7 @@
         "activity":"進行分組遊戲-Round3",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
-        "supplies":[],
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
 	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
@@ -257,7 +257,7 @@
         "activity":"進行分組遊戲-Round4",
         "venue": "7200,7217,7219,7220",
         "manpower":"<strong>OC</strong>",
-        "supplies":[],
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
         "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
 	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
    }]
@@ -278,7 +278,7 @@
         "activity":"前往房間集合-準備動漫劇情扮演",
         "venue": "7217",
         "manpower":"<strong>營長</strong>",
-        "supplies":[],
+        "supplies":["4份劇情稿","Cosplay衫","Cosplay衫"],
         "remarks":["負責房間的OC,清理場地"],
 	    "Content":[]
    }]
@@ -376,7 +376,7 @@
         "manpower":"<strong>營長</strong>",
         "supplies":[],
         "remarks":[],
-	    "Content":["MC: 營長 ","評選 1. Jerry JC <br>2. 孔翠雯  QIvy 3. 劉曉琳 Zoe"]
+	    "Content":["MC: 營長 ","評選 1. Jerry JC <br>2. 孔翠雯  QIvy <br>3. 劉曉琳 Zoe"]
    }]
 }
 ]
