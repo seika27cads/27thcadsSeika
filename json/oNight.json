@@ -34,10 +34,22 @@
         "remarks":[],
 	    "Content":[]
    }]
-},{ "bothevent":true,
+},{ "bothevent":false,
    "AFKtime":false,
    "setup":[{
        "startTime": "15:00",
+        "endTime":"15:30",
+        "activity":"活動簡介",
+        "venue": "Cityu指定地方",
+        "manpower":"<strong>營長 & 副營長 & OC長 & OCs</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "15:30",
         "endTime":"18:00",
         "activity":"工作人員扮演遊戲角色",
         "venue": "Cityu指定地方",
@@ -46,7 +58,7 @@
         "remarks":[],
 	    "Content":[]
    },{
-       "startTime": "15:00",
+       "startTime": "15:30",
         "endTime":"18:00",
         "activity":"偵探遊戲",
         "venue": "Cityu指定地方",
