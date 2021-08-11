@@ -71,6 +71,18 @@
    "AFKtime":false,
    "setup":[{
        "startTime": "18:00",
+        "endTime":"18:15",
+        "activity":"合照",
+        "venue": "7215",
+        "manpower":"<strong>Volar</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "18:15",
         "endTime":"19:00",
         "activity":"收拾進行偵探遊戲的區域",
         "venue": "7200,7217,7219,7220",
@@ -79,24 +91,12 @@
         "remarks":[],
 	    "Content":[]
    },{
-       "startTime": "18:00",
-        "endTime":"18:15",
+       "startTime": "18:15",
+        "endTime":"19:00",
         "activity":"活動總結",
         "venue": "",
         "manpower":"<strong>營長</strong>",
         "supplies":[],
         "remarks":[]
-   }]
-},{ "bothevent":false,
-   "AFKtime":false,
-   "setup":[{
-       "startTime": "18:15",
-        "endTime":"18:30",
-        "activity":"合照",
-        "venue": "7215",
-        "manpower":"<strong>Volar</strong>",
-        "supplies":[],
-        "remarks":[],
-	    "Content":[]
    }]
 }]
