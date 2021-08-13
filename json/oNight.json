@@ -64,7 +64,7 @@
         "venue": "Cityu指定地方",
         "manpower":"<strong>組爸&組媽&組奶</strong>",
         "supplies":[],
-        "remarks":["Preonight 當天會將四DORM會合成兩DORM遊玩","OC會停等在指定位置直至完成指定工作"],
+        "remarks":["Preonight 當天會將四DORM會合成兩DORM遊玩","OC會停等在指定位置直至完成指定工作","<a href='https://docs.google.com/spreadsheets/d/11ZiRkNxa3jHiLwPkEeS-WPbDt6ViLb8kWys93VIEKTA/edit?usp=sharing' class='btn btn-outline-primary'>分工表</a> <a href='https://docs.google.com/spreadsheets/d/1M6pHcZByENp3VCiWVN1qHxF7XCG3Ns4HnG__1TCv2eQ/edit?usp=sharing' class='btn btn-outline-primary ml-2'>行程表</a>"],
 	    "Content":["藍Dorm: Entrollpy,Yuki, Iris, Libby, Pansy, Ryan", "紅Dorm: Hinson, Daniel, Tiffany, DB, Ivy, Michael"]
    }]
 },{ "bothevent":false,
