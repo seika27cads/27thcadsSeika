@@ -22,7 +22,7 @@
 		$(document).ready(function() {
 			$('.showContent').load("info.html");
 			$('#twoDMenuContent').hide();
-			$('#info').click(function() {
+			$('#info, #index').click(function() {
 				$('.showContent').load("info.html");
 			});
 			$('#event').click(function() {
@@ -53,6 +53,7 @@
 			$('#twoDMenuContent').hide();
 		});
 	</script>
+
 </head>
 <style>
 	/*Nav*/
@@ -107,7 +108,8 @@
 		}
 	}
 
-	.twoDMenu {
+	.twoDMenu,
+	twoDMenu0 {
 		position: absolute;
 		background-color: red;
 	}
@@ -116,7 +118,8 @@
 		z-index: 5;
 	}
 
-	.documents .nav-item:hover {
+	.documents .nav-item:hover,
+	.dropdown .dropdown-content a:hover{
 		background-color: #ffc107 !important;
 		text-shadow: 2px 3px 2px white;
 	}
@@ -151,16 +154,42 @@
 	#addShape {
 		clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
 	}
+
+
+	.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
+
 <body class="bg-light" onload="checkCookie()">
 	<nav class="navbar navbar-fixed-top navbar-white bg-white d-flex justify-content-around indigo">
 		<div class="d-flex flex-row navbar-nav">
-			<img src="../img/commonUsageImg/seikaIcon.png" alt="" class="icon" style="">
-			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index">漫衍菁華</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='info'>活動資料</a>
+			<img src="../img/commonUsageImg/seikaIcon.png" class="icon" id="info">
+			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index ">漫衍菁華</a>
 			<a class="nav-item nav-link m-2 p-1 text-dark" id='team'>分組名單</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark d-none" id='event' >ODay 活動流程</a>
-			<a class="nav-item nav-link m-2 p-1 text-dark" id='oNight'>PreONight 活動流程</a>
+			<div class="nav-item nav-link m-2 p-1 text-dark dropdown">
+				<span>活動流程</span>
+				<div class="dropdown-content">
+					<a class="nav-item nav-link  p-3 text-dark bg-white" id='event'>ODay </a>
+					<a class="nav-item nav-link  p-3 text-dark bg-white" id='oNight'>ONight</a>
+				</div>
+			</div>
+
+
 			<div class="nav-item position-relative" id="twoDMenu">
 			</div>
 		</div>

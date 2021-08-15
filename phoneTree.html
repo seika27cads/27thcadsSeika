@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>AllInOneLinks</title>
+	<link rel="icon" href="../img/commonUsageImg/seikaIcon.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Jquery-->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
+	<!--PhoneDesign-->
+	<link rel="stylesheet" href="../css/phoneDesign.css">
+
+
+</head>
+<style>
+		body{
+		background-image: url('../img/Bgimg/banner.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+	}
+	/*Nav*/
+	.icon {
+		height: 50px;
+		width: 50px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.nav-item {
+		cursor: pointer;
+	}
+
+	/*BaseInfo*/
+	.myMemo {
+		position: absolute;
+		left: 5%;
+		top: 20%;
+		width: 500px;
+		background-color: #EBEF67;
+		height: auto;
+		text-align: left;
+		box-shadow: 5px 5px 5px grey;
+		margin-top: 10px;
+	}
+
+	.rotate {
+		animation: rotate 4s infinite ease-in-out;
+
+	}
+
+	.notesItem {
+		padding: 2px 5px;
+		height: 40px;
+		border-bottom: 2px solid grey;
+		font-family: 'Reenie Beanie';
+		font-size: 20px;
+	}
+
+
+	@keyframes rotate {
+		0% {
+			transform: perspective(1000px) rotateY(4deg);
+		}
+
+		50% {
+			transform: perspective(1000px) rotateX(-5deg);
+		}
+
+		100% {
+			transform: perspective(1000px) rotateY(4deg);
+		}
+	}
+
+	.twoDMenu {
+		position: absolute;
+		background-color: red;
+	}
+
+	#twoDMenuContent {
+		z-index: 5;
+	}
+
+	.documents .nav-item:hover {
+		background-color: #ffc107 !important;
+		text-shadow: 2px 3px 2px white;
+	}
+
+	.toolset {
+		position: fixed;
+		bottom: 5%;
+		right: 5%;
+	}
+
+	.toolset button {
+		display: none;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		background-color: gray;
+		color: white;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		border-radius: 4px;
+	}
+	#topBtn:hover {
+		background-color: gray;
+
+	}
+
+    #addShape {
+        min-height: 100px;
+    }
+    #addShape {
+        clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
+    }
+	body {
+		margin: 0px;
+	}
+
+	.phone{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.memeber a{
+		text-decoration:none;
+		color: black;
+	}
+</style>
+
+<body class="bg-light" onload="checkCookie()">
+
+	<div class="text-center w-100">
+		<div class=" phone  mt-2" style="">
+			<div class="phoneBg">
+				<div class="d-flex justify-content-between phoneTopbar">
+					<div id="MyClockDisplay" class="clock ml-3 mt-2 text-black" onload="showTime()"></div>
+					<div class="phoneHand d-flex justify-content-around ">
+						<div class="speaker"></div>
+					</div>
+					<div class="icons d-flex justify-content-center mt-2 text-black">
+						<i class="fa fa-signal" aria-hidden="true"></i>
+						<i class="fa fa-wifi" aria-hidden="true"></i>
+						<i class="fa fa-battery-half" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="contactPerson px-3">
+					<div class="">
+						<form class="form-inline my-2 my-lg-2 d-flex d-row">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="filter" disabled>
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+						<div class="memeberList" id="memberList">
+
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3  text-black">
+									<a href="https://www.facebook.com/cityucads">FaceBook</a>
+
+								</div>
+								<div class="inbox ">
+									<i class='fa fa-paper-plane text-white chat ' style='' id="0"></i>
+								</div>
+
+							</div>
+
+
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://www.instagram.com/cityu_seika/">Instagram</a>
+
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="1"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://drive.google.com/file/d/1IHfP3OkzUrV7Ls_i9h92BOhY1JTDeQq5/view" class="w-100">Leaflet</a>
+
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="1"></i>
+								</div>
+							</div>
+							<div class="memeber d-flex flex-row">
+								<div class="w-100 px-3 text-black">
+									<a href="https://seika27cads.github.io/27thcadsSeika">漫衍菁華Website</a>
+								</div>
+								<div class="inbox">
+									<i class='fa fa-paper-plane text-white chat' style='' id="2"></i>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="chatroom " style="display: none;">
+					<div class="card-title mt-2 bg-dark text-white  px-1" id="chatroomBar">
+
+					</div>
+
+					<div class="content  bgImg" style="overflow: scroll;" id="content">
+					</div>
+
+
+				</div>
+
+			</div>
+			<div class="d-flex justify-content-center" id="homeButton">
+
+				<i class="fa fa-circle-thin fa-2x mt-2 back text-always-white" aria-hidden="true"></i>
+
+			</div>
+			<div class="message">
+
+			</div>
+		</div>
+	</div>
+	<script src="js/phone.js">
+    </script>
+
+
+
+
+
+</body></html>
