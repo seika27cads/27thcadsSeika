@@ -88,24 +88,24 @@
         "remarks":[],
 	    "Content":[]
    }]
-},{ "bothevent":false,
-   "AFKtime":true,
+},{ "bothevent":true,
+   "AFKtime":false,
    "setup":[{
+       "startTime": "19:00",
+        "endTime":"22:00",
+        "activity":"協助DGame",
+        "venue": "",
+        "manpower":"<strong>OCs</strong>",
+        "supplies":[],
+        "remarks":[]
+   },{
        "startTime": "19:00",
         "endTime":"22:00",
         "activity":"偵探遊戲",
         "venue": "7217",
-        "manpower":"<strong>物資長 & OC長 & OCs</strong>",
+        "manpower":"<strong>營長 & 副營 & 物資長 & OC長 & OCs</strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
-   },{
-       "startTime": "22:00",
-        "endTime":"22:30",
-        "activity":"活動總結",
-        "venue": "",
-        "manpower":"<strong>營長</strong>",
-        "supplies":[],
-        "remarks":[]
    }]
 }]
