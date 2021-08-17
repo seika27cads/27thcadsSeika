@@ -26,8 +26,8 @@
     "eventName":"迎新日",
     "dateDetail":[{ "date":"2021年8月24日",
                     "color":"bg-always-dark",
-                    "url":"../Oday/odayIndex.html"}],
-    "content":"藉著不同種類的動漫畫及同人文化主題集體遊戲，提供一個讓參加者相聚和分享自己興趣的機會，並鼓勵他們投入大學生活，讓新生更加熟悉彼此，作為<a href='http://127.0.0.1:65090/odayIndex.html' style='text-decoration: none;color:black;'>平台</a>讓參加者交流關於動漫畫同人文化的心得和內容，藉此推廣動漫畫同人誌文化。"
+                    "url":"Oday/odayIndex.html"}],
+    "content":"藉著不同種類的動漫畫及同人文化主題集體遊戲，提供一個讓參加者相聚和分享自己興趣的機會，並鼓勵他們投入大學生活，讓新生更加熟悉彼此，作為<a href='Oday/odayIndex.html' style='text-decoration: none;color:black;'>平台</a>讓參加者交流關於動漫畫同人文化的心得和內容，藉此推廣動漫畫同人誌文化。"
 },{
     "eventName":"迎新夜",
     "dateDetail":[{ "date":"2021年8月27日",
