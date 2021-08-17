@@ -17,8 +17,11 @@
 	<link rel="stylesheet" href="darkMode/dark-mode.css">
 	<script>
 		$(document).ready(function() {
-			$('.mainContent').load("home.html");
-			$('#index, .icon').click(function() {
+			$('.mainContent').load("InvitationCard.html");
+			$('.icon').click(function() {
+				$('.mainContent').load("InvitationCard.html");
+			});
+			$('#index').click(function() {
 				$('.mainContent').load("home.html");
 			});
 			$('#event').click(function() {
