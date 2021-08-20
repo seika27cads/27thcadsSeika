@@ -1,10 +1,8 @@
 
-
 	.memeberList {
 		max-height: 500px;
 		overflow: scroll;
 	}
-
 	.memeberList .memeber {
 		width: 100%;
 		height: 50px;
@@ -12,27 +10,22 @@
 		padding: 15px 0px;
 		border-bottom: 1px solid white;
 	}
-
 	.memeber:hover div:first-child {
 		font-size: 24px;
 		font-weight: bold;
 	}
-
 	.member div {
 		margin: 50px;
 	}
-
 	::-webkit-scrollbar {
 		width: 0px;
 	}
-
 	.toolBar {
 		margin-top: 15px;
 		width: 100%;
 		border-radius: 15px;
 		height: 40px;
 	}
-
 	.toolBar input {
 		width: 100%;
 	}
