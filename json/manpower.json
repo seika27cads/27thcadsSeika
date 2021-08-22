@@ -9,10 +9,6 @@
 		"name":"Yuki",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
-	},{
-		"name":"Iris",
-		"role":"組仔女",
-		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"赤日",
@@ -25,10 +21,6 @@
 		"name":"Daniel",
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
-	},{
-		"name":"",
-		"role":"組仔女",
-		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"黃昏",
@@ -41,10 +33,6 @@
 		"name":"Pansy",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
-	},{
-		"name":"Ryan",
-		"role":"組仔女",
-		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"東雲",
@@ -57,9 +45,5 @@
 		"name":"Ivy",
 		"role":"組媽",
 		"changeOf":"處理DORM一切事務"
-	},{
-		"name":"Michael",
-		"role":"組仔女",
-		"changeOf":"參與Oday&Onight"
 	}]
 }]
