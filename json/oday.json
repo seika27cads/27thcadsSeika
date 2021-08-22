@@ -7,7 +7,7 @@
         "venue": "soc房",
         "manpower":"<strong>所有莊員</strong>",
         "supplies":["OC Tshirt"],
-        "remarks":["場地準備:<br>中國銀行（香港）綜合樓七樓學生會會室:<br><br><br><br>","影場地相","準備OC Tshirt", "點算物資", "放置物資跟到7217"],
+        "remarks":["場地準備:<br>中國銀行（香港）綜合樓七樓學生會會室:<br>7215, 7217, 7219, 7220","影場地相","準備OC Tshirt", "點算物資", "放置物資跟到7217"],
 	    "Content":[]
    }]
 },{ "bothevent":true,
@@ -68,8 +68,8 @@
 	    "Content":["圍圈而坐","每dorm選出一個代表離場。","小組再推舉一位「領袖」；「領袖」負責帶領各人做動作，包括：拍手、點頭、大笑、拍膊頭、拍大脾等；","開始首個動作後，離場者便可回來","站在圓心猜測誰是領袖","離場者可猜3次，輸的人自我介紹一分鐘"]
 
    },{
-       "startTime": "12:00",
-        "endTime":"12:25",
+       "startTime": "11:45",
+        "endTime":"11:55",
         "activity":"FM集合",
         "venue": "香港城市大學邵逸夫圖書館外",
         "manpower":"<strong>副營 &&(組爸媽及組爸媽)</strong>",
@@ -80,8 +80,8 @@
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "12:25",
-        "endTime":"12:30",
+       "startTime": "11:55",
+        "endTime":"12:00",
         "activity":"前往破冰場地",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong>ALL FM && 副營 &&(組爸媽及組爸媽)</strong>",
@@ -93,7 +93,7 @@
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "12:30",
+       "startTime": "12:00",
         "endTime":"13:00",
         "activity":"破冰GAME",
         "venue": "7215, 7217, 7219, 7220",
@@ -103,11 +103,110 @@
 	    "Content":["玩法: 無中生友 <br> 參加者獲發每人一枝筆及一張印有3X3格子的BINGO紙。參加者先將自已喜愛的事物寫在格子內，內容的自由度非常低，如喜愛的作品名。俾5分鐘時間寫，9個有關動漫嘅項目，填寫完成後。參加者可在10分鐘內詢問其他參加者，係問對方之前要稍微自我介紹先，並互相觀看對方的BINGO紙，如發現對方與自己一樣喜觀相同的東西，便可在自己的紙上圈起讓項東西。最快圈出事物成1直 / 橫 / 斜線的參加者便是贏家,<br><hr>","玩法: 估領袖 <br>圍圈而坐，每dorm選出一個代表離場，小組再推舉一位「領袖」；「領袖」負責帶領各人做動作，包括：拍手、點頭、大笑、拍膊頭、拍大脾等；開始首個動作後，離場者便可回來，站在圓心猜測誰是領袖，每人可猜3次，輸的人自我介紹一分鐘。"]
 
    }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "13:00",
+        "endTime":"13:05",
+        "activity":"OC前往所屬地點&&Set up場地",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong>OC</strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
+   },{
+       "startTime": "13:00",
+        "endTime":"13:05",
+        "activity":"FM協助清理場地-準備Round1",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong>組爸媽奶 && FM</strong>",
+        "supplies":[],
+        "remarks":["有GAME玩真的很興奮"],
+	    "Content":["7219 - 動漫問答 (紅A vs 藍A)", "7220 - 大電視(橙A vs 粉紅A)", "7217 - 雲畫之月(橙B vs 藍B)", "7215- 猜猜畫畫(紅B vs 粉紅B)"]
+   }]
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "13:00",
-        "endTime":"13:15",
+       "startTime": "13:05",
+        "endTime":"13:30",
+        "activity":"進行分組遊戲-Round1",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong>OC</strong>",
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
+        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "13:30",
+        "endTime":"13:35",
+        "activity":"清理場地",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong><br>OCs</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   },{
+       "startTime": "13:30",
+        "endTime":"13:35",
+        "activity":"轉場地-準備Round2",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["7200 - 動漫問答 (紅B vs 藍B)"," 7217 - 大電視(橙B vs 粉紅B)"," 7219 - 雲畫之月(橙A vs 藍A)"," 7220- 猜猜畫畫(紅A vs 粉紅A)"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "13:35",
+        "endTime":"14:00",
+        "activity":"進行分組遊戲-Round2",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong>OC</strong>",
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
+        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
+   }]
+},{ "bothevent":true,
+   "AFKtime":false,
+   "setup":[{
+       "startTime": "14:05",
+        "endTime":"14:05",
+        "activity":"清理場地",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong><br>OCs</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":[]
+   },{
+       "startTime": "14:05",
+        "endTime":"14:05",
+        "activity":"轉場地-準備Round3",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["7200 - 動漫問答 (橙B vs 粉紅A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 粉紅B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "14:05",
+        "endTime":"14:30",
+        "activity":"進行分組遊戲-Round3",
+        "venue": "7215, 7217, 7219, 7220",
+        "manpower":"<strong>OC</strong>",
+        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
+        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
+	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, Tiffany</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "14:30",
+        "endTime":"14:35",
         "activity":"準備聚餐",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong>ALL people</strong>",
@@ -119,54 +218,20 @@
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "13:15",
-        "endTime":"14:00",
+       "startTime": "14:35",
+        "endTime":"15:30",
         "activity":"聚餐",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong>ALL people || Only 組爸媽奶 && FM??</strong>",
         "supplies":[],
         "remarks":["洗手"],
 	    "Content":[]
-
    }]
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
-       "startTime": "14:00",
-        "endTime":"14:05",
-        "activity":"OC前往所屬地點&&Set up場地",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong>OC</strong>",
-        "supplies":[],
-        "remarks":[],
-	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
-   },{
-       "startTime": "14:00",
-        "endTime":"14:15",
-        "activity":"FM協助清理場地-準備Round1",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong>組爸媽奶 && FM</strong>",
-        "supplies":[],
-        "remarks":["有GAME玩真的很興奮"],
-	    "Content":["7219 - 動漫問答 (紅A vs 藍A)", "7220 - 大電視(橙A vs 粉紅A)", "7217 - 雲畫之月(橙B vs 藍B)", "7215- 猜猜畫畫(紅B vs 粉紅B)"]
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
-       "startTime": "14:15",
-        "endTime":"14:40",
-        "activity":"進行分組遊戲-Round1",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong>OC</strong>",
-        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
-        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
-   }]
-},{ "bothevent":true,
-   "AFKtime":false,
-   "setup":[{
-       "startTime": "14:40",
-        "endTime":"14:45",
+       "startTime": "15:25",
+        "endTime":"15:35",
         "activity":"清理場地",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong><br>OCs</strong> ",
@@ -174,74 +239,8 @@
         "remarks":[],
 	    "Content":[]
    },{
-       "startTime": "14:40",
-        "endTime":"14:45",
-        "activity":"轉場地-準備Round2",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
-        "supplies":[],
-        "remarks":[],
-	    "Content":["7200 - 動漫問答 (紅B vs 藍B)"," 7217 - 大電視(橙B vs 粉紅B)"," 7219 - 雲畫之月(橙A vs 藍A)"," 7220- 猜猜畫畫(紅A vs 粉紅A)"]
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
-       "startTime": "14:45",
-        "endTime":"15:10",
-        "activity":"進行分組遊戲-Round2",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong>OC</strong>",
-        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
-        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, 熙仔</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
-   }]
-},{ "bothevent":true,
-   "AFKtime":false,
-   "setup":[{
-       "startTime": "15:10",
-        "endTime":"15:15",
-        "activity":"清理場地",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong><br>OCs</strong> ",
-        "supplies":[],
-        "remarks":[],
-	    "Content":[]
-   },{
-       "startTime": "15:10",
-        "endTime":"15:15",
-        "activity":"轉場地-準備Round3",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
-        "supplies":[],
-        "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙B vs 粉紅A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 粉紅B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
-   }]
-},{ "bothevent":false,
-   "AFKtime":true,
-   "setup":[{
-       "startTime": "15:15",
-        "endTime":"15:40",
-        "activity":"進行分組遊戲-Round3",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong>OC</strong>",
-        "supplies":["大電視: 1部Tablet, 2枝筆, 2張四Round GAME 計分紙","動漫間答: 1部Tablet, 2枝筆,4張印有入Discord的QRcode紙,計分excel","猜猜畫畫:一塊白板, 2個白板擦, 4枝白板筆, 1部tablet/phone ","雲畫之月: 100張白紙, 2部tablet/phone, 40枝筆"],
-        "remarks":["MC: 說明遊戲規則 && 發問問題 && 刻對答案 && 睇邊組舉手快 ","OC: 計分 && 計時"],
-	    "Content":["動漫問答 :<strong><br>MC:吖樂 <br> OC:HOHO, Tiffany</strong><br>","大電視: <strong><br>MC: Cyy, JC<br> OC: Andy<br></strong> ","雲畫之月:<strong><br>MC: Yoyo <br> OC: Zoe, Calvin </strong> <br>","猜猜畫畫:<strong><br>MC: Ellie, <br>OC: Joyce, Mitchell </strong><br>"]
-   }]
-},{ "bothevent":true,
-   "AFKtime":false,
-   "setup":[{
-       "startTime": "15:40",
-        "endTime":"15:45",
-        "activity":"清理場地",
-        "venue": "7215, 7217, 7219, 7220",
-        "manpower":"<strong><br>OCs</strong> ",
-        "supplies":[],
-        "remarks":[],
-	    "Content":[]
-   },{
-       "startTime": "15:40",
-        "endTime":"15:45",
+       "startTime": "15:25",
+        "endTime":"15:35",
         "activity":"轉場地-準備Round4",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
@@ -252,8 +251,8 @@
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "15:45",
-        "endTime":"16:10",
+       "startTime": "15:35",
+        "endTime":"16:00",
         "activity":"進行分組遊戲-Round4",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong>OC</strong>",
@@ -264,8 +263,8 @@
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
-       "startTime": "16:10",
-        "endTime":"16:15",
+       "startTime": "16:00",
+        "endTime":"16:10",
         "activity":"清理場地",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong><br>OCs</strong> ",
@@ -275,10 +274,10 @@
    },{
        "startTime": "16:10",
         "endTime":"16:15",
-        "activity":"前往房間集合-準備動漫劇情扮演",
+        "activity":"前往房間集合 - 準備動漫劇情扮演",
         "venue": "7217",
         "manpower":"<strong>營長</strong>",
-        "supplies":["4份劇情稿","Cosplay衫","Cosplay衫"],
+        "supplies":["4份劇情稿","Cosplay衫","物資"],
         "remarks":["負責房間的OC,清理場地"],
 	    "Content":[]
    }]
