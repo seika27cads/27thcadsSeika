@@ -11,8 +11,8 @@
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Iris",
-		"role":"組奶",
-		"changeOf":"協助組爸媽 && 炒熱氣氛"
+		"role":"組仔女",
+		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"赤日",
@@ -26,9 +26,9 @@
 		"role":"組爸",
 		"changeOf":"處理DORM一切事務"
 	},{
-		"name":"Tiffany",
-		"role":"組奶",
-		"changeOf":"協助組爸媽 && 炒熱氣氛"
+		"name":"",
+		"role":"組仔女",
+		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"黃昏",
@@ -43,8 +43,8 @@
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Ryan",
-		"role":"組奶",
-		"changeOf":"協助組爸媽 && 炒熱氣氛"
+		"role":"組仔女",
+		"changeOf":"參與Oday&Onight"
 	}]
 },{
 	"dorm":"東雲",
@@ -59,7 +59,7 @@
 		"changeOf":"處理DORM一切事務"
 	},{
 		"name":"Michael",
-		"role":"組奶",
-		"changeOf":"協助組爸媽 && 炒熱氣氛"
+		"role":"組仔女",
+		"changeOf":"參與Oday&Onight"
 	}]
 }]
