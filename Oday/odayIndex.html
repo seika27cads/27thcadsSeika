@@ -53,6 +53,7 @@
 			});
 			$('#twoDMenuContent').hide();
 		});
+
 	</script>
 </head>
 <style>
@@ -119,7 +120,7 @@
 	}
 
 	.documents .nav-item:hover,
-	.dropdown .dropdown-content a:hover{
+	.dropdown .dropdown-content a:hover {
 		background-color: #ffc107 !important;
 		text-shadow: 2px 3px 2px white;
 	}
@@ -157,29 +158,30 @@
 
 
 	.dropdown {
-  position: relative;
-  display: inline-block;
-}
+		position: relative;
+		display: inline-block;
+	}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 50px;
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 50px;
 
-  z-index: 1;
-}
+		z-index: 1;
+	}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
 </style>
 
 <body class="bg-light" onload="checkCookie()">
 	<nav class="navbar navbar-fixed-top navbar-white bg-white d-flex justify-content-around indigo">
 		<div class="d-flex flex-row navbar-nav">
 			<img src="../img/commonUsageImg/icon3.png" class="icon" id="info">
-			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index ">漫衍菁華</a>
+			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index">漫衍菁華</a>
 			<div class="nav-item nav-link m-2 p-1 text-dark dropdown">
 				<span>活動流程</span>
 				<div class="dropdown-content" style="z-index: 5;">
@@ -223,9 +225,10 @@
 	</div>
 	<script>
 		var mybutton = document.getElementById("topBtn");
-			window.onscroll = function() {
+		window.onscroll = function() {
 			scrollFunction()
 		};
+
 		function scrollFunction() {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
@@ -233,10 +236,13 @@
 				mybutton.style.display = "none";
 			}
 		}
+
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
 
 	</script>
-</body></html>
+</body>
+
+</html>
