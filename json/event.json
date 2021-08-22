@@ -19,13 +19,13 @@
 },{
     "eventName":"城大新生註冊日",
     "dateDetail":[{ "date":"2021年8月18日至21日",
-                    "color":"bg-always-dark",
+                    "color":"bg-success",
                     "url":""}],
     "content":"簡介基本會員福利（漫畫圖書館內借還服務，本會所舉辦的活動及與本內閣合作之贊助商所提供的折扣優惠），宣傳迎新日及迎新夜，提供迎新日和迎新夜報名服務"
 },{
     "eventName":"迎新日",
     "dateDetail":[{ "date":"2021年8月24日",
-                    "color":"bg-always-dark",
+                    "color":"bg-warning",
                     "url":"Oday/odayIndex.html"}],
     "content":"藉著不同種類的動漫畫及同人文化主題集體遊戲，提供一個讓參加者相聚和分享自己興趣的機會，並鼓勵他們投入大學生活，讓新生更加熟悉彼此，作為<a href='Oday/odayIndex.html' style='text-decoration: none;color:black;'>平台</a>讓參加者交流關於動漫畫同人文化的心得和內容，藉此推廣動漫畫同人誌文化。"
 },{
