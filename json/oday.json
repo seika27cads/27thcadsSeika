@@ -108,7 +108,7 @@
    },{
        "startTime": "13:00",
         "endTime":"13:05",
-        "activity":"FM協助清理場地-準備Round1",
+        "activity":"FM協助清理場地-準備Round1 (FAKE)",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong>組爸媽奶 && FM</strong>",
         "supplies":[],
@@ -141,7 +141,7 @@
    },{
        "startTime": "13:30",
         "endTime":"13:35",
-        "activity":"轉場地-準備Round2",
+        "activity":"轉場地-準備Round2 (FAKE)",
         "venue": "7215, 7217, 7219, 7220",
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
