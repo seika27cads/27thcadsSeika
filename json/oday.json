@@ -206,6 +206,18 @@
 	    "Content":[]
 
    }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "14:40",
+        "endTime":"16:00",
+        "activity":"聚餐",
+        "venue": "6203, 7215, 7219",
+        "manpower":"<strong>ALL people</strong>",
+        "supplies":[],
+        "remarks":["洗手"],
+	    "Content":["如果3點要reg科的FM, 組爸媽去協助FM"]
+   }]
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
@@ -223,7 +235,7 @@
         "activity":"前往房間集合 - 準備動漫劇情扮演",
         "venue": "7215",
         "manpower":"<strong>營長</strong>",
-        "supplies":["4份劇情稿","Cosplay衫"],
+        "supplies":["4份劇情稿","Cosplay衫","物資"],
         "remarks":["負責房間的OC,清理場地"],
 	    "Content":[]
    }]
