@@ -10,7 +10,7 @@
         "remarks":["場地準備:<br>中國銀行（香港）綜合樓七樓學生會會室:<br>7215, 7217, 7219, 7220","影場地相","準備OC Tshirt", "點算物資", "放置物資跟到7217"],
 	    "Content":[]
    }]
-},{ "bothevent":true,
+},{ "bothevent":false,
     "AFKtime":false,
    "setup":[{
        "startTime": "11:00",
@@ -19,16 +19,7 @@
         "venue": "soc房",
         "manpower":"<strong>營長(申展)<br>副營(QIVY)<br>物資長(白龍)<br>OC長(KEN)</strong>",
         "supplies":["100無中生有紙","2個探熱槍","2枝消毒洗手液"],
-        "remarks":["準備聚餐食物(最遲12:15要拿到)","準備聚餐物資","準備破冰物資"],
-	    "Content":[]
-   },{
-       "startTime": "11:30",
-        "endTime":"12:00",
-        "activity":"Walkin FM",
-        "venue": "中國銀行（香港）綜合樓七樓學生會會室7217",
-        "manpower":"<strong>營長 </strong>",
-        "supplies":["人名表","黃單","2*筆"],
-        "remarks":["收錢","加人名落dorm"],
+        "remarks":["準備聚餐物資","準備破冰物資"],
 	    "Content":[]
    }]
 },{ "bothevent":false,
@@ -75,7 +66,7 @@
         "manpower":"<strong>副營 &&(組爸媽及組爸媽)</strong>",
         "supplies":["點名紙"],
         "remarks":[],
-	    "Content":["FM點名"]
+	    "Content":["組爸組媽FM點名"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -122,7 +113,7 @@
         "manpower":"<strong>組爸媽奶 && FM</strong>",
         "supplies":[],
         "remarks":["有GAME玩真的很興奮"],
-	    "Content":["7219 - 動漫問答 (紅A vs 藍A)", "7220 - 大電視(橙A vs 粉紅A)", "7217 - 雲畫之月(橙B vs 藍B)", "7215- 猜猜畫畫(紅B vs 粉紅B)"]
+	    "Content":["7220 - 動漫問答 (紅A vs 藍A)", "7219 - 大電視(橙A vs 粉紅A)", "7217 - 雲畫之月(橙B vs 藍B)", "7215- 猜猜畫畫(紅B vs 粉紅B)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -155,7 +146,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (紅B vs 藍B)"," 7217 - 大電視(橙B vs 粉紅B)"," 7219 - 雲畫之月(橙A vs 藍A)"," 7220- 猜猜畫畫(紅A vs 粉紅A)"]
+	    "Content":["7220 - 動漫問答 (紅B vs 藍B)"," 7219 - 大電視(橙B vs 粉紅B)"," 7217 - 雲畫之月(橙A vs 藍A)"," 7215- 猜猜畫畫(紅A vs 粉紅A)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -188,7 +179,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙B vs 粉紅A)"," 7217 - 大電視(藍A vs 紅B)","7219 - 雲畫之月(紅A vs 粉紅B)"," 7220- 猜猜畫畫(藍B vs 橙A)"]
+	    "Content":["7220 - 動漫問答 (橙B vs 粉紅A)"," 7219 - 大電視(藍A vs 紅B)","7217 - 雲畫之月(紅A vs 粉紅B)"," 7215- 猜猜畫畫(藍B vs 橙A)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -246,7 +237,7 @@
         "manpower":"<strong><br>組爸媽奶 && FM</strong> ",
         "supplies":[],
         "remarks":[],
-	    "Content":["7200 - 動漫問答 (橙A vs 粉紅B)"," 7217 - 大電視(藍B vs 紅A)"," 7219 - 雲畫之月(紅B vs 粉紅A)"," 7220- 猜猜畫畫(藍A vs 橙B)"]
+	    "Content":["7220 - 動漫問答 (橙A vs 粉紅B)"," 7219 - 大電視(藍B vs 紅A)"," 7217 - 雲畫之月(紅B vs 粉紅A)"," 7215- 猜猜畫畫(藍A vs 橙B)"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
@@ -303,7 +294,7 @@
         "manpower":"ALL people",
         "supplies":[],
         "remarks":[],
-	    "Content":["藍:7200","橙:7217","紅:7219","粉紅:7220"]
+	    "Content":["藍:7217","橙:7220","紅:7219","粉紅:7215"]
    }]
 },{ "bothevent":false,
    "AFKtime":true,
