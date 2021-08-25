@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Oday</title>
+	<title>Onight</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../img/commonUsageImg/icon3.png" />
+	<link rel="icon" href="../img/commonUsageImg/icon2.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
 	<!--Bootstrap js-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -64,11 +64,9 @@
 		object-fit: cover;
 		border-radius: 50%;
 	}
-
 	.nav-item {
 		cursor: pointer;
 	}
-
 	/*BaseInfo*/
 	.myMemo {
 		position: absolute;
@@ -81,12 +79,10 @@
 		box-shadow: 5px 5px 5px grey;
 		margin-top: 10px;
 	}
-
 	.rotate {
 		animation: rotate 4s infinite ease-in-out;
 
 	}
-
 	.notesItem {
 		padding: 2px 15px;
 		height: 40px;
@@ -94,7 +90,6 @@
 		font-family: 'Reenie Beanie';
 		font-size: 18px;
 	}
-
 	@keyframes rotate {
 		0% {
 			transform: perspective(1000px) rotateY(4deg);
@@ -108,29 +103,24 @@
 			transform: perspective(1000px) rotateY(4deg);
 		}
 	}
-
 	.twoDMenu,
 	twoDMenu0 {
 		position: absolute;
 		background-color: red;
 	}
-
 	#twoDMenuContent {
 		z-index: 5;
 	}
-
 	.documents .nav-item:hover,
 	.dropdown .dropdown-content a:hover {
 		background-color: #ffc107 !important;
 		text-shadow: 2px 3px 2px white;
 	}
-
 	.toolset {
 		position: fixed;
 		bottom: 5%;
 		right: 5%;
 	}
-
 	.toolset button {
 		display: none;
 		z-index: 99;
@@ -143,25 +133,19 @@
 		height: 50px;
 		border-radius: 4px;
 	}
-
 	#topBtn:hover {
 		background-color: gray;
 	}
-
 	#addShape {
 		min-height: 100px;
 	}
-
 	#addShape {
 		clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
 	}
-
-
 	.dropdown {
 		position: relative;
 		display: inline-block;
 	}
-
 	.dropdown-content {
 		display: none;
 		position: absolute;
@@ -170,26 +154,23 @@
 
 		z-index: 1;
 	}
-
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
-
 </style>
-
 <body class="bg-light" onload="checkCookie()">
-	<nav class="navbar navbar-fixed-top navbar-white bg-white d-flex justify-content-around indigo">
+	<nav class="navbar navbar-fixed-top d-flex justify-content-around indigo" style="">
 		<div class="d-flex flex-row navbar-nav">
-			<img src="../img/commonUsageImg/icon3.png" class="icon" id="info">
+			<img src="../img/commonUsageImg/icon2.png" class="icon" id="info">
 			<a class="nav-item nav-link m-2 p-1 text-dark d-none d-md-block" id="index">漫衍菁華</a>
 			<div class="nav-item nav-link m-2 p-1 text-dark dropdown">
 				<span>活動流程</span>
 				<div class="dropdown-content" style="z-index: 5;">
-					<a class="nav-item nav-link  p-3 text-dark bg-white" id='event'>ODay </a>
-					<a class="nav-item nav-link d-none p-3 text-dark bg-white" id='oNight'>ONight</a>
+					<a class="nav-item nav-link  p-3 text-dark bg-white d-none" id='event'>ODay </a>
+					<a class="nav-item nav-link  p-3 text-dark bg-white" id='oNight'>ONight</a>
 				</div>
 			</div>
-			<div class="nav-item position-relative" id="twoDMenu">
+			<div class="nav-item position-relative d-none" id="twoDMenu">
 			</div>
 		</div>
 		<div>
@@ -201,7 +182,9 @@
 	<div class="showContent" id="content">
 	</div>
 	<div class="toolset">
-		<button onclick="topFunction()" id="topBtn" class="bg-dark"><i class="fas fa-angle-double-up"></i></button>
+		<button onclick="topFunction()" id="topBtn" class="bg-dark">
+			<i class="fas fa-angle-double-up"></i>
+		</button>
 	</div>
 	<div style="margin: -20px;">
 	</div>
