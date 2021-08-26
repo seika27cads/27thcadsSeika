@@ -25,11 +25,11 @@
 },{ "bothevent":false,
     "AFKtime":true,
    "setup":[{
-       "startTime": "14:00",
-        "endTime":"14:30",
+       "startTime": "13:45",
+        "endTime":"14:00",
         "activity":"新生集合",
         "venue": "香港城市大學邵逸夫圖書館外",
-        "manpower":"<strong>OC長</strong>",
+        "manpower":"<strong>組爸媽</strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
@@ -37,22 +37,34 @@
 },{ "bothevent":false,
    "AFKtime":true,
    "setup":[{
-       "startTime": "14:30",
-        "endTime":"15:00",
-        "activity":"活動簡介& 破冰",
-        "venue": "",
+       "startTime": "14:00",
+        "endTime":"14:45",
+        "activity":"破冰",
+        "venue": "7215,7220,7200",
         "manpower":"<strong>副營長</strong>",
         "supplies":[],
-        "remarks":[],
+        "remarks":["藍:7215, 橙:7215, 紅:7200, 粉:7200"],
+	    "Content":[]
+   }]
+},{ "bothevent":false,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "14:45",
+        "endTime":"15:00",
+        "activity":"Briefing (講city Hunter, 晚飯時間, 集合時間)",
+        "venue": "7215,7220,7200",
+        "manpower":"<strong>副營長</strong>",
+        "supplies":[],
+        "remarks":["藍:7215, 紅:7200, 橙:7215,  粉:7200"],
 	    "Content":[]
    }]
 },{ "bothevent":true,
    "AFKtime":false,
    "setup":[{
-       "startTime": "17:00",
-        "endTime":"18:00",
-        "activity":"OC集合 & 準備物資 & 練習Dgame",
-        "venue": "7217",
+       "startTime": "16:30",
+        "endTime":"17:00",
+        "activity":"OC集合 ",
+        "venue": "7215",
         "manpower":"<strong></strong>",
         "supplies":[],
         "remarks":[],
@@ -67,19 +79,31 @@
         "remarks":[],
 	    "Content":[]
    }]
-},{ "bothevent":true,
-   "AFKtime":true,
+},{ "bothevent":false,
+   "AFKtime":false,
    "setup":[{
-       "startTime": "17:45",
-        "endTime":"18:45",
-        "activity":"晚飯時段",
-        "venue": "",
+       "startTime": "17:00",
+        "endTime":"17:30",
+        "activity":"準備物資 & SetUp場地",
+        "venue": "7217",
         "manpower":"<strong></strong>",
         "supplies":[],
         "remarks":[],
 	    "Content":[]
+   }]
+},{ "bothevent":true,
+   "AFKtime":true,
+   "setup":[{
+       "startTime": "17:30",
+        "endTime":"18:30",
+        "activity":"OC晚飯時段",
+        "venue": "",
+        "manpower":"<strong></strong>",
+        "supplies":[],
+        "remarks":[],
+	    "Content":["OC要Dgame前10分鐘準備"]
    },{
-       "startTime": "17:45",
+       "startTime": "17:30",
         "endTime":"18:30",
         "activity":"晚飯時段",
         "venue": "7215",
@@ -99,7 +123,7 @@
         "supplies":[],
         "remarks":[]
    },{
-       "startTime": "19:00",
+       "startTime": "18:30",
         "endTime":"22:00",
         "activity":"偵探遊戲",
         "venue": "7217",
