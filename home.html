@@ -2,161 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>CityU Seika</title>
+	<meta charset="UTF-8">
+	<title>CityU Seika</title>
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="icon" href="img/login.png" />
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="design.css">
-    <!--Dark mode-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="darkMode/dark-mode.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="icon" href="img/login.png" />
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="design.css">
+	<!--Dark mode-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="darkMode/dark-mode.css">
 </head>
 <style>
-    .bg1 {
-        background-image: url('img/Bgimg/banner.png');
-        height: 100%;
-        min-height: 400px;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-	.seikaImg{
-		top:-30%;
+	.bg1 {
+		background-image: url('img/Bgimg/banner.png');
+		height: 100%;
+		min-height: 400px;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.seikaImg {
+		top: -30%;
 		height: 230px;
 		float: left;
 	}
-	.introduce{
+
+	.introduce {
 		height: 200px;
 		margin: 50px auto;
 		font-size: 24px;
 	}
+
 	.imgWord {
-        width: 210px;
-        animation-name: toChangeWeight;
-        animation-duration: 2s;
+		width: 210px;
+		animation-name: toChangeWeight;
+		animation-duration: 2s;
 
-    }
-    .thxImg{
-        animation: toChangeOpacity 3s infinite ease-in-out;
-    }
+	}
 
-    @keyframes toChangeOpacity {
-        0% {
-            transform: perspective(1000px) rotateY(-4deg);
-        }
-        25% {
-            transform: perspective(1100px) rotateX(5deg);
-        }
-        50% {
-            transform: perspective(1000px) rotateY(-6deg);
-        }
+	.thxImg {
+		animation: toChangeOpacity 3s infinite ease-in-out;
+	}
 
-        75% {
-            transform: perspective(900px) rotateX(-4deg);
-        }
-        100% {
-            transform: perspective(1000px) rotateY(-4deg);
-        }
-    }
-    @keyframes toChangeWeight {
-        from {
-            margin-left: 100%;
-        }
+	@keyframes toChangeOpacity {
+		0% {
+			transform: perspective(1000px) rotateY(-4deg);
+		}
 
-        to {
-            margin-left: 0%;
-        }
-    }
+		25% {
+			transform: perspective(1100px) rotateX(5deg);
+		}
+
+		50% {
+			transform: perspective(1000px) rotateY(-6deg);
+		}
+
+		75% {
+			transform: perspective(900px) rotateX(-4deg);
+		}
+
+		100% {
+			transform: perspective(1000px) rotateY(-4deg);
+		}
+	}
+
+	@keyframes toChangeWeight {
+		from {
+			margin-left: 100%;
+		}
+
+		to {
+			margin-left: 0%;
+		}
+	}
 </style>
 
-<body class="">
-    <div class="container-fluid bg-white">
-        <section class=" container  mt-2 mb-2 p-3 ">
-            <div class="text-center">
-                <h1>
-                    香港城市大學學生會
-                    <br>第二十七屆動漫畫同人誌幹事會
-                    <br>漫衍菁華🌺
-                </h1>
-                <hr>
-                大家好！！我哋係香港城市大學學生會第27屆動漫畫同人誌幹事會《漫衍菁華》٩(˃̶͈̀௰˂̶͈́)و
-            </div>
-        </section>
-        <div class="bg1 position-relative">
-            <div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>\成功上莊/</h2>
-            </div>
-        </div>
-        <section class=" container  p-3  position-relative">
-            我哋漫衍菁華成功當選！！~\(≧▽≦)/~
-            多謝各位會員對我哋嘅支持同埋你哋所投嘅每一票
-            <br><br>
-            感謝各位一直對我哋嘅支持同埋鼓勵🙌🏻 我哋《漫衍菁華》終於正式上任啦😆🎉🎊 有你哋大家嘅支持先至有今日嘅我哋❣️❣️嚟緊嘅呢一年，我哋《漫衍菁華》將不遺餘力咁為大家服務💪🏻💪🏻希望可以為每一位會員帶嚟歡樂，同埋更享受大學嘅生活🔥
-            <br><br>
-            <hr>
-            最新消息我哋會即刻向大家宣布！請大家多啲留意我哋嘅Facebook同Instagram(*/ω＼*)
-            最後！再一次感謝大家嘅支持！嚟緊呢一年請大家多多指教(≧∇≦)و
-        </section>
-        <div class="bg1 position-relative">
-            <div class="imgWord position-absolute top-50 start-50 text-center bg-light pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>Thank you!!</h2>
-            </div>
-        </div>
-        <section class=" container  mt-2 mb-2 p-3 position-relative d-flex flex-column">
-            <div class="row  row-cols-sm-1 row-cols-md-2 ">
-                <img src="img/thx/2.png" alt="" class="position-relative thxImg">
-                <img src="img/thx/1.JPG" alt="" class="position-relative thxImg">
-                <img src="img/thx/3.JPG" alt="" class="position-relative thxImg">
-                <img src="img/thx/4.jpg" alt="" class="position-relative thxImg">
-            </div>
-        </section>
-        <div class="bg1 position-relative">
-            <div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
-                <h2>福利提供</h2>
-            </div>
-        </div>
-        <section class=" container  mt-2 mb-2 p-3 ">
-            <div class="text-center">
-            </div>
-        </section>
-        <section class=" container">
-            <hr>
-            <div class="d-flex flex-row " style="min-height:300px;">
-                <div class="col-12 col-md-8  p-3">
-                    <h1></h1>
-                    號外！！！！🤩
-                    城大漫soc有幸可以同 Future Formula 合作，只要你係漫soc嘅基本會員，
-                    <br>
-                    並於 Future Formula 訂購商品時出示本會會員證，就可以：
-                    <ul>
-                        <li>以Future Formula 會員價格訂購商品</li>
-                        <li> 購物時將獲得額外 Future Formula印花(印花10個可當港幣$50使用）</li>
-                    </ul>
-                    <div class="text-danger">是次福利將會持續直至本會莊期結束，快啲趁住今次嘅機會將老婆/老公帶返屋企啦！</div>
+<body class="" >
+	<div class="container-fluid bg-white">
+		<section class=" container  mt-2 mb-2 p-3 ">
+			<div class="text-center">
+				<h1>
+					香港城市大學學生會
+					<br>第二十七屆動漫畫同人誌幹事會
+					<br>漫衍菁華🌺
+				</h1>
+				<hr>
+				大家好！！我哋係香港城市大學學生會第27屆動漫畫同人誌幹事會《漫衍菁華》٩(˃̶͈̀௰˂̶͈́)و
+			</div>
+		</section>
+		<div class="bg1 position-relative">
+			<div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
+				<h2>\成功上莊/</h2>
+			</div>
+		</div>
+		<section class=" container  p-3  position-relative">
+			我哋漫衍菁華成功當選！！~\(≧▽≦)/~
+			多謝各位會員對我哋嘅支持同埋你哋所投嘅每一票
+			<br><br>
+			感謝各位一直對我哋嘅支持同埋鼓勵🙌🏻 我哋《漫衍菁華》終於正式上任啦😆🎉🎊 有你哋大家嘅支持先至有今日嘅我哋❣️❣️嚟緊嘅呢一年，我哋《漫衍菁華》將不遺餘力咁為大家服務💪🏻💪🏻希望可以為每一位會員帶嚟歡樂，同埋更享受大學嘅生活🔥
+			<br><br>
+			<hr>
+			最新消息我哋會即刻向大家宣布！請大家多啲留意我哋嘅Facebook同Instagram(*/ω＼*)
+			最後！再一次感謝大家嘅支持！嚟緊呢一年請大家多多指教(≧∇≦)و
+		</section>
+		<div class="bg1 position-relative">
+			<div class="imgWord position-absolute top-50 start-50 text-center bg-light pt-2 px-4" style="transform: translate(-50%, -50%);">
+				<h2>Thank you!!</h2>
+			</div>
+		</div>
+		<section class=" container  mt-2 mb-2 p-3 position-relative d-flex flex-column">
+			<div class="row  row-cols-sm-1 row-cols-md-2 ">
+				<img src="img/thx/2.png" alt="" class="position-relative thxImg">
+				<img src="img/thx/1.JPG" alt="" class="position-relative thxImg">
+				<img src="img/thx/3.JPG" alt="" class="position-relative thxImg">
+				<img src="img/thx/4.jpg" alt="" class="position-relative thxImg">
+			</div>
+		</section>
+		<div class="bg1 position-relative">
+			<div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
+				<h2>福利提供</h2>
+			</div>
+		</div>
+
+		<section class=" container  mt-2 mb-2 p-3 ">
+			<div class="text-center">
+			</div>
+		</section>
+		<section class=" container">
+			<hr>
+			<div class="d-flex flex-row  " style="min-height:300px;">
+				<div class="col-12 col-md-8  p-3 ">
+					<h2> Future Formula </h2>
+
+					基本會員於 Future Formula 訂購商品時出示本會會員證，就可以：
+					<ul>
+						<li>以Future Formula 會員價格訂購商品</li>
+						<li> 購物時將獲得額外 Future Formula印花(印花10個可當港幣$50使用）</li>
+					</ul>
+					門市地址：旺角上海街450號慶華商業大廈7/F A1室
+				</div>
+				<div class="text-center d-none d-md-block">
+					<a target='_blank' href="https://www.instagram.com/p/CN2iT94hKsd/?utm_source=ig_web_copy_link"><img src="img/welfare/welfare.JPG" class="position-absolute" style="width:250px;height:250px;"></a>
+				</div>
+			</div>
+			<hr>
+			<div class="d-flex flex-row " style="min-height:300px;">
+				<div class="col-12 col-md-8  p-3">
+					<h2> Fatesouvenir </h2>
+					<br>
+					基本會員於 Fatesouvenir 門市購物時只要出示本會會員證：
+					<ul>
+						<li>即可以享有九折優惠</li>
+					</ul>
+					門市地址：旺角彌敦道608號W Plaza 123號舖
+				</div>
+				<div class="text-center d-none d-md-block">
+					<a target='_blank' href="https://www.instagram.com/p/CUjkrxBhoi7/?utm_source=ig_web_copy_link"><img src="img/welfare/fatesouvenir.png" class="position-absolute" style="width:250px;height:250px;"></a>
+				</div>
+			</div>
+			<hr>
+			<div class="d-flex flex-row " style="min-height:300px;">
+				<div class="col-12 col-md-8  p-3">
+					<h2> 東雲 </h2>
+					<br>
+					基本會員於 東雲 b26_instock 門市購物時只要出示本會會員證：
+					<ul>
+						<li>即可以享有門市購物優惠買滿$100 九五 折</li>
+						<li>或門市購物優惠買滿$200 九折</li>
+					</ul>
+					門市地址：旺角彌敦道582-592號信和中心地庫B26號店
+				</div>
+				<div class="text-center d-none d-md-block">
+					<a target='_blank' href="https://www.instagram.com/p/CUjlIEzBz3k/?utm_source=ig_web_copy_link"><img src="img/welfare/b26.png" class="position-absolute" style="width:250px;height:250px;"></a>
+				</div>
+			</div>
+		</section>
 
 
 
 
-                </div>
-                <div class="text-center d-none d-md-block">
-                    <a target='_blank' href="https://www.facebook.com/futureformula2014/"><img src="img/welfare/welfare.JPG" class="position-absolute" style="width:250px;height:250px;"></a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-
-    </div>
+	</div>
 
 </body></html>
