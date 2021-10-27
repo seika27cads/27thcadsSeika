@@ -1,7 +1,13 @@
 [{
     "eventName":"漫畫圖書館",
-    "dateDetail":[{ "date":"暫定",
-                    "color":"bg-danger",
+    "dateDetail":[{ "date":"星期二",
+                    "color":"bg-primary",
+                    "url":"https://www.instagram.com/p/CL3YX8khhhe/"}
+		 ,{ "date":"星期三",
+                    "color":"bg-primary",
+                    "url":"https://www.instagram.com/p/CL3YX8khhhe/"},
+		 { "date":"星期五",
+                    "color":"bg-primary",
                     "url":"https://www.instagram.com/p/CL3YX8khhhe/"}],
     "content":"為基本會員提供一個借閱漫畫的場所 給予基本會員一個交流和分享資訊心得的平台 給予基本會員一個向本候選內閣提供意見的平台 作為一個平台讓非基本會員了解本學會的文化 處理新會員入會或舊會員續會的平台"
 },{
