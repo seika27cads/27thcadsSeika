@@ -1,297 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-    .slideShow {
-        height: auto;
-        max-height: 610px;
-        width: auto;
-        text-align: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        left: 5px;
+        bottom:0;
     }
-    .slideShow img {
-        display: none;
-        width: auto;
-        max-height: 400px;
+    .divImg{
         position: relative;
-    }
-    .myMemo {
-        display: none;
-        width: 350px;
-        background-color: #EBEF67;
-        height: auto;
-        text-align: left;
-        box-shadow: 5px 5px 5px grey;
-    }
-    .notesItem {
-        padding: 2px 5px;
-        height: 40px;
-        border-bottom: 2px solid grey;
-        font-family: 'Reenie Beanie';
-        font-size: 20px;
-    }
-    .rotate {
-        animation: rotate 4s infinite ease-in-out;
-
-    }
-    .trapezoid {
-            margin-left: 5px;
-            height: 30px;
-            line-height:30px;
-            text-align: center;
-            background: #ddd;
-            transform: skewX(45deg);
-
-    }
-    .girl {
-        max-height: 220px;
-    }
-    #chick {
-        max-height: 220px;
-        width: auto;
-    }
-    .mySlides {
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    #personDetails {
-        height: 100vh;
-    }
-    .radioSet input:before {
-        content: attr(label);
-        display: inline-block;
+        z-index: 1;
+        width:450px;
+        height:650px;
+        margin: 10px auto;
         text-align: center;
-        width: 100%;
+        background-color: #3b4b52;
     }
-    .radioSet input {
-        width: 100px;
-        appearance: none;
-        cursor: pointer;
-        outline: none;
-        font-size: large;
+    .character{
+        display: flex;
+        flex-direction: column;
+    }
+    .description{
+        position: relative;
+        opacity: 0.7;
+        border: 2px solid white;
+        border-radius:8px;
+        background-color: white;
+        margin: 15px;
+        z-index: 2;
+    }
+    .name{
+        position: absolute;
+        z-index: 2;
+        bottom: 10px;
+        left: 50%;
+        background-color: #3b4b52;
+        border-radius: 15px;
+        padding:8px 12px;
+        transform : translate(-50%,0)  ;
+        color: aliceblue;
         font-weight: bold;
-
+        font-size: 30px;
     }
-    input[type="radio"]:checked {
-        color: white;
-        text-shadow: 0.1em 0.1em 0.2em black;
-        font-weight: bold;
-        font-size: 20px;
+    @media only screen and (min-width: 780px) {
+        .character{
+            display: flex;
+            flex-direction: row;
+        }
+	}
+
+	@media only screen and (min-width: 970px) {
+        
     }
-    input[type="radio"] {
-        font-size: 16px;
-        animation: choiceText 2s ;
 
-    }
-
-    @keyframes choiceText{
-        0%{
-            opacity: 0;
-
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    @keyframes choice{
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 100%;
-        }
-    }
-    @keyframes rotate {
-        0% {
-            transform: perspective(1000px) rotateY(4deg);
-        }
-
-        50% {
-            transform: perspective(1000px) rotateX(-5deg);
-        }
-
-        100% {
-            transform: perspective(1000px) rotateY(4deg);
-        }
-    }
-    @media only screen and (min-width: 750px) {
-        .myMemo {
-
-            transform: translate(-100px, -20%);
-        }
-        /*Choosing button*/
-        .radioSet input:before {
-            content: attr(label);
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-        }
-
-        .radioSet input {
-            width: 150px;
-            appearance: none;
-            cursor: pointer;
-            outline: none;
-            font-size: large;
-            font-weight: bold;
-
-        }
-
-        input[type="radio"]:checked {
-            color: white;
-            text-shadow: 0.1em 0.1em 0.2em black;
-            font-weight: bold;
-            font-size: 24px;
-
-        }
-
-        input[type="radio"] {
-            font-size: 20px;
-        }
-
-        .trapezoid {
-            margin-left: 15px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            background: #ddd;
-            transform: skewX(45deg);
-        }
-
-        .slideShow img,
-        #chick {
-            display: none;
-            width: auto;
-            max-height: 300px;
-            position: relative;
-        }
-
-        #personDetails {
-            height: 85vh;
-        }
-    }
-    @media only screen and (min-width: 970px) {
-        #chick {
-            max-height: 300px;
-            width: auto;
-        }
-
-        .slideShow img {
-            display: none;
-            width: auto;
-            max-height: 480px;
-            position: relative;
-        }
-
-        .myMemo {
-            width: 500px;
-            transform: translate(-80px, 0%);
-            display: none;
-            background-color: #EBEF67;
-            height: auto;
-            text-align: left;
-            box-shadow: 5px 5px 5px grey;
-
-        }
-
-        .notesItem {
-            padding: 2px 50px;
-            height: 50px;
-            border-bottom: 2px solid grey;
-            font-family: 'Reenie Beanie';
-            font-size: 1.75rem;
-        }
-
-        #personDetails {
-            height: 85vh;
-        }
-    }
-    @media only screen and (min-width: 1170px) {
-        #chick {
-            max-height: 380px;
-            width: auto;
-        }
-
-        .myMemo {
-            width: 500px;
-            transform: translate(-80px, 0%);
-        }
-
-        .slideShow img {
-            display: none;
-            width: auto;
-            max-height: 480px;
-            position: relative;
-        }
-    }
+	@media only screen and (min-width: 1170px) {}
 </style>
-
 <body>
-
-    <div class="container " id="personDetails">
-        <div class="d-flex justify-content-around my-3">
-            <div class="content w-100">
-                <div class="position d-flex justify-content-center ">
-                    <div class="radioSet  d-flex">
-                        <label class="trapezoid bg-danger" for="1">
-                            <input class="text" type="radio" name="position" id="1" label="菁" onclick="showDivs(1)" Checked>
-                        </label>
-
-                        <label class="trapezoid bg-success" for="2">
-                            <input class=" text" type="radio" name="position" id="2" label="華" style="" onclick="showDivs(0)">
-                        </label>
-                        <label class="trapezoid bg-warning" for="3">
-                            <input class=" text" type="radio" name="position" id="3" label="DChick" onclick="showDivs(2)">
-                        </label>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="slideShow ">
-            <div class="detail ">
-                <img class="mySlides" src="img/person/boy/boyBanner.png" alt="">
-                <div class="myMemo pt-3  rotate text-black">
-
-                    <div class="notesItem">名字：華</div>
+    <div class="character">
+        <div class="divImg">
+            <img class="mySlides" src="img/person/boy/boyBanner.png" alt="">
+            <div class="description">
                     <div class="notesItem">身高：183cm</div>
                     <div class="notesItem">生日：5月24日♊</div>
                     <div class="notesItem">年齡：21</div>
                     <div class="notesItem">性格：外冷內熱，慢熱</div>
                     <div class="notesItem">喜歡：研究新科技👩‍💻</div>
                     <div class="notesItem">討厭：輕易放棄 同伴受到傷害</div>
-
-                </div>
             </div>
-            <div class="detail"><img class="mySlides" src="img/person/girl/girlBanner.png" alt="" id="girl">
-                <div class="myMemo pt-3  rotate text-black">
-                    <div class="notesItem">名字：菁</div>
-                    <div class="notesItem">身高：164cm</div>
-                    <div class="notesItem">生日：11月30日 ♐</div>
-                    <div class="notesItem">年齡：18</div>
-                    <div class="notesItem">性格：溫文爾雅，自立堅強</div>
-                    <div class="notesItem">喜歡：發白日夢，吃甜品🍡</div>
-                    <div class="notesItem">討厭︰辣的食物🌶️，吵架</div>
-
-
-
-                </div>
+            <div class="name">華</div>
+                
             </div>
-            <div class="detail"><img class="mySlides" src="img/person/chick/DChick.png" alt="" id="chick">
-
-                <div class="myMemo pt-3 rotate text-black">
-                    <div class="notesItem">名字：D-chick</div>
+        <div class="divImg">
+            <img class="mySlides" src="img/person/girl/girlBanner.png" alt="" id="girl">
+            <div class="description">
+                
+                <div class="notesItem">身高：164cm</div>
+                <div class="notesItem">生日：11月30日 ♐</div>
+                <div class="notesItem">年齡：18</div>
+                <div class="notesItem">性格：溫文爾雅，自立堅強</div>
+                <div class="notesItem">喜歡：發白日夢，吃甜品🍡</div>
+                <div class="notesItem">討厭︰辣的食物🌶️，吵架</div>
+            </div>
+            <div class="name">菁</div>
+        </div>
+        <div class="divImg">
+            <img class="mySlides" src="img/person/chick/DChick.png" alt="" id="chick">
+            <div class="description">
                     <div class="notesItem">種族：惡魔 (不是雞)</div>
                     <div class="notesItem">身高：200mm 😉</div>
                     <div class="notesItem">生日：?</div>
@@ -299,28 +100,8 @@
                     <div class="notesItem">性格：愛惡作劇 高傲自大 </div>
                     <div class="notesItem">喜歡：菁 吃和菓子🍡</div>
                     <div class="notesItem">討厭︰華 稱自己為雞的人類</div>
-                </div>
             </div>
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                var y = document.getElementsByClassName("myMemo");
-
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                    y[i].style.display = "none";
-                }
-                x[n].style.display = "inline-block";
-                y[n].style.display = "inline-block";
-            }
-        </script>
-
+            <div class="name">D-chick</div> 
     </div>
-
-</body></html>
+</body>
+</html>
