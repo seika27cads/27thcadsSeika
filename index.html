@@ -20,7 +20,7 @@
 			$('.mainContent').load("home.html");
 
 			$('#index').click(function() {
-				$('.mainContent').load("home.html");
+				window.location.href = 'index.html';
 			});
 			$('#event').click(function() {
 				$('.mainContent').load("event.html");
@@ -36,30 +36,34 @@
 				$('.mainContent').load("seikaPerson.html");
 			});
 		});
-
 	</script>
 </head>
 <style>
-
-	#icon{
+	#icon {
 		margin: auto 0px;
 	}
+
 	.navbar-nav a,
 	navbar-nav img {
 		cursor: pointer;
 	}
+
 	#addShape {
 		min-height: 100px;
 	}
+
 	#addShape {
 		clip-path: polygon(20% 50%, 0% 100%, 100% 100%);
 	}
+
 	.mainContent {
 		height: 100%;
 	}
+
 	.toolset {
 		font-size: 30px;
 	}
+
 	.tools {
 		width: 35px;
 		height: 35px;
@@ -68,23 +72,26 @@
 		align-items: center;
 		background-color: red;
 	}
+
 	.nav-item {
 		animation-name: navAnimation;
 		animation-duration: 4s;
 	}
+
 	.nav-item:hover {
 		opacity: 0.7;
 		background-color: white;
 	}
+
 	@keyframes navAnimation {
 		0% {
 			opacity: 0;
 		}
+
 		100% {
 			width: 1;
 		}
 	}
-
 </style>
 
 <body>
@@ -108,40 +115,103 @@
 			</div>
 
 		</nav>
-		<div class="mainContent" >
-		</div>
-		<div id="addShape" class="bg-dark d-none d-md-block"></div>
-		<div class="d-none d-md-block">
-			<footer class="bg-dark text-white d-flex flex-column text-center ">
-				<div>
-					漫衍菁華
-					<div class="px-4">
-						如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我哋
+		<div class="container-fluid bg-white">
+
+
+			<div class="mainContent">
+				<section class=" container  mt-2 mb-2 p-3 ">
+					<div class="text-center">
+						<h1>
+							香港城市大學學生會
+							<br>第二十七屆動漫畫同人誌幹事會
+							<br>
+						</h1>
 					</div>
-					<div class="text-center d-flex justify-content-center">
-						<a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
-						<a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
-					</div>
-					<div class="bg-secondary">
-						@ 2021 Copyright seika27cads
+				</section>
+				<div class="bg1 position-relative">
+					<div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
+						<h2>漫衍菁華</h2>
 					</div>
 				</div>
-			</footer>
-		</div>
+				<section class=" container  p-3  position-relative">
 
-		<div class="toolset row row-cols-4 w-100 d-inlineblock d-md-none" style="position: sticky;bottom: 0px;left: 2px;z-index: 3;">
-			<a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram  btn btn-danger text-white" style="font-size: 24px;"></a>
-			<a target='_blank' href="https://www.facebook.com/futureformula2014" class="fa fa-facebook btn btn-primary text-white" style="font-size: 24px;"></a>
-			<a id='contactUsPhone' class="fa fa-envelope-o btn btn-success text-white" style="font-size: 24px;"></a>
-			<div class="nav-link btn btn-primary bg-dark text-white">
-				<input type="checkbox" class="form-check-input fa fa-sun-o" id="darkSwitch" style="display: none;">
-				<label for="darkSwitch" class="fa fa-moon-o w-100" style="font-size: 24px;">
-				</label>
-				<script src="darkMode/dark-mode-switch.min.js"></script>
+					<h5>古有「沕潏漫衍」之說，今有「漫衍菁華」綠水青花，相互映襯。
+						我們致力推廣動漫畫同人誌，令更多人了解同人文化，希望認識同好的喜悅及憧憬幻想的悸動能紮根於心中，綿延伸展，好比萬紫千紅的芳群，璀璨盛放。
+
+					</h5>
+				</section>
+				<div class="bg1 position-relative">
+					<div class="imgWord position-absolute top-50 start-50 text-center bg-light pt-2 px-4" style="transform: translate(-50%, -50%);">
+						<h2>Thank you!!</h2>
+					</div>
+				</div>
+				<section class=" container  mt-2 mb-2 p-3 position-relative d-flex flex-column">
+					<h5>
+						最新消息我哋會即刻向大家宣布！請大家多啲留意我哋嘅Facebook同Instagram(*/ω＼*)
+						最後！再一次感謝大家嘅支持！嚟緊呢一年請大家多多指教(≧∇≦)
+					</h5>
+					<div class="row  row-cols-sm-1 row-cols-md-2 ">
+						<img src="img/thx/2.png" alt="" class="position-relative thxImg">
+						<img src="img/thx/1.JPG" alt="" class="position-relative thxImg">
+						<img src="img/thx/3.JPG" alt="" class="position-relative thxImg">
+						<img src="img/thx/4.jpg" alt="" class="position-relative thxImg">
+					</div>
+				</section>
+				<div class="bg1 position-relative">
+					<div class="imgWord position-absolute top-50 start-50 text-center bg-white pt-2 px-4" style="transform: translate(-50%, -50%);">
+						<h2>福利提供</h2>
+					</div>
+				</div>
+				<div class="container welfare">
+
+					<div class="row position-relatives">
+						<div class="col-sm">
+							<a target='_blank' href="https://www.instagram.com/p/CN2iT94hKsd/?utm_source=ig_web_copy_link"> <img src="img/welfare/welfare.JPG" class="position-relative  welfareImg"></a>
+							<h4>Future Formula</h4>
+						</div>
+						<div class="col-sm">
+							<a target='_blank' href="https://www.instagram.com/p/CUjkrxBhoi7/?utm_source=ig_web_copy_link"> <img src="img/welfare/fatesouvenir.png" class="position-relative welfareImg"></a>
+							<h4>Fatesouvenir</h4>
+
+						</div>
+						<div class="col-sm">
+							<a target='_blank' href="https://www.instagram.com/p/CUjlIEzBz3k/?utm_source=ig_web_copy_link"><img src="img/welfare/b26.png" class="position-relative welfareImg"></a>
+							<h4>東雲</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="addShape" class="bg-dark d-none d-md-block"></div>
+			<div class="d-none d-md-block">
+				<footer class="bg-dark text-white d-flex flex-column text-center ">
+					<div>
+						漫衍菁華
+						<div class="px-4">
+							如果有興趣與漫衍菁華合作歡迎在IG或FB聯絡我哋
+						</div>
+						<div class="text-center d-flex justify-content-center">
+							<a target='_blank' href="https://www.facebook.com/cityucads" class="fa fa-facebook text-white nav-link"></a>
+							<a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram text-white nav-link "></a>
+						</div>
+						<div class="bg-secondary">
+							@ 2021 Copyright seika27cads
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<div class="toolset row row-cols-4 w-100 d-inlineblock d-md-none" style="position: sticky;bottom: 0px;left: 2px;z-index: 3;">
+				<a target='_blank' href="https://www.instagram.com/cityu_seika/" class="fa fa-instagram  btn btn-danger text-white" style="font-size: 24px;"></a>
+				<a target='_blank' href="https://www.facebook.com/futureformula2014" class="fa fa-facebook btn btn-primary text-white" style="font-size: 24px;"></a>
+				<a id='contactUsPhone' class="fa fa-envelope-o btn btn-success text-white" style="font-size: 24px;"></a>
+				<div class="nav-link btn btn-primary bg-dark text-white">
+					<input type="checkbox" class="form-check-input fa fa-sun-o" id="darkSwitch" style="display: none;">
+					<label for="darkSwitch" class="fa fa-moon-o w-100" style="font-size: 24px;">
+					</label>
+					<script src="darkMode/dark-mode-switch.min.js"></script>
+				</div>
 			</div>
 		</div>
-	</div>
 
-</body>
-
-</html>
+</body></html>
